@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <title>openEHR - Technical standards and domain‑developed clinical models for an EHR platform.</title>
+    <meta name="description" content="Technical standards for an EHR platform and domain‑developed clinical models to define content.">
+    <meta name="generator" content="Discourse 3.4.0.beta4-dev - https://github.com/discourse/discourse version 380910aeddf668f7718630fbf7c91442b678d325">
+<link rel="icon" type="image/png" href="https://discourse.openehr.org/uploads/default/optimized/2X/8/8c1893deac0759f6b7f635a76b21fe70e09c4fa3_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://discourse.openehr.org/uploads/default/optimized/2X/8/8c1893deac0759f6b7f635a76b21fe70e09c4fa3_2_180x180.png">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111">
+
+<meta name="color-scheme" content="light dark">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="https://discourse.openehr.org/" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discourse.openehr.org","name":"openEHR","potentialAction":{"@type":"SearchAction","target":"https://discourse.openehr.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="https://discourse.openehr.org/opensearch.xml" title="openEHR Search">
+
+    <link href="/stylesheets/color_definitions_openehr2-light_4_4_cc74df1bd31c757187087c38282f03560496b1e8.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" class="light-scheme"/><link href="/stylesheets/color_definitions_openehr2-dark_5_4_78ed1a00d236adf1278f53202135a116c529c84c.css?__ws=discourse.openehr.org" media="(prefers-color-scheme: dark)" rel="stylesheet" class="dark-scheme"/>
+
+  <link href="/stylesheets/desktop_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="desktop"  />
+
+
+
+  <link href="/stylesheets/chat_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="chat"  />
+  <link href="/stylesheets/checklist_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="checklist"  />
+  <link href="/stylesheets/discourse-calendar_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="discourse-calendar"  />
+  <link href="/stylesheets/discourse-details_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="discourse-details"  />
+  <link href="/stylesheets/discourse-doc-categories_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="discourse-doc-categories"  />
+  <link href="/stylesheets/discourse-lazy-videos_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="discourse-lazy-videos"  />
+  <link href="/stylesheets/discourse-local-dates_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="discourse-local-dates"  />
+  <link href="/stylesheets/discourse-narrative-bot_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="discourse-narrative-bot"  />
+  <link href="/stylesheets/discourse-presence_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="discourse-presence"  />
+  <link href="/stylesheets/discourse-solved_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="discourse-solved"  />
+  <link href="/stylesheets/docker_manager_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="docker_manager"  />
+  <link href="/stylesheets/footnote_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="footnote"  />
+  <link href="/stylesheets/poll_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="poll"  />
+  <link href="/stylesheets/spoiler-alert_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="spoiler-alert"  />
+  <link href="/stylesheets/chat_desktop_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="chat_desktop"  />
+  <link href="/stylesheets/discourse-calendar_desktop_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="discourse-calendar_desktop"  />
+  <link href="/stylesheets/poll_desktop_b47be22e0c849fe57dcb56b1c424eb8ca0a1b143.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="poll_desktop"  />
+
+  <link href="/stylesheets/desktop_theme_6_9f85229dc88326426dd440eaa4fe9f06994fb001.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="6" data-theme-name="custom header links"/>
+<link href="/stylesheets/desktop_theme_8_56eab60917757a8a9fa62bbca388f0d5e7c1987d.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="8" data-theme-name="discotoc"/>
+<link href="/stylesheets/desktop_theme_7_6f1dd0949a6ab84c4c08e7ad7ce70494d14a727b.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="7" data-theme-name="discourse kanban"/>
+<link href="/stylesheets/desktop_theme_10_9efe58140a6c1b6a86801d0c445bd4dc876915d7.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="10" data-theme-name="discourse-placeholder-theme-component"/>
+<link href="/stylesheets/desktop_theme_9_b8a0c61f0d8a578a23d8f7c29b2d74eac7da6f88.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="9" data-theme-name="pdf previews"/>
+<link href="/stylesheets/desktop_theme_11_6a237f357858e507dda9fd3a0df0247b01a41672.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="11" data-theme-name="topic-width-desktop"/>
+<link href="/stylesheets/desktop_theme_4_7b55dc729b8ce525144656f235927dcfb8e6cbd1.css?__ws=discourse.openehr.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4" data-theme-name="openehr-light"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
+
+    
+      <meta property="og:site_name" content="openEHR" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discourse.openehr.org/uploads/default/original/2X/8/8c1893deac0759f6b7f635a76b21fe70e09c4fa3.png" />
+<meta property="og:image" content="https://discourse.openehr.org/uploads/default/original/2X/8/8c1893deac0759f6b7f635a76b21fe70e09c4fa3.png" />
+<meta property="og:url" content="https://discourse.openehr.org/" />
+<meta name="twitter:url" content="https://discourse.openehr.org/" />
+<meta property="og:title" content="openEHR" />
+<meta name="twitter:title" content="openEHR" />
+<meta property="og:description" content="Technical standards for an EHR platform and domain‑developed clinical models to define content." />
+<meta name="twitter:description" content="Technical standards for an EHR platform and domain‑developed clinical models to define content." />
+
+    
+  </head>
+  <body class="crawler ">
+    
+    <header>
+  <a href="/">
+    openEHR
+  </a>
+</header>
+
+    <div id="main-outlet" class="wrap" role="main">
+      <div itemscope itemtype='http://schema.org/ItemList'>
+  <meta itemprop='itemListOrder' content='http://schema.org/ItemListOrderDescending'>
+  <table class='category-list'>
+    <thead>
+      <tr>
+        <th class='category'>Category</th>
+        <th class='topics'>Topics</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class='category' style='border-color: #ED207B;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='0'>
+              <meta itemprop='url' content='/c/new-to-openehr/13'>
+              <h3>
+                <a href='/c/new-to-openehr/13'>
+                  <span itemprop='name'>New to openEHR?</span>
+                </a>
+              </h3>
+              <div itemprop='description'>Just starting in openEHR? Ask questions here!<br>
+Some useful resources:</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='34 Topics'>34</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #9EB83B;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='1'>
+              <meta itemprop='url' content='/c/openehr-news/9'>
+              <h3>
+                <a href='/c/openehr-news/9'>
+                  <span itemprop='name'>openEHR news</span>
+                </a>
+              </h3>
+              <div itemprop='description'>Announcements from <a href="https://www.openehr.org/governance/organisational_structure">openEHR International</a></div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='51 Topics'>51</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #3AB54A;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='2'>
+              <meta itemprop='url' content='/c/community/10'>
+              <h3>
+                <a href='/c/community/10'>
+                  <span itemprop='name'>Community</span>
+                </a>
+              </h3>
+              <div itemprop='description'>News from the community, including:</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='29 Topics'>29</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #8C6238;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='3'>
+              <meta itemprop='url' content='/c/openehr-affiliates/11'>
+              <h3>
+                <a href='/c/openehr-affiliates/11'>
+                  <span itemprop='name'>openEHR affiliates</span>
+                </a>
+              </h3>
+              <div itemprop='description'>Forum for general issues relating to all openEHR Affiliates. See geography level sub-categories for your region.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='0 Topics'>0</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #8C6238;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='4'>
+              <meta itemprop='url' content='/c/reg-com/110'>
+              <h3>
+                <a href='/c/reg-com/110'>
+                  <span itemprop='name'>Regional communities</span>
+                </a>
+              </h3>
+              <div itemprop='description'></div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='0 Topics'>0</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #F7941D;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='5'>
+              <meta itemprop='url' content='/c/tool-support/29'>
+              <h3>
+                <a href='/c/tool-support/29'>
+                  <span itemprop='name'>Tool Support</span>
+                </a>
+              </h3>
+              <div itemprop='description'>For user community support for clinical modelling and other tools. <strong>ESSENTIAL</strong>: <em>watch</em> sub-category of tools you use to get notifications.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='19 Topics'>19</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #F1592A;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='6'>
+              <meta itemprop='url' content='/c/implem/39'>
+              <h3>
+                <a href='/c/implem/39'>
+                  <span itemprop='name'>Implementation</span>
+                </a>
+              </h3>
+              <div itemprop='description'>For discussions on <em>development</em> of openEHR implementations. <strong>ESSENTIAL</strong>: <em>watch</em> sub-categories to get notifications.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='79 Topics'>79</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #BF1E2E;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='7'>
+              <meta itemprop='url' content='/c/integration/100'>
+              <h3>
+                <a href='/c/integration/100'>
+                  <span itemprop='name'>Integration</span>
+                </a>
+              </h3>
+              <div itemprop='description'>For discussions on integrating to other systems, including via HIT standards, APIs, products.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='4 Topics'>4</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #12A89D;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='8'>
+              <meta itemprop='url' content='/c/clinical/5'>
+              <h3>
+                <a href='/c/clinical/5'>
+                  <span itemprop='name'>Clinical</span>
+                </a>
+              </h3>
+              <div itemprop='description'>Discuss healthcare use cases, clinical models, <a href="https://ckm.openehr.org/">CKM archetypes</a>. <strong>ESSENTIAL</strong>: <em>watch</em> sub-categories to get notifications.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='245 Topics'>245</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #0088CC;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='9'>
+              <meta itemprop='url' content='/c/specifications/6'>
+              <h3>
+                <a href='/c/specifications/6'>
+                  <span itemprop='name'>Specifications</span>
+                </a>
+              </h3>
+              <div itemprop='description'>Discussions about the <a href="https://specifications.openehr.org">openEHR specifications</a> | <a href="https://specifications.openehr.org/releases/UML/latest/index.html">Global UML website</a>. <strong>ESSENTIAL</strong>: <em>watch</em> sub-categories to get notifications.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='82 Topics'>82</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #652D90;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='10'>
+              <meta itemprop='url' content='/c/education/88'>
+              <h3>
+                <a href='/c/education/88'>
+                  <span itemprop='name'>Education</span>
+                </a>
+              </h3>
+              <div itemprop='description'>Discussions on education and training.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='6 Topics'>6</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #B3B5B4;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='11'>
+              <meta itemprop='url' content='/c/conformance/73'>
+              <h3>
+                <a href='/c/conformance/73'>
+                  <span itemprop='name'>Conformance</span>
+                </a>
+              </h3>
+              <div itemprop='description'>Topics relating to conformance and product certification.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='3 Topics'>3</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #B3B5B4;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='12'>
+              <meta itemprop='url' content='/c/site-feedback/2'>
+              <h3>
+                <a href='/c/site-feedback/2'>
+                  <span itemprop='name'>Site Feedback</span>
+                </a>
+              </h3>
+              <div itemprop='description'>Discussion about this site and how we can improve it.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='21 Topics'>21</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #F7941D;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='13'>
+              <meta itemprop='url' content='/c/general-discussion/132'>
+              <h3>
+                <a href='/c/general-discussion/132'>
+                  <span itemprop='name'>General Discussion</span>
+                </a>
+              </h3>
+              <div itemprop='description'>This area is for discussion of general topics that don’t fit in any other more specific category.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='25 Topics'>25</div>
+          </td>
+        </tr>
+        <tr>
+          <td class='category' style='border-color: #9EB83B;'>
+            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='14'>
+              <meta itemprop='url' content='/c/collabrathon/138'>
+              <h3>
+                <a href='/c/collabrathon/138'>
+                  <span itemprop='name'>Collabrathon</span>
+                </a>
+              </h3>
+              <div itemprop='description'>The <a class="hashtag-cooked" href="/c/collabrathon/138" data-type="category" data-slug="collabrathon" data-id="138"><span class="hashtag-icon-placeholder"><svg class="fa d-icon d-icon-square-full svg-icon svg-node"><use href="#square-full"></use></svg></span><span>Collabrathon</span></a> category is for knowledge sharing, briefing, updates, and discussion relating to the openEHR Conference Collabrathon.</div>
+            </div>
+          </td>
+          <td class='topics'>
+            <div title='2 Topics'>2</div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+    </div>
+    <footer class="container wrap">
+  <nav class='crawler-nav'>
+    <ul>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/' itemprop="url">Home </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/categories' itemprop="url">Categories </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/guidelines' itemprop="url">Guidelines </a>
+        </span>
+      </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+    </ul>
+  </nav>
+  <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+</footer>
+
+    
+    
+  </body>
+  
+</html>

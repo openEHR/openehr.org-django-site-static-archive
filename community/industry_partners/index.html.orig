@@ -1,0 +1,1086 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<title>OpenEHR Industry Partners</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems">
+	<meta name="keywords" content="archetypes, openEHR, EHR, electronic health record, electronic medical record, ADL, reference model, clinical models, healthcare, health informatics, medical informatics, EHR standards, ISO 18308, CEN 13606, health care software, open source software, knowledge modelling, patient-centric">
+	<meta name="author" content="Sam Heard, Thomas Beale">
+	<meta name="designer" content="Adriana Csefalvay">
+	<meta name="rating" content="General">
+	<meta name="robots" content="All">
+	<meta name="revisit-after" content="15 days">
+
+	<meta name="msvalidate.01" content="8FFF7BE532A432C2B590526A24F0CBF9" />
+	<meta name="yandex-verification" content="da5f926c2ac75b3c" />
+
+	<meta property="og:title" content="openEHR-Home">
+    <meta property="og:description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems.">
+    <meta property="og:type" content="website">
+
+	<link rel="stylesheet" href="/static/css/normalize.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/basic.css"  type="text/css">
+	
+	<link rel="stylesheet" href="/static/css/pages.css"  type="text/css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+	
+	<link rel="icon" sizes="any" href="/static/img/favicon/favicon.ico">
+	<link rel="icon" type="image/svg+xml" href="/static/img/favicon/icon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="/static/img/favicon/site.webmanifest">
+	
+	<link rel="home" href="/">
+	
+	<script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="/static/js/bootstrap.bundle.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+</head>
+<body>
+	
+	<header>
+  <div class="container hidden" id="affiliate">
+    <div class="affiliates flex">
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-netherlands/12" target="_blank"
+          >openEHR NL</a
+        >
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-germany/16" target="_blank">openEHR DE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-japan/18" target="_blank">openEHR JP</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openher-china/19" target="_blank">openEHR CN</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-sweden/28" target="_blank">openEHR SE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-brazil/17" target="_blank">openEHR BR</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-spain/21" target="_blank">openEHR ES</a>
+      </div>
+    </div>
+  </div>
+  <div class="container hidden grid grid--2" id="search">
+    <div></div>
+    <div class="search-box">
+      <script>
+        (function () {
+          var cx = "013258992131926468583:q3vo4hyneyu";
+          var gcse = document.createElement("script");
+          gcse.type = "text/javascript";
+          gcse.async = true;
+          gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#top-menu"
+          aria-controls="top-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-menu">
+          <ul class="navbar-nav me-auto">
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">About</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">About</span></li>
+                    <li>
+                      <a href="/about/what_is_openehr">What is openEHR?</a>
+                    </li>
+                    <li>
+                      <a href="/about/vision_and_mission">Vision and Mission</a>
+                    </li>
+                    <li>
+                      <a href="/about/developer_ecosystem">Developer Ecosystem</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/origins">Origins of openEHR</a></li>
+                    <li>
+                      <a href="/about/history_2002_2018">History 2002 - 2018</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/logos">Logos</a></li>
+                    <li><a href="/about/contacts">Contacts</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Governance</span></li>
+                    <li>
+                      <a href="/governance/organisational_structure">Organisational Structure</a>
+                    </li>
+                    <li><a href="/governance/cic_board">CIC Board</a></li>
+                    <li>
+                      <a href="/governance/foundation_board">Foundation Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/governance/intellectual_property">Intellectual Property</a>
+                    </li>
+                    <li>
+                      <a href="/governance/code_of_conduct">Code of Conduct</a>
+                    </li>
+                    <li><a href="/governance/reports">Reports</a></li>
+                    <br/>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Community</span></li>
+                    <li>
+                      <a href="/community/industry_partners/">Industry Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/organisation_partners/">Organisation Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/professional_members/">Professional Members</a>
+                    </li>
+                    <li>
+                      <a href="https://www.openehr.org/ckm/#userstatistics" target="_blank">Clinical Modellers (CKM)</a>
+                    </li>
+                    <li><a href="/community/ambassadors">Ambassadors</a></li>
+                    <li><a href="/community/affiliates/">Affiliates</a></li>
+                    <br/>
+                    <li><a href="/community/membership/">Membership</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Programs</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/specification/" class="column-title">Specification Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/board_members">Program Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/programs/specification/changeprocess">Change Process</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/releasestrategy">Release Strategy</a>
+                    </li>
+                    <li>
+                      <a href="https://specifications.openehr.org" target="_blank">Specifications Site</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/spec/Specifications+Home" target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://openehrspecs.slack.com/" target="_blank">Slack</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/clinical/" class="column-title">Clinical Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="http://openehr.org/ckm/" target="_blank">openEHR CKM</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/nationalckms">National CKMs</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a
+                        href="https://openehr.atlassian.net/wiki/display/healthmod/Clinical+Content+Models"
+                        target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li><a href="https://openehrspecs.slack.com/" target="_blank">Slack</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/education/" class="column-title">Education Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/education/recognition">Educator Recognition</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/educator_training_program">Educator Training Program</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/spaces/edu/overview" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/software/" class="column-title">Software Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/software/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/software/issuetrackers">Issue Trackers</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/openEHR" target="_blank">openEHR Github</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/dev/Developers+Home" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Products & Tools</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Products & Tools</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/products_tools/modelling_tools/">Modelling Tools</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/knowledge_management/">Knowledge Management</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/guidelines_and_cds/">Guidelines and CDS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/platform/">Platform</a></li>
+                    <li><a href="/products_tools/applications/">Applications</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/libraries/">Libraries</a></li>
+                    <li><a href="/products_tools/sdks/">SDKs</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Deployments</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Deployments</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/provider_deployments/">Provider deployments</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/jurisdictions/">Jurisdictions</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/research_projects/">Research projects</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Resources</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/publications_zotero">Publications Zotero</a>
+                    </li>
+                    <li>
+                      <a href="/resources/learning_centre">Learning Centre</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/wiki/display/resources/FAQs+-+Frequently+Asked+Questions" title="FAQs" target="_blank">FAQs</a>
+                    </li>
+                    <li><a href="/resources/white_papers">White Papers</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/related_projects">Related Projects</a>
+                      <a href="/digital_media/blogs">Blogs</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/news_events/" class="dropdown-toggle" data-toggle="dropdown">News & Events</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">
+                  <a href="/news_events/">News & Events</a>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/industry_news/">Industry News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/community_news/">Community News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/foundation_news/">openEHR News</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/news_events/events/">Events</a></li>
+                    <li><a href="/news_events/releases/">Releases</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/clinical_news/">CKM Activity</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          
+          <button class="btn--quick-link">
+            <a href="https://specifications.openehr.org/" target="_blank" title="Specifications"><i class="fa fa-file-text"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://ckm.openehr.org/ckm/" target="_blank" title="CKM"><i class="fa fa-database"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://news.openehr.org/" target="_blank" title="News"><i class="fa fa-newspaper-o"></i></a>
+          </button>
+          <button class="btn--affiliate" title="Affiliates">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </button>
+          <button class="btn--search">
+            <svg width="18" height="18" viewBox="0 0 15 15">
+              <path
+                d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="nav-second__container">
+      <div class="brand-logo">
+        <a href="/"><img src="/static/img/logo.svg" alt="" /></a>
+      </div>
+      <div class="nav-second">
+        <div class="nav-second__item"><a href="/about_us">About us</a></div>
+        <div class="nav-second__item"><a href="/clinicians">Clinicians</a></div>
+        <div class="nav-second__item"><a href="/providers">Providers</a></div>
+        <div class="nav-second__item"><a href="/research">Research</a></div>
+        <div class="nav-second__item"><a href="/developers">Developers</a></div>
+        <div class="nav-second__item">
+          <a class="btn btn-secondary" href="/news_events/">Newsfeed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+	<div class='content'>
+		<div class="container">
+		
+		<div id="SideMenu">
+	<span>Community</span>
+	<ul>
+		<br/>
+		<li><a href="/community/industry_partners/"  class="active" >Industry partners</a></li>
+		<li><a href="/community/organisation_partners/"  >Organisation partners</a></li>
+		<li><a href="/community/professional_members/"  >Professional Members</a></li>
+		<li><a href="https://www.openehr.org/ckm/#userstatistics" target="_blank">Clinical Modellers (CKM)</a></li>
+		<li><a href="/community/ambassadors/" >Ambassadors</a></li>
+		<li><a href="/community/affiliates/" >Affiliates</a></li>
+		<br/>
+		<li><a href="/community/membership/"  >Membership</a></li>
+	</ul>
+</div>
+
+			<div id="Content">
+			
+
+<h1>OpenEHR Industry Partners</h1>
+
+<p>The openEHR Industry Partners are a group of companies implementing openEHR who have agreed to materially support the openEHR International. Industry Partners support the openEHR International with resources, both human and financial; and work on many aspects of openEHR, but in particular are focussed on product compliance and quality. To that end they are responsible for the conformance specifications for openEHR.</p>
+<p>You can find out, what does it mean to be openEHR developer or vendor here.</p>
+
+
+
+
+<br/>
+<h2>Diamond partner</h2>
+
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/better">
+                <img src ="/media/images/BetterLogo_with__and_www_RGB.jpg" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/better">Better</a></h3>
+            Better builds powerful digital products that help doctors and nurses treat people. We believe there is a way for healthcare professionals to maintain an authentic and personal relationship with their patients in the digital age. We are dedicated to leveraging the power of design and technology to exchange and use health data for seamless care coordination and constant innovation to ensure the best health outcomes for all.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/cambio-healthcare-systems">
+                <img src ="/media/images/CAMBIO_Logotype_Horizontal_RGB_TransparantBG.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/cambio-healthcare-systems">Cambio Healthcare Systems</a></h3>
+            Cambio Healthcare Systems is a major Scandinavian e-Health company that provides the COSMIC healthcare information system for comprehensive, easy-to-use solutions to meet the healthcare needs of all patients. Since 1993, Cambio has worked tirelessly to develop open, flexible and comprehensive IT support for healthcare. Development has taken place in constant close co-operation with those who work in health care - doctors, nurses, administrators and IT-technicians.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/dips">
+                <img src ="/media/images/dips_logo.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/dips">DIPS</a></h3>
+            DIPS ASA is the largest supplier of electronic patient record systems to Norwegian hospitals, the largest supplier of Radiology Information Systems and the second largest supplier of Laboratory Information Systems. DIPS has group and framework agreements with the health trusts organised under the regional health authorities for South-Eastern Norway, Western Norway and Northern Norway. DIPS also has customers in Denmark and Sweden.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/tieto">
+                <img src ="/media/images/TE_Lockup_RGB_BLUE.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/tieto">TietoEVRY</a></h3>
+            TietoEVRY creates digital advantage for businesses and society. We are a leading digital services and software company with local presence and global capabilities. Our Nordic values and heritage steer our success. Headquartered in Finland, TietoEVRY employs around 24 000 experts globally. The company serves thousands of enterprise and public sector customers in more than 90 countries.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/ey-health">
+                <img src ="/media/images/EY.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/ey-health">EY Health</a></h3>
+            Working with the health sector to help them reposition and optimize business models, people strategies and operational structures to address cost pressures, while leveraging the potential of analytics and technologies to improve quality of care. Helping health organisations to stay competitive and deliver better patient outcomes.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/cistec-1ydc">
+                <img src ="/media/images/Logo_CISTEC_RGB_Claim.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/cistec-1ydc">CISTEC AG</a></h3>
+            The successful Swiss company CISTEC develops and operates the leading hospital information system KISIM. KISIM is feature-rich, easy to use and supports the daily work of health professionals. Over 50 hospitals are using KISIM. CISTEC has been committed to the Swiss digital health market for over 20 years. We understand the needs of our clients in detail and develop practice-oriented and well-designed software solutions.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/aws">
+                <img src ="/media/images/download_1.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/aws">AWS</a></h3>
+            Since launching in 2006, Amazon Web Services has been providing world-leading cloud technologies that help any organization and any individual build solutions to transform industries, communities, and lives for the better. As part of Amazon, we strive to be Earth’s most customer-centric company. We work backwards from our customers’ problems to provide them with cloud infrastructure that meets their needs, so they can reinvent continuously and push through barriers of what people thought was possible. Whether they are entrepreneurs launching new businesses, established companies reinventing themselves, non-profits working to advance their missions, or governments and cities seeking to serve their citizens more effectively—our customers trust AWS with their livelihoods, their goals, their ideas, and their data.
+            <br/>
+        </div>
+    </div>
+    
+
+
+
+
+<br/>
+<h2>Platinum partner</h2>
+
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/big-picture-medical">
+                <img src ="/media/images/Bigpiclogo.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/big-picture-medical">Big Picture Medical</a></h3>
+            The Big Picture Medical platform; empowering health systems to improve patient outcomes.
+            <br/>
+        </div>
+    </div>
+    
+
+
+
+
+<br/>
+<h2>Gold partner</h2>
+
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/code24">
+                <img src ="/media/images/CODE24-openehr-partnerpage.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/code24">CODE24</a></h3>
+            CODE24 B.V. is an innovative software development company located in Alkmaar, the Netherlands. We dream, think and do. With our knowledge and expertise, we create advanced, efficient software that supports healthcare professionals in the workplace. In doing so, we constantly keep security, quality and stability in mind.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/ocean-health-systems">
+                <img src ="/media/images/blue_ocean_logo.jpg" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/ocean-health-systems">Ocean Health Systems</a></h3>
+            Ocean Health Systems is a recognised leader in e-health strategy, semantic interoperability and the shared EHR. Founded in 1998, Ocean Informatics is a unique company, comprising an experienced engineering team with strong clinical expertise. Collectively the Ocean team has over 100 person-years of health informatics experience. Ocean&#39;s vision is fully integrated and highly computable health data organised around the patient care process, served from high-availability infrastructure to point of care, reporting and analytics applications.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/nedap-nv">
+                <img src ="/media/images/NEDAP_LOGO_HERO__DIGITAL_Gr7kP32.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/nedap-nv">Nedap</a></h3>
+            We believe that people together make care better. We develop technology that helps people to be the best they can be. From care professionals and administration, to patients and their network.
+Because we believe in open standards: we love openEHR for it’s open specification and clinically led technology. OpenEHR is our first choice medical data storage technology. It helps us achieve our vision of care of the future where our systems adapt to whatever way people want to work together by combining multiple internal and external sources, but still feel integrated. We particularly like the structure that openEHR offers for standardisation with options for flexibility (specialisation and localisation).
+
+We use openEHR for multiple products that are used by hundreds of customers in Dutch elderly care, disabled care and mental health care. In our journey starting 2016 we recorded millions of compositions.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/vitagroup">
+                <img src ="/media/images/MicrosoftTeams-image.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/vitagroup">vitagroup</a></h3>
+            Providing digital ecosystems on an openEHR based open platform. A future-proven open platform that enables providers to develop and operate an ecosystem of networked health applications and to free themselves from the dependency of proprietary systems.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/the-i-engineers-ag">
+                <img src ="/media/images/the_i-engineers_AG_Logo.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/the-i-engineers-ag">the i-engineers AG</a></h3>
+            The i-engineers AG, a Swiss market-leading company, has been developing software products for the healthcare industry since 2002.
+            <br/>
+        </div>
+    </div>
+    
+
+
+
+
+<br/>
+<h2>Silver partner</h2>
+
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/in2-ingenieria-de-la-informacion-sl">
+                <img src ="/media/images/in2.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/in2-ingenieria-de-la-informacion-sl">IN2 Ingenieria de la Informacion, S.L.</a></h3>
+            Technology consulting company
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/ethical-healthcare-consulting">
+                <img src ="/media/images/logo_xksZsxi.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/ethical-healthcare-consulting">Ethical Healthcare Consulting</a></h3>
+            Advisory consultancy with extensive experience in digital health offering advice and support across the digital transformation lifecycle.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/avenue3">
+                <img src ="/media/images/Avenue3.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/avenue3">Avenue3</a></h3>
+            Providing experienced digital strategy, architecture, and integration consultancy, and full-stack agile software engineering services to support organisations in adopting cloud, and open data standards and to design cohesive digital architectures.
+
+Avenue3 has industry leading experience in delivering outcomes using agile methodologies and continuous integration and delivery processes at scale.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/egress-group">
+                <img src ="/media/images/Egress.jpg" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/egress-group">Egress Group</a></h3>
+            Data Confidence... Driving Digital Transformation
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/deloitte-healthcare-italy">Deloitte Healthcare Italy</a></h3>
+            Deloitte Italy collaboration in healthcare requires interoperable data and open platforms
+            <br/>
+        </div>
+    </div>
+    
+
+
+
+
+<br/>
+<h2>Bronze partner</h2>
+
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/biocytics-inc">
+                <img src ="/media/images/BioCytics-web-100-logo.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/biocytics-inc">BioCytics, Inc.</a></h3>
+            Privately-held biotechnology company located in Huntersville, North Carolina. BioCytics was founded in 2005 by John Powderly MD, CPI, as a multi-dimensional biotech company to develop a BioBank, Human Applications Laboratory, and BioInformatics Group.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/carolina-biooncology-institute">
+                <img src ="/media/images/CBOI-Logo.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/carolina-biooncology-institute">Carolina BioOncology Institute</a></h3>
+            Providing the highest level of comprehensive and quality medical care possible.  To accomplish our mission, we work as a team, with patient health and safety as our common goal.  We are constantly striving to improve our daily set of values and are committed to cancer-fighting.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/eweave-ab">
+                <img src ="/media/images/eWeave_logo_rgb_h_w-p-500.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/eweave-ab">eWeave AB</a></h3>
+            eWeave Core is an openEHR-based healthcare platform that solves the communication and reuse of medical record data between different system providers in Sweden.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/freshehr">
+                <img src ="/media/images/freshEHR-logo.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/freshehr">FreshEHR</a></h3>
+            freshEHR Clinical Informatics offers clinically-led informatics consultancy services based on over 30 years experience in the field, with a solid background in front-line clinical practice and real-world experience of electronic health and care record use and development.  We believe in open standards as the fundamental approach to modern health and care applications.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/future-perfect-healthcare-ltd">
+                <img src ="/media/images/healthcare_futureperfectlogo_colour-copy300x.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/future-perfect-healthcare-ltd">Future Perfect (Healthcare) Ltd</a></h3>
+            Future Perfect (Healthcare) employs technical development experts in the openEHR standard, which is of growing importance in making healthcare far more integrated in the UK and across Europe. Future Perfect openEHR tools enable integration and interoperability, essential to deploying advanced analytics, clinical decision support and AI.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/solit-clouds">
+                <img src ="/media/images/SC_logo_oOxVm5p.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/solit-clouds">Solit-Clouds</a></h3>
+            Solit Clouds is fastly growing software development company with more than 100 developers. We are principally dedicated to healthcare and analytics solutions, providing clinical applications and platforms based on the openEHR standard.Our solutions are used by health authorities to reduce development time and cost.We develop projects for primary and secondary care as well as products for Digital Healthcare Platform based on openEHR.We have great experience in developing, implementing and maintaining of huge region-level healthcare projects such as Moscow City Health IT Projects - one of the biggest openEHR implementations in the world.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/veratech-for-health">
+                <img src ="/media/images/vt-logotipo-tagline3x.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/veratech-for-health">VeraTech for Health</a></h3>
+            VeraTech is a company focused on providing archetype-based solutions for the standardization and semantic interoperability of electronic health records. With a professional experience of more than 20 years, we are experts on the adoption of standards such as openEHR, ISO 136060, HL7 CDA, HL7 FHIR, or OMOP CDM. We provide consulting, training, and specialized software development services, covering the mentioned EHR standards, and terminologies such as SNOMED CT.
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/daya-medika-pratama">
+                <img src ="/media/images/logo_Daya_Medika_Pratama_lFh6RiW.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/daya-medika-pratama">Daya Medika Pratama</a></h3>
+            Daya Medika Pratama, based in Jakarta Indonesia, provides comprehensive software solutions, named AFYA Better HIS, for managing healthcare facilities operational processes (front office – back office) and implementing cutting-edge openEHR-based solutions for clinical data repositories. Our solutions are dedicated to leveraging the power of technology to enhance healthcare facilities&#39; operational efficiency, streamline clinical workflows, optimize and improve patient care outcomes by implementing OpenEHR based custom EMR solutions.
+            <br/>
+        </div>
+    </div>
+    
+
+
+
+
+<br/>
+<h2>Startup partner</h2>
+
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/neoehr">
+                <img src ="/media/images/medical.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/neoehr">Medical Ltd</a></h3>
+            Legacy EHR data migration to openEHR with YAML mapping and with an interpretable programming language for data transformation inside YAML.
+
++ 
+
+Executable Clinical Pathways in BPMN. 
+
++ 
+
+Providing an openEHR Applications Builder — generated openEHR SDKs for Java/Kotlin/C#/TypeScript, APIs, forms, applications, libraries, GraphQL, OpenAPI,...
+            <br/>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+            
+            <a href="/community/industry_partners_detail/enigma-health">
+                <img src ="/media/images/Enigma_Logo.png" class="IndustryLogo" />
+            </a>
+            
+        </div>
+        <div class="col-md-9">
+            <h3><a href="/community/industry_partners_detail/enigma-health">Enigma Global eHealth</a></h3>
+            Enigma Global eHealth platform creates a secure and private e-health portal, facilitating seamless communication among patients, doctors, and health institutions and grants patients access to their personal digital vaccine passport in sync with their own EHR for life, anytime and anywhere around the globe.
+            <br/>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+			<br class="clear">
+			</div>
+			<br class="clear">
+		</div>
+		<br class="clear">
+	</div>
+	<footer class="block footer">
+  <div class="container grid grid--4 footer__sections">
+    <section class="footer__section">
+      <h2 class="footer__heading">Sites</h2>
+      <div>
+        <ul class="list">
+          <li><a href="https://discourse.openehr.org/" target="_blank">Forums</a></li>
+          <li>
+            <a href="https://openehr.atlassian.net/wiki/spaces/resources/pages/4554774/FAQs+-+Frequently+Asked+Questions" target="_blank">
+              Wiki
+            </a>
+          </li>
+          <li>
+            <a href="https://openehr.atlassian.net/secure/BrowseProjects.jspa?selectedCategory=all&amp;selectedProjectType=all" target="_blank">
+              Jira
+            </a>
+          </li>
+          <li><a href="https://github.com/openEHR" target="_blank">GitHub</a></li>
+          <li><a href="https://specifications.openehr.org/" target="_blank">Specifications</a></li>
+          <li><a href="https://ckm.openehr.org/ckm/" target="_blank">CKM</a></li>
+          <li><a href="/accounts/">Accounts</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Using the Site</h2>
+      <div>
+        <ul class="list">
+          <li><a href="/using_the_site/terms_of_use">Terms of Use</a></li>
+          <li><a href="/using_the_site/privacy_policy">Privacy Policy</a></li>
+          <li>
+            <a href="/using_the_site/publishing_content">Publishing Content</a>
+          </li>
+          <li><a href="/using_the_site/localisation">Localisation</a></li>
+          <li><a href="/using_the_site/feedback">Feedback</a></li>
+          <li><a href="mailto:webmaster@openehr.org">Contact Webmaster</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Acknowledgements</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.atlassian.com/" target="_blank">Atlassian</a>
+            (Jira, Confluence)
+          </li>
+          <li>
+            <a href="http://asciidoctor.org/" target="_blank">AsciiDoctor</a>
+            (publishing)
+          </li>
+          <li><a href="https://github.com/" target="_blank">GitHub</a> (DVCS)</li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="_blank">LAMP</a>
+            (dev community)
+          </li>
+          <li>
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            (images)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Social media</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.youtube.com/openEHR" target="_blank" class="fa fa-youtube" title="YouTube"></a>
+            <a href="https://www.youtube.com/openEHR" target="_blank">YouTube</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/#!/openehr" target="_blank" class="fa fa-twitter" title="Twitter"></a> 
+            <a href="http://twitter.com/#!/openehr" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/openehr/"
+              target="_blank"
+              class="fa fa-facebook"
+              title="Facebook"
+            ></a>
+            <a href="https://www.facebook.com/groups/openehr/" target="_blank">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer__copyright">
+      <img src="/static/img/logo_inverse.svg" alt="" class="brand-logo" />
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        openEHR International. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+	<script src="/static/js/header_boxes.js"></script>
+	<script>$('.select_field_class').select2( { placeholder: "Select here", maximumSelectionSize: 100  } );</script>
+
+</body>
+</html>

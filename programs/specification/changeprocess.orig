@@ -1,0 +1,935 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<title>Change Process</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems">
+	<meta name="keywords" content="archetypes, openEHR, EHR, electronic health record, electronic medical record, ADL, reference model, clinical models, healthcare, health informatics, medical informatics, EHR standards, ISO 18308, CEN 13606, health care software, open source software, knowledge modelling, patient-centric">
+	<meta name="author" content="Sam Heard, Thomas Beale">
+	<meta name="designer" content="Adriana Csefalvay">
+	<meta name="rating" content="General">
+	<meta name="robots" content="All">
+	<meta name="revisit-after" content="15 days">
+
+	<meta name="msvalidate.01" content="8FFF7BE532A432C2B590526A24F0CBF9" />
+	<meta name="yandex-verification" content="da5f926c2ac75b3c" />
+
+	<meta property="og:title" content="openEHR-Home">
+    <meta property="og:description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems.">
+    <meta property="og:type" content="website">
+
+	<link rel="stylesheet" href="/static/css/normalize.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/basic.css"  type="text/css">
+	
+	<link rel="stylesheet" href="/static/css/pages.css"  type="text/css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+	
+	<link rel="icon" sizes="any" href="/static/img/favicon/favicon.ico">
+	<link rel="icon" type="image/svg+xml" href="/static/img/favicon/icon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="/static/img/favicon/site.webmanifest">
+	
+	<link rel="home" href="/">
+	
+	<script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="/static/js/bootstrap.bundle.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+</head>
+<body>
+	
+	<header>
+  <div class="container hidden" id="affiliate">
+    <div class="affiliates flex">
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-netherlands/12" target="_blank"
+          >openEHR NL</a
+        >
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-germany/16" target="_blank">openEHR DE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-japan/18" target="_blank">openEHR JP</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openher-china/19" target="_blank">openEHR CN</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-sweden/28" target="_blank">openEHR SE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-brazil/17" target="_blank">openEHR BR</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-spain/21" target="_blank">openEHR ES</a>
+      </div>
+    </div>
+  </div>
+  <div class="container hidden grid grid--2" id="search">
+    <div></div>
+    <div class="search-box">
+      <script>
+        (function () {
+          var cx = "013258992131926468583:q3vo4hyneyu";
+          var gcse = document.createElement("script");
+          gcse.type = "text/javascript";
+          gcse.async = true;
+          gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#top-menu"
+          aria-controls="top-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-menu">
+          <ul class="navbar-nav me-auto">
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">About</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">About</span></li>
+                    <li>
+                      <a href="/about/what_is_openehr">What is openEHR?</a>
+                    </li>
+                    <li>
+                      <a href="/about/vision_and_mission">Vision and Mission</a>
+                    </li>
+                    <li>
+                      <a href="/about/developer_ecosystem">Developer Ecosystem</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/origins">Origins of openEHR</a></li>
+                    <li>
+                      <a href="/about/history_2002_2018">History 2002 - 2018</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/logos">Logos</a></li>
+                    <li><a href="/about/contacts">Contacts</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Governance</span></li>
+                    <li>
+                      <a href="/governance/organisational_structure">Organisational Structure</a>
+                    </li>
+                    <li><a href="/governance/cic_board">CIC Board</a></li>
+                    <li>
+                      <a href="/governance/foundation_board">Foundation Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/governance/intellectual_property">Intellectual Property</a>
+                    </li>
+                    <li>
+                      <a href="/governance/code_of_conduct">Code of Conduct</a>
+                    </li>
+                    <li><a href="/governance/reports">Reports</a></li>
+                    <br/>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Community</span></li>
+                    <li>
+                      <a href="/community/industry_partners/">Industry Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/organisation_partners/">Organisation Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/professional_members/">Professional Members</a>
+                    </li>
+                    <li>
+                      <a href="https://www.openehr.org/ckm/#userstatistics" target="_blank">Clinical Modellers (CKM)</a>
+                    </li>
+                    <li><a href="/community/ambassadors">Ambassadors</a></li>
+                    <li><a href="/community/affiliates/">Affiliates</a></li>
+                    <br/>
+                    <li><a href="/community/membership/">Membership</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Programs</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/specification/" class="column-title">Specification Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/board_members">Program Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/programs/specification/changeprocess">Change Process</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/releasestrategy">Release Strategy</a>
+                    </li>
+                    <li>
+                      <a href="https://specifications.openehr.org" target="_blank">Specifications Site</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/spec/Specifications+Home" target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://openehrspecs.slack.com/" target="_blank">Slack</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/clinical/" class="column-title">Clinical Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="http://openehr.org/ckm/" target="_blank">openEHR CKM</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/nationalckms">National CKMs</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a
+                        href="https://openehr.atlassian.net/wiki/display/healthmod/Clinical+Content+Models"
+                        target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li><a href="https://openehrspecs.slack.com/" target="_blank">Slack</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/education/" class="column-title">Education Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/education/recognition">Educator Recognition</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/educator_training_program">Educator Training Program</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/spaces/edu/overview" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/software/" class="column-title">Software Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/software/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/software/issuetrackers">Issue Trackers</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/openEHR" target="_blank">openEHR Github</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/dev/Developers+Home" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Products & Tools</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Products & Tools</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/products_tools/modelling_tools/">Modelling Tools</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/knowledge_management/">Knowledge Management</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/guidelines_and_cds/">Guidelines and CDS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/platform/">Platform</a></li>
+                    <li><a href="/products_tools/applications/">Applications</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/libraries/">Libraries</a></li>
+                    <li><a href="/products_tools/sdks/">SDKs</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Deployments</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Deployments</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/provider_deployments/">Provider deployments</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/jurisdictions/">Jurisdictions</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/research_projects/">Research projects</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Resources</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/publications_zotero">Publications Zotero</a>
+                    </li>
+                    <li>
+                      <a href="/resources/learning_centre">Learning Centre</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/wiki/display/resources/FAQs+-+Frequently+Asked+Questions" title="FAQs" target="_blank">FAQs</a>
+                    </li>
+                    <li><a href="/resources/white_papers">White Papers</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/related_projects">Related Projects</a>
+                      <a href="/digital_media/blogs">Blogs</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/news_events/" class="dropdown-toggle" data-toggle="dropdown">News & Events</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">
+                  <a href="/news_events/">News & Events</a>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/industry_news/">Industry News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/community_news/">Community News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/foundation_news/">openEHR News</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/news_events/events/">Events</a></li>
+                    <li><a href="/news_events/releases/">Releases</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/clinical_news/">CKM Activity</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          
+          <button class="btn--quick-link">
+            <a href="https://specifications.openehr.org/" target="_blank" title="Specifications"><i class="fa fa-file-text"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://ckm.openehr.org/ckm/" target="_blank" title="CKM"><i class="fa fa-database"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://news.openehr.org/" target="_blank" title="News"><i class="fa fa-newspaper-o"></i></a>
+          </button>
+          <button class="btn--affiliate" title="Affiliates">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </button>
+          <button class="btn--search">
+            <svg width="18" height="18" viewBox="0 0 15 15">
+              <path
+                d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="nav-second__container">
+      <div class="brand-logo">
+        <a href="/"><img src="/static/img/logo.svg" alt="" /></a>
+      </div>
+      <div class="nav-second">
+        <div class="nav-second__item"><a href="/about_us">About us</a></div>
+        <div class="nav-second__item"><a href="/clinicians">Clinicians</a></div>
+        <div class="nav-second__item"><a href="/providers">Providers</a></div>
+        <div class="nav-second__item"><a href="/research">Research</a></div>
+        <div class="nav-second__item"><a href="/developers">Developers</a></div>
+        <div class="nav-second__item">
+          <a class="btn btn-secondary" href="/news_events/">Newsfeed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+	<div class='content'>
+		<div class="container">
+		
+		<div id="SideMenu">
+	<span><a href="/programs/specification/"  >Specification Program</a></span>
+	<ul>
+		<br/>
+		<li><a href="/programs/specification/board_members" >Program Board</a></li>
+		<br/>
+		<li><a href="/programs/specification/changeprocess"  class="active">Change Process</a></li>
+		<li><a href="/programs/specification/releasestrategy" >Release Strategy</a></li>
+		<li><a href="https://specifications.openehr.org"  target="_blank">Specifications Site</a></li>
+		<br/>
+		<li><a href="https://openehr.atlassian.net/wiki/display/spec/Specifications+Home" target="_blank">Wiki</a></li>
+		<li><a href="https://openehrspecs.slack.com/" target="_blank">Slack</a></li>
+	</ul>
+</div>
+
+			<div id="Content">
+			
+
+
+	<h1>Change Process</h1>
+
+    <h2>Introduction</h2>
+
+<p>This document describes the Change Management of the openEHR Specification Program. Specifications are divided into major Components (identified in the &#39;Component&#39; column of the <a href="/programs/specification/workingbaseline">current baseline</a>). They are managed by the <a href="/programs/specification/governance#sec">Specifications Editorial Committee (SEC)</a>, according to the process described here. All change and release management is <a href="https://openehr.atlassian.net/browse/SPEC" target="_blank">visible online</a>.</p>
+
+<h2>Specification Lifecycle</h2>
+
+<p>All specification artefacts, both documentary and computable follow a lifecycle, from inception (or accession, in the case of donated works) to stability to obsolescence. The following formal lifecycle states are recognised: Planning, Development, Trial, Stable, and Retired. For specifications developed from scratch within openEHR (i.e. not donated), the management is as follows:</p>
+
+<ul>
+	<li><em>Planning state</em>: development of description and scope of new specification, along with relevance and utility.</li>
+	<li><em>Development state</em>: agile development by project group, no formal change management, visibility of documentation and experimental software. By the end of development, an open source reference implementation must be available.</li>
+	<li><em>Trial state</em>: during this period, the specification is managed in a formal way. Issues are reported on an online tracker; changes are recorded on a separate dedicated tracker, ensuring every change to the specification is recorded;</li>
+	<li><em>Stable state</em>: in stable state, the specification is published in a high-quality format. Proposed changes are assessed based on impact to existing implementations.</li>
+	<li><em>Retired state</em>: some specifications inevitably become obsolete, or irrelevant for other reasons, and are promoted to the Retired state.</li>
+</ul>
+
+<p>The intention is to be lightweight when needed, and to manage specifications carefully as they gain widespread use.</p>
+
+<p>Specifications created based on existing software, widespread existing practices etc can enter the lifecycle at the Trial or Stable states if they meet the relevant criteria.</p>
+
+<p>The following table describes the lifecycle states in detail:</p>
+
+<table class="TableBasic">
+	<tbody>
+		<tr>
+			<th>Lifecycle State</th>
+			<th>Period</th>
+			<th>Publication Format</th>
+			<th>Versioning* &nbsp;</th>
+			<th>Change doc</th>
+			<th>Change Manager</th>
+			<th>Issue Reporting</th>
+		</tr>
+		<tr>
+			<td><strong>Planning</strong></td>
+			<td>6 months max</td>
+			<td>Wiki</td>
+			<td>0.y.z</td>
+			<td>informal</td>
+			<td>external development group</td>
+			<td>Informal</td>
+		</tr>
+		<tr>
+			<td><strong>Development</strong></td>
+			<td>18 months max</td>
+			<td>Wiki</td>
+			<td>0.y.z</td>
+			<td>Change Requests optional; otherwise informal</td>
+			<td>SEC or external development group</td>
+			<td>Informal</td>
+		</tr>
+		<tr>
+			<td><strong>Trial</strong></td>
+			<td>2 years max</td>
+			<td><em>PDF + computable</em></td>
+			<td><em>x.y.z</em> (x &gt;= 1)</td>
+			<td><em>Change Requests</em></td>
+			<td><em>SEC</em></td>
+			<td><em>Problem Reports</em></td>
+		</tr>
+		<tr>
+			<td><strong>Stable</strong></td>
+			<td>unbounded</td>
+			<td><em>PDF + computable</em></td>
+			<td>x.y.z</td>
+			<td>Change Requests</td>
+			<td><em>SEC</em></td>
+			<td>Problem Reports</td>
+		</tr>
+		<tr>
+			<td><strong>Retired</strong></td>
+			<td>unbounded</td>
+			<td>Replaced by version marked as &#39;Retired&#39; and relevant meta-data</td>
+			<td>frozen</td>
+			<td>n/a</td>
+			<td>SEC</td>
+			<td>n/a</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>* Versioning obeys rules of <a href="http://semver.org" target="_blank">semver.org</a>; note that version 0.x.y versions do not follow any strict rules.</p>
+
+<table class="TableBasic">
+	<tbody>
+		<tr>
+			<th>Lifecycle State</th>
+			<th>Formal Expression</th>
+			<th>Implementation Technology Specification(s)</th>
+			<th>Implementations</th>
+			<th>Conformance</th>
+		</tr>
+		<tr>
+			<td><strong>Development</strong></td>
+			<td><em>One formal tool-based expression must exist</em>, in a widely recognised format, prior to promotion to trial state.</td>
+			<td><em>At least one ITS</em> must exist prior to promotion to trial state.</td>
+			<td><em>one open source reference implementation</em> must exist prior to promotion to Trial state.</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<td><strong>Trial</strong></td>
+			<td>Tool-based expression maintained.</td>
+			<td>An ITS should exist for the major technologies in use.</td>
+			<td>Prior to promotion, at least <em>2 independent interoperating implementations</em>, preferably in different major technologies at end of period. These may be commercial or open source.</td>
+			<td><em>Conformance levels &amp; criteria</em> developed, tested and published.</td>
+		</tr>
+		<tr>
+			<td><strong>Stable</strong></td>
+			<td>Tool-based expression maintained.</td>
+			<td>&nbsp;</td>
+			<td>Reference implementation maintained.</td>
+			<td>Industry implementations recognised via conformance testing.</td>
+		</tr>
+		<tr>
+			<td><strong>Retired</strong></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>Reference implementation still available but not maintained.</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Problem Reports (PRs) can be raised by anyone, and are designed to capture reports of problems and issues, including new requirements. Change Requests (CRs) can be created only by the Specifications Editorial Committee, and are used to document changes undertaken to the specifications. No change can be made to the specifications without a CR.</p>
+
+<h3>Promotion of Specifications throught the Lifecycle</h3>
+
+<p>Specifications are promoted to the next lifecycle state when the appropriate time-limit is reached for the current state. A review is held by the SEC 3 months prior to the putative promotion date to determine if the criteria documented above are satisfied. If so, a CR is raised to document the promotion of the artefact(s) on the relevant date, including all changes to documentation, publishing format and actual publication.</p>
+
+<p>If the criteria are not met, the Component Maintainer is asked to ensure that the specification is worked on to ensure that it will meet the promotion criteria. This may require them communicating with teams in the Software Program or elsewhere in order to ensure adequate implementation has been achieved.</p>
+
+<p>If on the due date of promotion, the promotion criteria are still not met, the Component Maintainer is asked to provide a report indicating if it is likely that the conditions can be met in 3 months or less, and outlining what steps will be taken to achieve them. The SEC may accept this and provide a 3 month extension. Alternatively it may reject it, and the specification is then demoted to &#39;obsolete&#39; state.</p>
+
+<p>After one extension period, the SEC again reviews the specfication, and either accepts it for promotion or rejects it, leading to demotion to &#39;obsolete&#39; state.</p>
+
+<h2>Change Management</h2>
+
+<p>Seen as a whole, the specification library consists of a number of components, each of which is separately releasable. The canges that can be made to specifications in any component are driven by Problem Reports (PRs) and Change Requests (CRs). The processing of PRs and the creation, acceptance and final approval or rejection of CRs is performed by the Specifications Editorial Committee.</p>
+
+<h3>Release Definition</h3>
+
+<p>Releases are defined for each Component, as the organising structure for changes. They are normally defined pragmataically, depending on the needs and interests of the community, as understood by the SEC. For example various &#39;easy&#39; changes may be already described in PRs or CRs, that could be allocated to a release scheduled soon, whereas other changes might be spread over a programme of other releases.</p>
+
+<h3>Problem Reports</h3>
+
+<p>PRs raised on the <a href="https://openehr.atlassian.net/browse/SPECPR/" target="_blank">public SPECPR tracker</a> are reviewed on a regular basis by the SEC, and where appropriate, CRs raised. PR review is carried out online by the SEC either when a new PR is raised, or at least every 3 months.</p>
+
+<p>PR review can lead to a number of possibilities. The PR may be rejected, in which case it is resolved as such and closed. For PRs that are accepted, one or more CRs may be created on the relevant Component CR tracker, or the PR may be linked to an existing PR.</p>
+
+<p>PRs that create CRs are referenced by the relevant CRs. When the latter are completed, the relevant PRs are resolved according to the resolutions of the related CRs.</p>
+
+<p>CRs are not created for specifications still in development phase; instead, changes are added to the CR used at creation of the specification.</p>
+
+<h3>Change Requests</h3>
+
+<p>CRs are generally raised in response to PRs. However, CRs may also be raised separately by SEC members.</p>
+
+<p>CRs need to be a) prioritised in importance and b) allocated to releases. A pre-requisite therefore is to define one or more future releases, each with an identifier and expected date of delivery. Allocation to a release may be done at any time, and changed as deemed necessary by the SEC.</p>
+
+<p>The lifecycle of a CR is shown below.</p>
+
+<p><a href="/static/img/programs/CR_workflow.png"><img alt="CR Workflow" class="imgMiddle width25" src="/static/img/programs/CR_workflow.png" /></a></p>
+
+<h4>Creation</h4>
+
+<p>New CRs are created by the SEC on the relevant <a href="https://openehr.atlassian.net/secure/Dashboard.jspa?selectPageId=10190" target="_blank">Component Change tracker</a> for the relevant Component. The following information is initially required:</p>
+
+<ul>
+	<li>a short description (i.e. title)</li>
+	<li>a description of the problem(s) it addresses, and/or references to relevant PRs</li>
+	<li>the associated component within the specification library (if more than one component is affected, a separate CR or Task is created for each component).</li>
+	<li>the raiser</li>
+	<li>Other key fields such as id, date etc are created automatically.</li>
+</ul>
+
+<h4>Acceptance</h4>
+
+<p>Every CR has to initially be accepted or rejected by the SEC. This primarily means determining if:</p>
+
+<ul>
+	<li>the CR responds to a real need</li>
+	<li>if the CR is compatible with the current specification library.</li>
+</ul>
+
+<p>For every CR accepted, the following information is added:</p>
+
+<ul>
+	<li>planned date of completion;</li>
+	<li>estimate: estimation of number of days&#39; work;</li>
+	<li>assignee: allocation of an SEC member by the relevant Component Maintainer, who acts as the Change Owner (CO) (who becomes an &#39;assignee&#39; on the CR). The CO&#39;s responsibility is to manage the CR to completion (which occasionally will be an obsolete state) - essentially this means ensuring the process is followed and the actual work is done on time;</li>
+	<li>priority: minor, major, critical, reflecting the size of change and impact to users.</li>
+</ul>
+
+<p>The Change Owner (assignee) is now responsible for developing the following:</p>
+
+<ul>
+	<li>impact assessment;</li>
+	<li>detailed description of proposed changes;</li>
+	<li>revised classification if necessary.</li>
+</ul>
+
+<p>The SEC reviews the CR again. If the impact is deemed acceptable, the CR is allocated to a release.</p>
+
+<ul>
+	<li>for larger CRs, the addition of more assignees from the SEC may be required. The CO manages this.</li>
+</ul>
+
+<h4>Performing the work</h4>
+
+<p>For <em>minor changes</em>, the work usually involves no more than making a small change to one or more documents, and generating other publication formats where relevant. The changes should be committed to a branch or review version of the specification or artefact.</p>
+
+<p>For <em>major changes</em>, the relevant changes should be made in a branch of the specification repository. Additionally, a dedicated wiki page should be created, describing the work, current status, who is performing it, with links to the relevant CR and also the branch version of the work.</p>
+
+<h4>Approval</h4>
+
+<p>The initially completed work of a CR is approved as follows:</p>
+
+<ul>
+	<li>for <em>minor changes</em>, the changes are reviewed by inspection of the relevant document(s) and/or inspection of the changed computable artefact in a relevant tool.
+
+	<ul>
+		<li>Approval requires review by the Component Maintainer.
+		<ul>
+			<li>If passed, the change is committed to the specification library.</li>
+			<li>If not, the assignee has one week to re-present the change, when it will re-enter review.</li>
+			<li>If a change is not approved in 3 rounds of review, it is rejected and closed.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>for <em>major changes</em>:
+	<ul>
+		<li>an open review is conducted during a defined period, e.g. 30 days, seeking comments from the openEHR membership.</li>
+		<li>At the end of this period, the assignee(s) have 2 weeks to re-present the work, taking into account the review feedback.</li>
+		<li>A 2/3 majority of the SEC is required to approve the final presentation of the work, incorporating review responses.
+		<ul>
+			<li>Ideally, concerns (e.g. that the changes are acceptable but insufficient) of dissenting members should be addressed through further CRs, if appropriate.</li>
+		</ul>
+		</li>
+		<li>If accepted, the change is committed to the specification library.</li>
+		<li>If not, the review process is re-entered.</li>
+		<li>If a change is not approved in 3 rounds of review, it is rejected and closed.</li>
+	</ul>
+	</li>
+</ul>
+
+<h2>Creation of New Specifications</h2>
+
+<h3>Process</h3>
+
+<p>New specifications can be proposed by any member of the openEHR community. Formally this is done via either a PR on the SPEC PR tracker, or if the proposer is a Program member, a CR on a <a href="https://openehr.atlassian.net/secure/Dashboard.jspa?selectPageId=10190" target="_blank">Component Change tracker</a> . If the initial need is described in a PR, it will be reviewed by the SEC which may decide to create a CR for it. If this happens, the CR will cover the initial period of establishment of the specification, including its identification and setting of scope.</p>
+
+<p>New specifications need to be compatible with the existing structure and roadmap of the specification library. For a new specification to be added, it has to have an identifier, be located within the existing structure (a new category of specification may require a new location to be defined), and have a scope defined that is consistent with existing specifications. These are issued by the Specifications Editorial Committee prior to the creation of the initial CR for the specification. The new specification could potentially replace one or more existing specifications, in which case the structure and roadmap may be modified; the CR will also document these changes.</p>
+
+<p>Internationalisation and localisation aspects should also be described.</p>
+
+<p>A successful application to add a new specification results in the following being decided by the SEC:</p>
+
+<ul>
+	<li>an identifier</li>
+	<li>a title</li>
+	<li>the affected Component, e.g. Reference Model, Archetype Model, Service Model, Query Languages, etc, or a new Component may be required;</li>
+	<li>a new wiki page where the development form of the specification can be created</li>
+	<li>an announcement of the new specification.</li>
+</ul>
+
+<p>New specifications can be created in two ways.</p>
+
+<ul>
+	<li>There may already be a well-developed document or computable artefact that is being offered to the Specification Program. In this case, the SEC would assess the specification for maturity according to the lifecycle described below, and publish it in an appropriate way. A specification meeting the &#39;Trial&#39; or even &#39;Stable&#39; state criteria may be commenced in that state if the SEC agrees.</li>
+	<li>Alternatively, the need for a completely new specification might be identified, and a fresh development commenced within the SEC.</li>
+</ul>
+
+<h3>Specification Pro-forma</h3>
+
+<p>All openEHR specifications should include the following standard sections:</p>
+
+<ul>
+	<li>Standard front pages including
+	<ul>
+		<li>Front page containing identifier, current version and release date</li>
+		<li>Amendment record</li>
+		<li>Copyright notice</li>
+		<li>Trademarks &amp; Acknowledgements</li>
+	</ul>
+	</li>
+	<li>Standard TOC</li>
+	<li>Introduction, including:
+	<ul>
+		<li>Purpose</li>
+		<li>Related documents (in openEHR)</li>
+		<li>Nomenclature</li>
+		<li>Status</li>
+		<li>Tools</li>
+		<li>Changes from previous versions</li>
+	</ul>
+	</li>
+	<li>&lt;&lt;main specification&gt;&gt;</li>
+	<li>Standard references section</li>
+	<li>Standard end page(s)</li>
+</ul>
+
+<p>In addition, the following sections or information should be included where appropriate:</p>
+
+<ul>
+	<li>Internationalisation and Localisation</li>
+	<li>Implementation guidance.</li>
+</ul>
+
+<h3>Changes to Existing Trial and Stable Specifications</h3>
+
+<p><em>Minor changes</em> to specification documents are normally executed by the Component Maintainer making an agreed small change. Validation is performed by internal review, as described above under CR Lifecycle.</p>
+
+<p><em>Major changes</em>, typically leading to a new major release of a specification, may be performed by a team, although they can just as easily be performed by a single person. Validation is performed via community-wide open review with a published time limit. Review feedback is posted as comments on the CR. See the Acceptance section above under CR lifecycle.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<p><em>Who can report a problem or propose a change to a specification?</em></p>
+
+<p>Anyone. This is done by creating a Problem Report (PR) on the <a href="https://openehr.atlassian.net/projects/SPECPR" target="_blank">SPEC PR public issue tracker</a>. The (SEC) reviews these on a regular basis and may decide to create a Change Request on the specification library based on the PR.</p>
+
+<p><em>Who decides if a change will be performed or rejected?</em></p>
+
+<p>A change to the specifications proposed on the SPEC PR public tracker will be reviewed by the SEC, and may cause a CR to be created. CRs are performed by SEC members, and will result in change(s) to the specifications. Sometimes CRs may be rejected during processing, in which case no change will be made.</p>
+
+<p><em>Who prioritises the changes?</em></p>
+
+<p>The Specifications Editorial Committee in concert with the openEHR Management Board.</p>
+
+<p><em>Who decides which changes are in the next release of openEHR?</em></p>
+
+<p>The Specifications Editorial Committee in concert with the openEHR Management Board.</p>
+
+
+
+			<br class="clear">
+			</div>
+			<br class="clear">
+		</div>
+		<br class="clear">
+	</div>
+	<footer class="block footer">
+  <div class="container grid grid--4 footer__sections">
+    <section class="footer__section">
+      <h2 class="footer__heading">Sites</h2>
+      <div>
+        <ul class="list">
+          <li><a href="https://discourse.openehr.org/" target="_blank">Forums</a></li>
+          <li>
+            <a href="https://openehr.atlassian.net/wiki/spaces/resources/pages/4554774/FAQs+-+Frequently+Asked+Questions" target="_blank">
+              Wiki
+            </a>
+          </li>
+          <li>
+            <a href="https://openehr.atlassian.net/secure/BrowseProjects.jspa?selectedCategory=all&amp;selectedProjectType=all" target="_blank">
+              Jira
+            </a>
+          </li>
+          <li><a href="https://github.com/openEHR" target="_blank">GitHub</a></li>
+          <li><a href="https://specifications.openehr.org/" target="_blank">Specifications</a></li>
+          <li><a href="https://ckm.openehr.org/ckm/" target="_blank">CKM</a></li>
+          <li><a href="/accounts/">Accounts</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Using the Site</h2>
+      <div>
+        <ul class="list">
+          <li><a href="/using_the_site/terms_of_use">Terms of Use</a></li>
+          <li><a href="/using_the_site/privacy_policy">Privacy Policy</a></li>
+          <li>
+            <a href="/using_the_site/publishing_content">Publishing Content</a>
+          </li>
+          <li><a href="/using_the_site/localisation">Localisation</a></li>
+          <li><a href="/using_the_site/feedback">Feedback</a></li>
+          <li><a href="mailto:webmaster@openehr.org">Contact Webmaster</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Acknowledgements</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.atlassian.com/" target="_blank">Atlassian</a>
+            (Jira, Confluence)
+          </li>
+          <li>
+            <a href="http://asciidoctor.org/" target="_blank">AsciiDoctor</a>
+            (publishing)
+          </li>
+          <li><a href="https://github.com/" target="_blank">GitHub</a> (DVCS)</li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="_blank">LAMP</a>
+            (dev community)
+          </li>
+          <li>
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            (images)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Social media</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.youtube.com/openEHR" target="_blank" class="fa fa-youtube" title="YouTube"></a>
+            <a href="https://www.youtube.com/openEHR" target="_blank">YouTube</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/#!/openehr" target="_blank" class="fa fa-twitter" title="Twitter"></a> 
+            <a href="http://twitter.com/#!/openehr" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/openehr/"
+              target="_blank"
+              class="fa fa-facebook"
+              title="Facebook"
+            ></a>
+            <a href="https://www.facebook.com/groups/openehr/" target="_blank">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer__copyright">
+      <img src="/static/img/logo_inverse.svg" alt="" class="brand-logo" />
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        openEHR International. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+	<script src="/static/js/header_boxes.js"></script>
+	<script>$('.select_field_class').select2( { placeholder: "Select here", maximumSelectionSize: 100  } );</script>
+
+</body>
+</html>

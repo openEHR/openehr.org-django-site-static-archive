@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+   	<meta name="keywords" content="openEHR, Clinical Knowledge Manager, archetypes, templates, CKM, knowledge management">
+  	<meta name="author" content="Sebastian Garde, Ocean Health Systems">
+  	<meta name="description" content="The Clinical Knowledge Manager (CKM): A powerful collaboration tool to develop, manage, visualise, review and publish clinical data models. CKM enables knowledge governance within and across the health enterprise. Resources include archetypes, templates, terminology subsets, release sets, metadata relating to clinical models and related resources. Powered by Ocean Health Systems.">
+	
+	<title>Clinical Knowledge Manager</title>
+	
+	<meta content="text/html; charset=UTF-8" name="Content-Type" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Clinical Knowledge Manager" />
+	<meta property="og:description" content="The Clinical Knowledge Manager (CKM): A powerful collaboration tool to develop, manage, visualise, review and publish clinical data models. Powered by Ocean Health Systems." />
+	<meta property="og:image" content="pics/CKM-logo-dark.png" />
+	<meta name="twitter:image" content="pics/CKM-logo-dark.png" /> <!-- No svg possible. -->
+	<meta name="og:image:alt" content="Clinical Knowledge Manager Logo" />
+		  
+	<link rel="shortcut icon" href="https://ckm.openehr.org/ckm/picture?assetname=ckm-favicon" type="image/x-icon" />
+	<link rel="alternate" type="application/rss+xml" title="Clinical Knowledge Manager Changes" href="https://ckm.openehr.org/ckm/getRSS">
+   	  
+	<!-- CSS for loading message at application start -->
+	<style type="text/css">
+		#ckm-loading {position:absolute;top:calc(50% - 113px);left:calc(50% - 175px);z-index:20001;width:350px;border:1px solid #ccc;padding:10px;}
+		#ckm-loading .ckm-loading-indicator {color: #567ebc;font: bold 18px tahoma, arial, helvetica, sans-serif;padding: 5px 10px 10px 0;}
+		#ckm-loading-msg {font: normal 10px tahoma,arial,helvetica,sans-serif;}
+		.ckm-description {font: normal 12px tahoma,arial,helvetica,sans-serif;color: #555;}
+		.ckm-description p {margin-bottom: 5px;}
+	</style>
+	
+	<!-- To enable theme switching these need to be in the header, otherwise will always take precedence -->	  
+	<link id="base-theme" rel="stylesheet" type="text/css" href="https://ckm.openehr.org/ckm/ext/resources/css/ext-all.css" />
+	 
+	<link rel="stylesheet" type="text/css" href="https://ckm.openehr.org/ckm/css/ckm.css?v=1.20.1" /> <!-- Note the v=1.20.1 is just to ensure that no cached version is used for a new CKM version. -->	
+</head>
+<body>
+	<!-- Add printing support here: -->
+	<iframe title="Printing" id="__printingFrame" style="width:0;height:0;border:0"></iframe>
+
+	<!--add loading indicator while the app is being loaded-->
+	<div id="ckm-loading">
+		<div class="ckm-loading-indicator">
+			<img class="oi-spin" style="height:40px;margin-right:8px;float:left;vertical-align:top;" alt="Loading..." src="https://ckm.openehr.org/ckm/pics/other/loading.svg">
+			Clinical Knowledge Manager<br/>
+			<span id="ckm-loading-msg">Loading styles and images...</span>
+		</div>	
+		<div class="ckm-description"><p>The Clinical Knowledge Manager (CKM): A powerful collaboration tool to develop, manage, visualise, review and publish clinical data models.</p>
+			<p>CKM enables knowledge governance within and across the health enterprise.</p>
+			<p>Clinical data models include openEHR archetypes and templates, terminology subsets, release sets, as well as related meta data and resources.</p><br/>
+			<p>Powered by Ocean Health Systems.</p>
+		</div>	
+	</div>
+	<!-- Load library files -->
+	<script type="text/javascript">document.getElementById('ckm-loading-msg').innerHTML = 'Loading Core API...';</script>
+	<script type="text/javascript" src="https://ckm.openehr.org/ckm/ext/adapter/ext/ext-base.js"></script>
+	<script type="text/javascript">document.getElementById('ckm-loading-msg').innerHTML = 'Loading UI Components...';</script>
+	<script type="text/javascript" src="https://ckm.openehr.org/ckm/ext/ext-all.js"></script>
+	<script type="text/javascript">document.getElementById('ckm-loading-msg').innerHTML = 'Loading UI Plugin Components...';</script>
+	   
+	<script src="https://ckm.openehr.org/ckm/ckm/js/GwtExt.js"></script>
+	<script defer src="https://ckm.openehr.org/ckm/ckm/js/msis/DDView.js"></script>	
+	<script defer src="https://ckm.openehr.org/ckm/ckm/js/gridsearch/ext-ux-grid-search.js"></script> <!--  Grid search plugin -->
+	<script defer src="https://ckm.openehr.org/ckm/ckm/js/msis/Multiselect.js"></script> 
+	<script defer src="https://ckm.openehr.org/ckm/ckm/js/mif/ext-ux-miframe.js"></script> <!-- Managed IFrame -->
+	<script defer src="https://ckm.openehr.org/ckm/ckm/js/pagebus/pagebus.js"></script> <!--  Pagebus for Resource Grids -->
+ 
+	<script type="text/javascript">document.getElementById('ckm-loading-msg').innerHTML = 'Loading Sample Data Components...';</script>
+	<link rel="stylesheet" type="text/css" href="https://ckm.openehr.org/ckm/css/composition.css?v=1.20.1" />
+		
+	<script type="text/javascript">document.getElementById('ckm-loading-msg').innerHTML = 'Loading Operational Template Components...';</script>
+	<link rel="stylesheet" type="text/css" href="https://ckm.openehr.org/ckm/css/tabular.css?v=1.20.1"/>
+	<link rel="stylesheet" type="text/css" href="https://ckm.openehr.org/ckm/css/clickabletree.css?v=1.20.1"/>
+	   
+	<script type="text/javascript">document.getElementById('ckm-loading-msg').innerHTML = 'Loading Theme...';</script>
+	<link rel="stylesheet" type="text/css" id="ckm-main-theme" href="https://ckm.openehr.org/ckm/css/main-theme-gray.css?v=1.20.1" />
+	<link rel="stylesheet" type="text/css" id="ckm-header-theme" href="https://ckm.openehr.org/ckm/css/header-theme-white.css?v=1.20.1" />
+   
+	<script defer type="text/javascript" src="https://ckm.openehr.org/ckm/js/toggleOPTTree.js?v=1.20.1"></script>
+	<script defer type="text/javascript" src="https://ckm.openehr.org/ckm/js/diff.js?v=1.20.1"></script>
+
+	<script type="text/javascript">document.getElementById('ckm-loading-msg').innerHTML = 'Loading Mindmapping Components...';</script>
+	<link rel="stylesheet" type="text/css"  href="https://ckm.openehr.org/ckm/css/jsmind.css?v=1.20.1" />
+	<script defer type="text/javascript" src="https://ckm.openehr.org/ckm/js/jsmind.js"></script>
+
+	<script type="text/javascript">document.getElementById('ckm-loading-msg').innerHTML = 'Loading Format Styling...';</script>
+	<link rel="stylesheet" href="https://ckm.openehr.org/ckm/js/highlight/styles/highlight-ckm.css">
+	<script src="https://ckm.openehr.org/ckm/js/highlight/highlight.min.js"></script>
+
+	<!--include the application JS -->
+	<script type="text/javascript">document.getElementById('ckm-loading-msg').innerHTML = 'Initializing...';</script>
+	<script type="text/javascript" src="https://ckm.openehr.org/ckm/ckm/ckm.nocache.js"></script>
+		
+	<!-- hide loading message -->
+	<script type="text/javascript">Ext.get('ckm-loading').fadeOut({remove: true, duration:2.0});</script> 
+
+	<!--[if lte IE 8]><div style='font: bold 16px tahoma, arial, helvetica, sans-serif; color: white; background-color: red; text-align:center; clear: both; height: 112px; padding:30px; position: relative;'>Please note that you are using a very outdated version of the Internet Explorer that does not support many of the features of modern browsers.<br/>Please upgrade your browser for a better CKM experience.</div><![endif]-->
+
+	<noscript><div style='font: bold 16px tahoma, arial, helvetica, sans-serif; color: white; background-color: red; text-align:center; clear: both; height: 112px; padding:30px; position: relative;'>The Clinical Knowledge Manager requires Javascript.<br/>Please enable Javascript in your browser and reload this page.</div></noscript>
+  
+	<iframe name="dummysubmitiframe" style="display: none"></iframe>
+	<div style="display:none; height:0px">
+		<form id="login_form" method="post" action="../templates/1013.26.272/orgchart.html#"> 
+			<input style="width: 90px;" class="x-form-text x-form-field" size="20" autocomplete="on" placeholder="Username/Email" id="cred_username" name="username" type="text" aria-label="Username/Email">
+			<input style="width: 70px;" class="x-form-text x-form-field" size="20" autocomplete="on" placeholder="Password" id="cred_password" name="password" type="password" aria-label="Password">
+			<button type="submit">Login</button>
+		</form>
+	</div>
+
+	<a href="https://ckm.openehr.org/ckm/retrieveResources?list=true&amp;locale=en" aria-label="hidden resource list"></a> <!--  A link to a list of all active archetypes & templates. -->
+	</body>
+</html>

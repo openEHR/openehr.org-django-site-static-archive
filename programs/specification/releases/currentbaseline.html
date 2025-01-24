@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>openEHR - Specifications Start Page</title>
+    <meta charset="utf-8">
+	<meta name="description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems">
+	<meta name="author" content="openEHR Foundation - Specification Program">
+	<meta name="designer" content="Sebastian Iancu">
+	<meta name="rating" content="General">
+	<meta name="robots" content="index, follow">
+	<meta name="revisit-after" content="5 days">
+	<meta name="google-site-verification" content="zfPZfHQ-5oXYT119aAi7HdZELv8ubHPCxvIFANVPzcU"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://specifications.openehr.org/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://specifications.openehr.org/styles/specifications.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+    <link rel="icon" sizes="any" href="../../../static/img/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../../../static/img/favicon/icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../static/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="../../../static/img/favicon/site.webmanifest.html">
+
+    <link rel="home" href="currentbaseline.html">
+</head>
+<body>
+<header class="container-fluid d-flex flex-row justify-content-start align-items-center pt-2">
+    <a href="currentbaseline.html"><img src="https://specifications.openehr.org/images/Logo.png" alt="openEHR Specifications" class="logo img-fluid"></a>
+    <h6 class="motto d-none d-sm-flex ml-3">Open industry specifications, models <br/>and software for e-health</h6>
+</header>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top border-bottom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTop">
+        <ul class="navbar-nav">            <li class="nav-item dropdown px-1 ">
+                <a class="nav-link dropdown-toggle" href="currentbaseline.html#" id="navItem_home" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Home                </a>
+                <div class="dropdown-menu dropright shadow-sm" aria-labelledby="navItem_home">                        <a class="dropdown-item " href="https://specifications.openehr.org/start">Start</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/release_baseline">Release Baseline</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/development_baseline">Development Baseline</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/BASE/development/architecture_overview.html">Architecture Overview</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/AM/development/Overview.html">Archetype Technology</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/its">Implementation Technologies</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/components">All Components</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases">All Releases</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/UML/development/index.html">Global UML</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/classes">Class Index</a>
+                                                    </div>
+            </li>
+                        <li class="nav-item dropdown px-1 ">
+                <a class="nav-link dropdown-toggle" href="currentbaseline.html#" id="navItem_specifications" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Specifications                </a>
+                <div class="dropdown-menu dropright shadow-sm" aria-labelledby="navItem_specifications">                        <a class="dropdown-item " href="https://specifications.openehr.org/releases/BASE/development/architecture_overview.html">Architecture Overview</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <div class="dropdown-header">Implementation Technologies</div>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/its">ITS Overview</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/ITS-REST/latest">REST APIs</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/ITS-JSON/latest">JSON Schema</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/ITS-XML/latest">XML Schema</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/ITS-BMM/latest">BMMs</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <div class="dropdown-header">Process and CDS</div>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/CDS/latest">Clinical Decision Support</a>
+                                                            <div class="dropdown-header">Content</div>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/RM/latest">Reference Model</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/TERM/latest">openEHR Terminology</a>
+                                                            <div class="dropdown-header">Formalisms</div>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/QUERY/latest">Query Languages</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/AM/latest">Archetype Model</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/LANG/latest">Generic Languages</a>
+                                                            <div class="dropdown-header">Foundations</div>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/releases/BASE/latest">Base Model</a>
+                                                    </div>
+            </li>
+                        <li class="nav-item dropdown px-1 ">
+                <a class="nav-link dropdown-toggle" href="currentbaseline.html#" id="navItem_community" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Community                </a>
+                <div class="dropdown-menu dropright shadow-sm" aria-labelledby="navItem_community">                        <a class="dropdown-item " href="https://openehr.atlassian.net/secure/Dashboard.jspa?selectPageId=10190">Issue Trackers</a>
+                                                            <a class="dropdown-item " href="https://discourse.openehr.org/c/specifications">Discourse Forum</a>
+                                                            <a class="dropdown-item " href="https://specifications.openehr.org/wiki/display/spec/Specifications+Home">Wiki</a>
+                                                            <a class="dropdown-item " href="https://github.com/openEHR">GitHub</a>
+                                                    </div>
+            </li>
+                        <li class="nav-item dropdown px-1 ">
+                <a class="nav-link dropdown-toggle" href="currentbaseline.html#" id="navItem_governance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Governance                </a>
+                <div class="dropdown-menu dropright shadow-sm" aria-labelledby="navItem_governance">                        <a class="dropdown-item " href="https://www.openehr.org/programs/specification">Specification Program</a>
+                                                            <a class="dropdown-item " href="https://www.openehr.org/programs/specification/governance">Specification Governance</a>
+                                                            <a class="dropdown-item " href="https://www.openehr.org/programs/specification/changeprocess">Change process</a>
+                                                            <a class="dropdown-item " href="https://www.openehr.org/programs/specification/releasestrategy">Release Strategy</a>
+                                                            <a class="dropdown-item " href="https://www.openehr.org/programs/specification/editorialcommittee">SEC Members</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item " href="https://www.openehr.org/governance/organisational_structure">Organisational Structure</a>
+                                                            <a class="dropdown-item " href="https://www.openehr.org/governance/intellectual_property">IP and Licensing</a>
+                                                    </div>
+            </li>
+                    </ul>
+    </div>
+    <form class="form-inline" action="https://specifications.openehr.org/search">
+        <div class="input-group">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="keyword" alt="Search" required>
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</nav>
+<main id="page_start" class="container pt-2 pb-5">
+    ﻿
+
+<h1 class="h_start"><em>open</em>EHR Specifications</h1>
+<p class="lead d-none d-md-block">for an interoperable healthcare information platform</p>
+
+<div class="jumbotron jumbotron-start bg-white py-5 px-4 m-0 row">
+    <div class="col-12 col-md-6">
+        <p class="d-none d-lg-block">
+            'openEHR' is the name of a technology, consisting of open specifications,
+            clinical models and software that can be used to create standards,
+            and build information and interoperability solutions for healthcare.
+            It is <strong>completely model-driven</strong>, and separates domain semantics out from software, into <strong>models created by domain professionals</strong>.
+        </p>
+        <p>
+            The <a href="https://specifications.openehr.org/release_baseline">openEHR specifications</a> consist of information models for healthcare data,
+            including the <a href="https://specifications.openehr.org/releases/RM/latest/ehr.html">EHR</a> (how to record clinical observations?)
+            and <a href="https://specifications.openehr.org/releases/RM/latest/demographics.html">Demographics</a> (parties, roles and relationships),
+            a portable <a href="https://specifications.openehr.org/releases/QUERY/latest/AQL.html">Query Language (AQL)</a>,
+            the <a href="https://specifications.openehr.org/releases/AM/latest">Archetype formalism</a> (adopted by <a href="https://www.iso.org/standard/62305.html" target="_blank">ISO 13606-2:2019</a>) for expressing domain content,
+            the <a href="https://specifications.openehr.org/releases/CDS/latest">CDS Guidelines and Care Pathways</a>,
+            and an <a href="https://specifications.openehr.org/releases/ITS-REST/latest">open API specification</a>.
+        </p>
+        <a class="btn btn-secondary" href="https://www.openehr.org/about/what_is_openehr" target="_blank" role="button" title="Try the openEHR Primer to get a global overview of openEHR"><strong><em>open</em>EHR</strong> Primer</a>
+    </div>
+    <div class="d-none d-md-block col-md-6">
+        <img class="img-fluid rounded align-middle" src="https://www.openehr.org/media/uploads/2019/02/24/openehr-what_is_it-architecture.png" width="100%">
+    </div>
+</div>
+
+<h3 class="h_start">What should I read first?</h3>
+<p>
+    If <strong>you are a developer</strong> and want to get to work right away, we recommend the following:
+    <ul>
+        <li>skim the <a href="https://specifications.openehr.org/releases/BASE/latest/architecture_overview.html" target="_blank">Architecture Overview</a>,</li>
+        <li>browse through the <a href="https://specifications.openehr.org/releases/UML/latest/index.html" target="_blank">global UML site</a> or <a href="https://specifications.openehr.org/classes" target="_blank">class index</a>,</li>
+        <li>make the <a href="https://specifications.openehr.org/its" target="_blank">Implementation Technologies (ITS) page</a> or the <a href="https://specifications.openehr.org/releases/ITS-REST/latest/overview.html" target="_blank">REST API</a> your home.</li>
+    </ul>
+</p>
+<p>
+    If <strong>you are an architect</strong> or just <strong>want to understand the platform</strong> architecture properly, we recommend reading/skimming the following guides:
+    <ul>
+        <li><a href="https://specifications.openehr.org/releases/BASE/latest/architecture_overview.html" target="_blank">Architecture Overview</a></li>
+        <li><a href="https://specifications.openehr.org/releases/AM/latest/Overview.html" target="_blank">Archetype Technology Overview</a></li>
+        <li><a href="https://specifications.openehr.org/releases/PROC/latest/overview.html" target="_blank">CDS, Guidelines and Planning Overview</a></li>
+    </ul>
+</p>
+<p>
+    The specifications are managed by the <a href="https://www.openehr.org/programs/specification/editorialcommittee" target="_blank">Specifications Editorial Committee (SEC)</a>, with extensive input from the community. If you are interested in details of the governance process, see <a href="https://www.openehr.org/programs/specification/" target="_blank">the governance and change management pages</a>.
+</p>
+<p>
+    If you are mainly interested in open source implementations and code bases, see the <a href="https://specifications.openehr.org/its" target="_blank">implementation page</a> or go straight to <a href="https://github.com/openEHR" target="_blank">openEHR@Github</a>.
+</p>
+
+<h3 class="h_start">How are the Specifications organised?</h3>
+<div class="jumbotron jumbotron-start bg-light p-4 pt-5 m-0 row">
+    <div class="d-none d-md-block mb-md-4 mb-lg-0 col-md-12 col-lg-6">
+        <img class="img-fluid rounded align-middle" src="https://specifications.openehr.org/releases/BASE/latest/architecture_overview/diagrams/openehr_block_diagram.svg" target="_blank" width="100%">
+    </div>
+    <div class="col-12 col-lg-6">
+        <p>
+            The specifications come in 3 categories:
+            <ul>
+                <li><strong>abstract specifications:</strong> platform-independent UML information models, service interfaces, Antlr grammars etc;</li>
+                <li><strong>implementation technology specifications (ITS):</strong> platform-specific specs, including XSDs, JSON-schema, REST APIs</li>
+                <li><strong>conformance specification:</strong> defining the basis of conformance testing and product profiling.</li>
+            </ul>
+        </p>
+        <p>
+            Within these categories are separate <a href="https://specifications.openehr.org/components" target="_blank">components</a>, each containing specifications on a specific topic. For convenience, some of the components are in groups, as visualise with this diagram.
+        </p>
+        <p class="text-right">
+            <a class="btn btn-success btn-sm m-1" href="https://specifications.openehr.org/release_baseline" target="_blank" role="button">Release baseline</a>
+            <a class="btn btn-primary btn-sm m-1" href="https://specifications.openehr.org/development_baseline" target="_blank" role="button">Development baseline</a>
+            <a class="btn btn-its btn-sm m-1 text-white" href="https://specifications.openehr.org/its" target="_blank" role="button">Implementation Technologies</a>
+        </p>
+    </div>
+</div>
+
+<h3 class="h_start">Where can I discuss Specifications and Implementation?</h3>
+<p>
+    We have extensive discussion groups at the <a href="../../../community/mailinglists.html" target="_blank">openEHR Discourse site</a>, particularly the following categories:
+    <ul>
+        <li><a href="https://discourse.openehr.org/c/tool-support/29" target="_blank">Tool support</a> - for reporting issues with tools</li>
+        <li><a href="https://discourse.openehr.org/c/implem/39" target="_blank">Implementation</a>
+            <ul>
+                <li><a href="https://discourse.openehr.org/c/implem/app-dev/8" target="_blank">Apps</a></li>
+                <li><a href="https://discourse.openehr.org/c/implem/platform-implem/7" target="_blank">Platform</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://discourse.openehr.org/c/specifications/6">Specifications</a>
+            <ul>
+                <li><a href="https://discourse.openehr.org/c/specifications/its/41" target="_blank">ITS</a></li>
+                <li><a href="https://discourse.openehr.org/c/specifications/rm/42" target="_blank">Reference Model</a></li>
+                <li><a href="https://discourse.openehr.org/c/specifications/adl/40" target="_blank">Archetypes and ADL</a></li>
+                <li><a href="https://discourse.openehr.org/c/specifications/aql/43" target="_blank">AQL / Querying</a></li>
+                <li><a href="https://discourse.openehr.org/c/specifications/task-planning-gdl/27" target="_blank">Process/CDS/Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+</p>
+<p>
+    See also the openEHR Wiki - <a href="https://openehr.atlassian.net/wiki/spaces/spec/overview" target="_blank">specifications space</a> and openEHR <a href="https://openehr.atlassian.net/secure/Dashboard.jspa?selectPageId=10190" target="_blank">Jira specification projects</a>.
+</p>
+
+<div class="text-center pt-3">
+    <hr class="mt-5">
+    <span class="align-middle">Latest releases:</span>
+            <a role="button" class="btn btn-outline-success btn-sm mb-1" href="https://specifications.openehr.org/releases/PROC/Release-1.7.0">PROC v1.7.0 (Aug 2024)</a>
+            <a role="button" class="btn btn-outline-success btn-sm mb-1" href="https://specifications.openehr.org/releases/CDS/Release-2.0.1">CDS v2.0.1 (Jul 2024)</a>
+            <a role="button" class="btn btn-outline-success btn-sm mb-1" href="https://specifications.openehr.org/releases/AM/Release-2.3.0">AM v2.3.0 (Mar 2024)</a>
+            <a role="button" class="btn btn-outline-success btn-sm mb-1" href="https://specifications.openehr.org/releases/CDS/Release-2.0.0">CDS v2.0.0 (Aug 2023)</a>
+            <a role="button" class="btn btn-outline-success btn-sm mb-1" href="https://specifications.openehr.org/releases/TERM/Release-3.0.0">TERM v3.0.0 (Jun 2023)</a>
+            <a role="button" class="btn btn-outline-success btn-sm mb-1" href="https://specifications.openehr.org/releases/TERM/Release-2.4.0">TERM v2.4.0 (Dec 2022)</a>
+        <a role="button" class="btn btn-outline-primary btn-sm mb-1" href="https://specifications.openehr.org/releases">more...</a>
+</div>
+
+
+
+
+
+</main>
+<footer class="container-fluid py-2">
+    <div class="row">
+        <div class="col-sm-auto order-sm-last">
+            <nav class="nav">
+                <a href="../../../community/mailinglists.html" class="fab fa-discourse fa-lg mt-2 mr-2" title="Discourse Forums"></a>
+                <a href="https://www.openehr.org/wiki" target="_blank" class="fab fa-wikipedia-w fa-lg m-2" title="Wiki"></a>
+                <a href="https://github.com/openEHR" target="_blank" class="fab fa-github-square fa-lg m-2" title="Github"></a>
+                <a href="https://www.openehr.org/digital_media/blogs" class="far fa-newspaper fa-lg m-2" title="Blogs"></a>
+                <a href="https://www.youtube.com/openEHR" target="_blank" class="fab fa-youtube fa-lg m-2" title="YouTube"></a>
+                <a href="https://www.linkedin.com/groups/144276" target="_blank" class="fab fa-linkedin fa-lg m-2" title="LinkedIn"></a>
+                <a href="https://twitter.com/#!/openehr" target="_blank" class="fab fa-twitter-square fa-lg m-2" title="Twitter"></a>
+                <a href="https://www.facebook.com/groups/openehr/" target="_blank" class="fab fa-facebook-square fa-lg m-2" title="Facebook"></a>
+            </nav>
+        </div>
+        <div class="col-sm order-sm-first">
+            <nav class="nav">
+                <a href="https://www.openehr.org/using_the_site/terms_of_use" class="mr-1">Terms of use</a> |
+                <a href="https://www.openehr.org/using_the_site/privacy_policy" class="mx-1">Privacy policy</a> |
+                <a href="mailto:webmaster@openehr.org" class="mx-1">Webmaster</a>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <img src="https://www.openehr.org/static/img/logo.svg" class="logo img-fluid">
+            <br/>
+            <span>Copyright © 2025 openEHR International. All rights reserved.</span>
+        </div>
+        <div class="col-md d-none d-md-block">
+            <nav class="nav justify-content-end">
+                Acknowledgements:
+                <span class="mx-1"><a href="https://www.atlassian.com/" target="_blank">Atlassian</a> (Jira, Confluence)</span> |
+                <span class="mx-1"><a href="https://www.nomagic.com/" target="_blank">NoMagic</a> (MagicDraw UML)</span> |
+                <span class="mx-1"><a href="https://asciidoctor.org/" target="_blank">AsciiDoctor</a> (publishing)</span> |
+                <span class="mx-1"><a href="https://github.com/" target="_blank">GitHub</a> (DVCS)</span> |
+                <span class="mx-1"><a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="_blank">LAMP</a> dev community</span>
+            </nav>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+<script src="https://specifications.openehr.org/js/toggle-specs.js"></script>
+</body>
+</html>

@@ -1,0 +1,1323 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<title>Events</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems">
+	<meta name="keywords" content="archetypes, openEHR, EHR, electronic health record, electronic medical record, ADL, reference model, clinical models, healthcare, health informatics, medical informatics, EHR standards, ISO 18308, CEN 13606, health care software, open source software, knowledge modelling, patient-centric">
+	<meta name="author" content="Sam Heard, Thomas Beale">
+	<meta name="designer" content="Adriana Csefalvay">
+	<meta name="rating" content="General">
+	<meta name="robots" content="All">
+	<meta name="revisit-after" content="15 days">
+
+	<meta name="msvalidate.01" content="8FFF7BE532A432C2B590526A24F0CBF9" />
+	<meta name="yandex-verification" content="da5f926c2ac75b3c" />
+
+	<meta property="og:title" content="openEHR-Home">
+    <meta property="og:description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems.">
+    <meta property="og:type" content="website">
+
+	<link rel="stylesheet" href="../../static/css/normalize.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../static/css/basic.css"  type="text/css">
+	
+	<link rel="stylesheet" href="../../static/css/pages.css"  type="text/css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+	
+	<link rel="icon" sizes="any" href="../../static/img/favicon/favicon.ico">
+	<link rel="icon" type="image/svg+xml" href="../../static/img/favicon/icon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../static/img/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="../../static/img/favicon/site.webmanifest.html">
+	
+	<link rel="home" href="../../index.html">
+	
+	<script src="../../static/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="../../static/js/bootstrap.bundle.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+</head>
+<body>
+	
+	<header>
+  <div class="container hidden" id="affiliate">
+    <div class="affiliates flex">
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-netherlands/12" target="_blank"
+          >openEHR NL</a
+        >
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-germany/16" target="_blank">openEHR DE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-japan/18" target="_blank">openEHR JP</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openher-china/19" target="_blank">openEHR CN</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-sweden/28" target="_blank">openEHR SE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-brazil/17" target="_blank">openEHR BR</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-spain/21" target="_blank">openEHR ES</a>
+      </div>
+    </div>
+  </div>
+  <div class="container hidden grid grid--2" id="search">
+    <div></div>
+    <div class="search-box">
+      <script>
+        (function () {
+          var cx = "013258992131926468583:q3vo4hyneyu";
+          var gcse = document.createElement("script");
+          gcse.type = "text/javascript";
+          gcse.async = true;
+          gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#top-menu"
+          aria-controls="top-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-menu">
+          <ul class="navbar-nav me-auto">
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">About</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">About</span></li>
+                    <li>
+                      <a href="../../about/what_is_openehr.html">What is openEHR?</a>
+                    </li>
+                    <li>
+                      <a href="../../about/vision_and_mission.html">Vision and Mission</a>
+                    </li>
+                    <li>
+                      <a href="../../about/developer_ecosystem.html">Developer Ecosystem</a>
+                    </li>
+                    <br/>
+                    <li><a href="../../about/origins.html">Origins of openEHR</a></li>
+                    <li>
+                      <a href="../../about/history_2002_2018.html">History 2002 - 2018</a>
+                    </li>
+                    <br/>
+                    <li><a href="../../about/logos.html">Logos</a></li>
+                    <li><a href="../../about/contacts.html">Contacts</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Governance</span></li>
+                    <li>
+                      <a href="../../governance/organisational_structure.html">Organisational Structure</a>
+                    </li>
+                    <li><a href="../../governance/cic_board.html">CIC Board</a></li>
+                    <li>
+                      <a href="../../governance/foundation_board.html">Foundation Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="../../governance/intellectual_property.html">Intellectual Property</a>
+                    </li>
+                    <li>
+                      <a href="../../governance/code_of_conduct.html">Code of Conduct</a>
+                    </li>
+                    <li><a href="../../governance/reports.html">Reports</a></li>
+                    <br/>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Community</span></li>
+                    <li>
+                      <a href="../../community/industry_partners/index.html">Industry Partners</a>
+                    </li>
+                    <li>
+                      <a href="../../community/organisation_partners/index.html">Organisation Partners</a>
+                    </li>
+                    <li>
+                      <a href="../../community/professional_members/index.html">Professional Members</a>
+                    </li>
+                    <li>
+                      <a href="https://www.openehr.org/ckm/#userstatistics" target="_blank">Clinical Modellers (CKM)</a>
+                    </li>
+                    <li><a href="../../community/ambassadors.html">Ambassadors</a></li>
+                    <li><a href="../../community/affiliates/index.html">Affiliates</a></li>
+                    <br/>
+                    <li><a href="../../community/membership.html">Membership</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">Programs</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="../../programs/specification/index.html" class="column-title">Specification Program</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/specification/board_members.html">Program Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="../../programs/specification/changeprocess.html">Change Process</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/specification/releasestrategy.html">Release Strategy</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/specification/releases/currentbaseline.html" target="_blank">Specifications Site</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/spec/Specifications+Home" target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://openehrspecs.slack.com/" target="_blank">Slack</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="../../programs/clinicalmodels/index.html" class="column-title">Clinical Program</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/clinical/board_members.html">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="../../ckm/index.html" target="_blank">openEHR CKM</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/clinical/nationalckms.html">National CKMs</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a
+                        href="https://openehr.atlassian.net/wiki/display/healthmod/Clinical+Content+Models"
+                        target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li><a href="https://openehrspecs.slack.com/" target="_blank">Slack</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="../../programs/education/index.html" class="column-title">Education Program</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/education/board_members.html">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="../../programs/education/recognition.html">Educator Recognition</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/education/educator_training_program.html">Educator Training Program</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/spaces/edu/overview" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="../../programs/software/index.html" class="column-title">Software Program</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/software/board_members.html">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="../../programs/software/issuetrackers.html">Issue Trackers</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/openEHR" target="_blank">openEHR Github</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/dev/Developers+Home" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">Products & Tools</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Products & Tools</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../downloads/modellingtools.html">Modelling Tools</a>
+                    </li>
+                    <li>
+                      <a href="../../products_tools/knowledge_management/index.html">Knowledge Management</a>
+                    </li>
+                    <li>
+                      <a href="../../products_tools/guidelines_and_cds/index.html">Guidelines and CDS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="../../products_tools/platform/index.html">Platform</a></li>
+                    <li><a href="../../products_tools/applications/index.html">Applications</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="../../products_tools/libraries/index.html">Libraries</a></li>
+                    <li><a href="../../products_tools/sdks/index.html">SDKs</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">Deployments</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Deployments</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../who_is_using_openehr/healthcare_providers_and_authorities.html">Provider deployments</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../deployments/jurisdictions/index.html">Jurisdictions</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../deployments/research_projects/index.html">Research projects</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Resources</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../resources/publications_zotero.html">Publications Zotero</a>
+                    </li>
+                    <li>
+                      <a href="../../resources/learning_centre.html">Learning Centre</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../wiki/display/resources/FAQs+-+Frequently+Asked+Questions.html" title="FAQs" target="_blank">FAQs</a>
+                    </li>
+                    <li><a href="../../resources/white_papers.html">White Papers</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../resources/related_projects.html">Related Projects</a>
+                      <a href="../../digital_media/blogs.html">Blogs</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">News & Events</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">
+                  <a href="../index.html">News & Events</a>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../industry_news.html">Industry News</a>
+                    </li>
+                    <li>
+                      <a href="../community_news.html">Community News</a>
+                    </li>
+                    <li>
+                      <a href="../foundation_news/index.html">openEHR News</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="../events.html">Events</a></li>
+                    <li><a href="../releases.html">Releases</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../clinical_news/index.html">CKM Activity</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          
+          <button class="btn--quick-link">
+            <a href="../../programs/specification/releases/currentbaseline.html" target="_blank" title="Specifications"><i class="fa fa-file-text"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="../../ckm/templates/1013.26.272/orgchart.html" target="_blank" title="CKM"><i class="fa fa-database"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://news.openehr.org/" target="_blank" title="News"><i class="fa fa-newspaper-o"></i></a>
+          </button>
+          <button class="btn--affiliate" title="Affiliates">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </button>
+          <button class="btn--search">
+            <svg width="18" height="18" viewBox="0 0 15 15">
+              <path
+                d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="nav-second__container">
+      <div class="brand-logo">
+        <a href="../../index.html"><img src="../../static/img/logo.svg" alt="" /></a>
+      </div>
+      <div class="nav-second">
+        <div class="nav-second__item"><a href="../../about_us.html">About us</a></div>
+        <div class="nav-second__item"><a href="../../clinicians.html">Clinicians</a></div>
+        <div class="nav-second__item"><a href="../../providers.html">Providers</a></div>
+        <div class="nav-second__item"><a href="../../research.html">Research</a></div>
+        <div class="nav-second__item"><a href="../../developers.html">Developers</a></div>
+        <div class="nav-second__item">
+          <a class="btn btn-secondary" href="../index.html">Newsfeed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+	<div class='content'>
+		<div class="container">
+		
+		<div id="SideMenu">
+	﻿<span><a href="../index.html" >News & Events</a></span>
+	<ul>
+		<br/>
+		<li><a href="../industry_news.html" >Industry News</a></li>
+		<li><a href="../community_news.html" >Community News</a></li>
+		<li><a href="../foundation_news/index.html" >openEHR News</a></li>
+		<br/>
+		<li><a href="../events.html"  class="active">Events</a></li>
+		<li><a href="../releases.html" >Releases</a></li>
+		<br/>
+		<li><a href="../clinical_news/index.html" >CKM Activity</a></li>
+	</ul>
+</div>
+
+			<div id="Content">
+			
+
+	<h1 class='center'>Events</h1>
+
+	<div class="container--news">
+    	<div class="row">
+    		<div class="col-sm-12">
+    			<div class="panel-group" id="accordion">
+    				<div class="panel panel-default">
+    					<div class="panel-heading text-right">
+    						 <a data-toggle="collapse" data-parent="#accordion" href="index.html%3Fpage=5.html#collapseOne">Advanced search</a>
+
+    					</div>
+    					<form method='GET' id="regulationForm">
+    					<div class="panel">
+    						<div class="panel-body">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="id_fulltext">Full-text</label>
+										<input type="text" class="form-control" id='id_fulltext' name='fulltext' />
+									</div>
+								</div>
+
+    						</div>
+    					</div>
+                        <div id="collapseOne" class="panel-collapse collapse ">
+    						<div id="announcement-form" class="panel-body">
+    							<div class="row">
+
+									<div class="col-md-12">
+	    								<div class="form-group">
+	    									<label for="title">News title</label>
+	    									<input type="text" class="form-control" id='id_title' name='title'  />
+	    								</div>
+	    							</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="summary">News summary</label>
+											<input type="text" class="form-control" id='id_summary' name='summary'  />
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="content">News content</label>
+											<input type="text" class="form-control" id='id_content' name='content'  />
+										</div>
+									</div>
+
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="country">Country</label>
+											<select id="id_country" name="country" class="form-control">
+											
+											    <option value="">---------</option>
+											
+											    <option value="AF">Afghanistan</option>
+											
+											    <option value="AX">Åland Islands</option>
+											
+											    <option value="AL">Albania</option>
+											
+											    <option value="DZ">Algeria</option>
+											
+											    <option value="AS">American Samoa</option>
+											
+											    <option value="AD">Andorra</option>
+											
+											    <option value="AO">Angola</option>
+											
+											    <option value="AI">Anguilla</option>
+											
+											    <option value="AQ">Antarctica</option>
+											
+											    <option value="AG">Antigua and Barbuda</option>
+											
+											    <option value="AR">Argentina</option>
+											
+											    <option value="AM">Armenia</option>
+											
+											    <option value="AW">Aruba</option>
+											
+											    <option value="AU">Australia</option>
+											
+											    <option value="AT">Austria</option>
+											
+											    <option value="AZ">Azerbaijan</option>
+											
+											    <option value="BS">Bahamas</option>
+											
+											    <option value="BH">Bahrain</option>
+											
+											    <option value="BD">Bangladesh</option>
+											
+											    <option value="BB">Barbados</option>
+											
+											    <option value="BY">Belarus</option>
+											
+											    <option value="BE">Belgium</option>
+											
+											    <option value="BZ">Belize</option>
+											
+											    <option value="BJ">Benin</option>
+											
+											    <option value="BM">Bermuda</option>
+											
+											    <option value="BT">Bhutan</option>
+											
+											    <option value="BO">Bolivia</option>
+											
+											    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+											
+											    <option value="BA">Bosnia and Herzegovina</option>
+											
+											    <option value="BW">Botswana</option>
+											
+											    <option value="BV">Bouvet Island</option>
+											
+											    <option value="BR">Brazil</option>
+											
+											    <option value="IO">British Indian Ocean Territory</option>
+											
+											    <option value="BN">Brunei</option>
+											
+											    <option value="BG">Bulgaria</option>
+											
+											    <option value="BF">Burkina Faso</option>
+											
+											    <option value="BI">Burundi</option>
+											
+											    <option value="CV">Cabo Verde</option>
+											
+											    <option value="KH">Cambodia</option>
+											
+											    <option value="CM">Cameroon</option>
+											
+											    <option value="CA">Canada</option>
+											
+											    <option value="KY">Cayman Islands</option>
+											
+											    <option value="CF">Central African Republic</option>
+											
+											    <option value="TD">Chad</option>
+											
+											    <option value="CL">Chile</option>
+											
+											    <option value="CN">China</option>
+											
+											    <option value="CX">Christmas Island</option>
+											
+											    <option value="CC">Cocos (Keeling) Islands</option>
+											
+											    <option value="CO">Colombia</option>
+											
+											    <option value="KM">Comoros</option>
+											
+											    <option value="CG">Congo</option>
+											
+											    <option value="CD">Congo (the Democratic Republic of the)</option>
+											
+											    <option value="CK">Cook Islands</option>
+											
+											    <option value="CR">Costa Rica</option>
+											
+											    <option value="CI">Côte d&#39;Ivoire</option>
+											
+											    <option value="HR">Croatia</option>
+											
+											    <option value="CU">Cuba</option>
+											
+											    <option value="CW">Curaçao</option>
+											
+											    <option value="CY">Cyprus</option>
+											
+											    <option value="CZ">Czechia</option>
+											
+											    <option value="DK">Denmark</option>
+											
+											    <option value="DJ">Djibouti</option>
+											
+											    <option value="DM">Dominica</option>
+											
+											    <option value="DO">Dominican Republic</option>
+											
+											    <option value="EC">Ecuador</option>
+											
+											    <option value="EG">Egypt</option>
+											
+											    <option value="SV">El Salvador</option>
+											
+											    <option value="GQ">Equatorial Guinea</option>
+											
+											    <option value="ER">Eritrea</option>
+											
+											    <option value="EE">Estonia</option>
+											
+											    <option value="SZ">Eswatini</option>
+											
+											    <option value="ET">Ethiopia</option>
+											
+											    <option value="FK">Falkland Islands  [Malvinas]</option>
+											
+											    <option value="FO">Faroe Islands</option>
+											
+											    <option value="FJ">Fiji</option>
+											
+											    <option value="FI">Finland</option>
+											
+											    <option value="FR">France</option>
+											
+											    <option value="GF">French Guiana</option>
+											
+											    <option value="PF">French Polynesia</option>
+											
+											    <option value="TF">French Southern Territories</option>
+											
+											    <option value="GA">Gabon</option>
+											
+											    <option value="GM">Gambia</option>
+											
+											    <option value="GE">Georgia</option>
+											
+											    <option value="DE">Germany</option>
+											
+											    <option value="GH">Ghana</option>
+											
+											    <option value="GI">Gibraltar</option>
+											
+											    <option value="GR">Greece</option>
+											
+											    <option value="GL">Greenland</option>
+											
+											    <option value="GD">Grenada</option>
+											
+											    <option value="GP">Guadeloupe</option>
+											
+											    <option value="GU">Guam</option>
+											
+											    <option value="GT">Guatemala</option>
+											
+											    <option value="GG">Guernsey</option>
+											
+											    <option value="GN">Guinea</option>
+											
+											    <option value="GW">Guinea-Bissau</option>
+											
+											    <option value="GY">Guyana</option>
+											
+											    <option value="HT">Haiti</option>
+											
+											    <option value="HM">Heard Island and McDonald Islands</option>
+											
+											    <option value="VA">Holy See</option>
+											
+											    <option value="HN">Honduras</option>
+											
+											    <option value="HK">Hong Kong</option>
+											
+											    <option value="HU">Hungary</option>
+											
+											    <option value="IS">Iceland</option>
+											
+											    <option value="IN">India</option>
+											
+											    <option value="ID">Indonesia</option>
+											
+											    <option value="IR">Iran</option>
+											
+											    <option value="IQ">Iraq</option>
+											
+											    <option value="IE">Ireland</option>
+											
+											    <option value="IM">Isle of Man</option>
+											
+											    <option value="IL">Israel</option>
+											
+											    <option value="IT">Italy</option>
+											
+											    <option value="JM">Jamaica</option>
+											
+											    <option value="JP">Japan</option>
+											
+											    <option value="JE">Jersey</option>
+											
+											    <option value="JO">Jordan</option>
+											
+											    <option value="KZ">Kazakhstan</option>
+											
+											    <option value="KE">Kenya</option>
+											
+											    <option value="KI">Kiribati</option>
+											
+											    <option value="KW">Kuwait</option>
+											
+											    <option value="KG">Kyrgyzstan</option>
+											
+											    <option value="LA">Laos</option>
+											
+											    <option value="LV">Latvia</option>
+											
+											    <option value="LB">Lebanon</option>
+											
+											    <option value="LS">Lesotho</option>
+											
+											    <option value="LR">Liberia</option>
+											
+											    <option value="LY">Libya</option>
+											
+											    <option value="LI">Liechtenstein</option>
+											
+											    <option value="LT">Lithuania</option>
+											
+											    <option value="LU">Luxembourg</option>
+											
+											    <option value="MO">Macao</option>
+											
+											    <option value="MK">Macedonia</option>
+											
+											    <option value="MG">Madagascar</option>
+											
+											    <option value="MW">Malawi</option>
+											
+											    <option value="MY">Malaysia</option>
+											
+											    <option value="MV">Maldives</option>
+											
+											    <option value="ML">Mali</option>
+											
+											    <option value="MT">Malta</option>
+											
+											    <option value="MH">Marshall Islands</option>
+											
+											    <option value="MQ">Martinique</option>
+											
+											    <option value="MR">Mauritania</option>
+											
+											    <option value="MU">Mauritius</option>
+											
+											    <option value="YT">Mayotte</option>
+											
+											    <option value="MX">Mexico</option>
+											
+											    <option value="FM">Micronesia (Federated States of)</option>
+											
+											    <option value="MD">Moldova</option>
+											
+											    <option value="MC">Monaco</option>
+											
+											    <option value="MN">Mongolia</option>
+											
+											    <option value="ME">Montenegro</option>
+											
+											    <option value="MS">Montserrat</option>
+											
+											    <option value="MA">Morocco</option>
+											
+											    <option value="MZ">Mozambique</option>
+											
+											    <option value="MM">Myanmar</option>
+											
+											    <option value="NA">Namibia</option>
+											
+											    <option value="NR">Nauru</option>
+											
+											    <option value="NP">Nepal</option>
+											
+											    <option value="NL">Netherlands</option>
+											
+											    <option value="NC">New Caledonia</option>
+											
+											    <option value="NZ">New Zealand</option>
+											
+											    <option value="NI">Nicaragua</option>
+											
+											    <option value="NE">Niger</option>
+											
+											    <option value="NG">Nigeria</option>
+											
+											    <option value="NU">Niue</option>
+											
+											    <option value="NF">Norfolk Island</option>
+											
+											    <option value="KP">North Korea</option>
+											
+											    <option value="MP">Northern Mariana Islands</option>
+											
+											    <option value="NO">Norway</option>
+											
+											    <option value="OM">Oman</option>
+											
+											    <option value="PK">Pakistan</option>
+											
+											    <option value="PW">Palau</option>
+											
+											    <option value="PS">Palestine, State of</option>
+											
+											    <option value="PA">Panama</option>
+											
+											    <option value="PG">Papua New Guinea</option>
+											
+											    <option value="PY">Paraguay</option>
+											
+											    <option value="PE">Peru</option>
+											
+											    <option value="PH">Philippines</option>
+											
+											    <option value="PN">Pitcairn</option>
+											
+											    <option value="PL">Poland</option>
+											
+											    <option value="PT">Portugal</option>
+											
+											    <option value="PR">Puerto Rico</option>
+											
+											    <option value="QA">Qatar</option>
+											
+											    <option value="RE">Réunion</option>
+											
+											    <option value="RO">Romania</option>
+											
+											    <option value="RU">Russia</option>
+											
+											    <option value="RW">Rwanda</option>
+											
+											    <option value="BL">Saint Barthélemy</option>
+											
+											    <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+											
+											    <option value="KN">Saint Kitts and Nevis</option>
+											
+											    <option value="LC">Saint Lucia</option>
+											
+											    <option value="MF">Saint Martin (French part)</option>
+											
+											    <option value="PM">Saint Pierre and Miquelon</option>
+											
+											    <option value="VC">Saint Vincent and the Grenadines</option>
+											
+											    <option value="WS">Samoa</option>
+											
+											    <option value="SM">San Marino</option>
+											
+											    <option value="ST">Sao Tome and Principe</option>
+											
+											    <option value="SA">Saudi Arabia</option>
+											
+											    <option value="SN">Senegal</option>
+											
+											    <option value="RS">Serbia</option>
+											
+											    <option value="SC">Seychelles</option>
+											
+											    <option value="SL">Sierra Leone</option>
+											
+											    <option value="SG">Singapore</option>
+											
+											    <option value="SX">Sint Maarten (Dutch part)</option>
+											
+											    <option value="SK">Slovakia</option>
+											
+											    <option value="SI">Slovenia</option>
+											
+											    <option value="SB">Solomon Islands</option>
+											
+											    <option value="SO">Somalia</option>
+											
+											    <option value="ZA">South Africa</option>
+											
+											    <option value="GS">South Georgia and the South Sandwich Islands</option>
+											
+											    <option value="KR">South Korea</option>
+											
+											    <option value="SS">South Sudan</option>
+											
+											    <option value="ES">Spain</option>
+											
+											    <option value="LK">Sri Lanka</option>
+											
+											    <option value="SD">Sudan</option>
+											
+											    <option value="SR">Suriname</option>
+											
+											    <option value="SJ">Svalbard and Jan Mayen</option>
+											
+											    <option value="SE">Sweden</option>
+											
+											    <option value="CH">Switzerland</option>
+											
+											    <option value="SY">Syria</option>
+											
+											    <option value="TW">Taiwan</option>
+											
+											    <option value="TJ">Tajikistan</option>
+											
+											    <option value="TZ">Tanzania</option>
+											
+											    <option value="TH">Thailand</option>
+											
+											    <option value="TL">Timor-Leste</option>
+											
+											    <option value="TG">Togo</option>
+											
+											    <option value="TK">Tokelau</option>
+											
+											    <option value="TO">Tonga</option>
+											
+											    <option value="TT">Trinidad and Tobago</option>
+											
+											    <option value="TN">Tunisia</option>
+											
+											    <option value="TR">Turkey</option>
+											
+											    <option value="TM">Turkmenistan</option>
+											
+											    <option value="TC">Turks and Caicos Islands</option>
+											
+											    <option value="TV">Tuvalu</option>
+											
+											    <option value="UG">Uganda</option>
+											
+											    <option value="UA">Ukraine</option>
+											
+											    <option value="AE">United Arab Emirates</option>
+											
+											    <option value="GB">United Kingdom</option>
+											
+											    <option value="UM">United States Minor Outlying Islands</option>
+											
+											    <option value="US">United States of America</option>
+											
+											    <option value="UY">Uruguay</option>
+											
+											    <option value="UZ">Uzbekistan</option>
+											
+											    <option value="VU">Vanuatu</option>
+											
+											    <option value="VE">Venezuela</option>
+											
+											    <option value="VN">Vietnam</option>
+											
+											    <option value="VG">Virgin Islands (British)</option>
+											
+											    <option value="VI">Virgin Islands (U.S.)</option>
+											
+											    <option value="WF">Wallis and Futuna</option>
+											
+											    <option value="EH">Western Sahara</option>
+											
+											    <option value="YE">Yemen</option>
+											
+											    <option value="ZM">Zambia</option>
+											
+											    <option value="ZW">Zimbabwe</option>
+											
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="event_type">Event Type</label>
+											<select id="id_event_type" name="event_type" class="form-control">
+											
+											    <option value="">---------</option>
+											
+											    <option value="openehr day">OpenEHR day</option>
+											
+											    <option value="conference">Conference</option>
+											
+											    <option value="workshop">Workshop</option>
+											
+											    <option value="seminar">Seminar</option>
+											
+											    <option value="sec meeting">SEC meeting</option>
+											
+											</select>
+										</div>
+									</div>
+									
+
+    							</div>
+    						</div>
+    					</div>
+    					<div class="panel">
+    						<div id="announcement-submit" class="panel-body">
+    							<div class="col-md-12 text-center">
+    								<input value="Search" class="btn btn-primary" type="submit">
+    								<a href="../events.html" class="btn btn-secondary">Clear</a>
+    							</div>
+    						</div>
+    					</div>
+    				</form>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<br/>
+
+	
+		
+		<a href = "92.html">Arctic Conference on Dual-Model based CDA &amp; KM</a>
+		<h6>13-04-2014</h6>
+		Arctic Conference on Dual-Model based Clinical Decision Support and Knowledge Management - find out about GDL, ADL 1.5, openEHR apps...
+		<br/><br/><br/>
+		
+		<a href = "82.html">openEHR standard, available tools for clinicians</a>
+		<h6>19-04-2013</h6>
+		On Friday, 19. April, Ing. Pablo Pasoz Guti&#233;rrez will give a talk at the Hospital Italiano de Buenos Aires, Argentina, about openEHR. This will be transmitted and recorded online.
+		<br/><br/><br/>
+		
+		<a href = "70.html">openEHR Foundation Meeting</a>
+		<h6>12-09-2012</h6>
+		openEHR Foundation Strategic Planning Seminar had focused on discussion of the current state of openEHR in order to develop both short and long term strategies.
+		<br/><br/><br/>
+		
+		<a href = "66.html">HL7 Australia Seminar on Future HL7 Standards</a>
+		<h6>30-06-2012</h6>
+		This HL7 Australia "Future of eHealth Standards" Seminar outlined the recent developments in the use of openEHR Archetypes in HL7, the FHIR work (an Aussie development that is taking the global HL7 community by storm) as well as the Clinical Information Modeling Initiative (CIMI).
+		<br/><br/><br/>
+		
+		<a href = "65.html">openEHR &#64; HINZ | New Zeland</a>
+		<h6>17-06-2012</h6>
+		Two days of strategic events on healthcare interoperability in June in New Zealand.
+		<br/><br/><br/>
+		
+		<a href = "62.html">Interconnected Health 2012</a>
+		<h6>30-03-2012</h6>
+		Interconnected Health 2012 will focus on approaches, challenges, and solutions affecting the ability to connect health organizations and systems, and the role of IT as an enabler in achieving this connectivity.
+		<br/><br/><br/>
+		
+		<a href = "58.html">CIMI Forum - 5th meeting</a>
+		<h6>16-01-2012</h6>
+		CIMI held its 5th group meeting in San Antonio. Over 35 people attended in person with an additional 5 participants attending via WebEx.
+		<br/><br/><br/>
+		
+		<a href = "53.html">MIE 2011</a>
+		<h6>24-08-2011</h6>
+		MIE 2011 is the 23rd International Conference of EFMI - the European Federation for Medical Informatics, and takes place in Oslo. The conference will cover various topics in the area of e-health, health informatics and telemedicine.
+		<br/><br/><br/>
+		
+		<a href = "49.html">OpenEHR sessions at HL7</a>
+		<h6>08-01-2011</h6>
+		Two openEHR sessions are scheduled at the next HL7 WGM in Sydney, both on Friday 14 January, the last day of the meeting.
+		<br/><br/><br/>
+		
+		<a href = "44.html">MedInfo 2010</a>
+		<h6>10-09-2010</h6>
+		MedInfo 2010 this year takes place in Cape Town, South Africa. The openEHR-related activities include a clinical modelling workshop and various presentations.
+		<br/><br/><br/>
+		
+		<a href = "40.html">8th Medical Open Source Software Seminar</a>
+		<h6>24-10-2009</h6>
+		It is a pleasure to announce the 8th Medical Open Source Software Seminar will take place in Tokyo.
+		<br/><br/><br/>
+		
+		<a href = "38.html">MIE 2009</a>
+		<h6>25-08-2009</h6>
+		Various openEHR-related events are occurring at MIE 2009, this year at Sarajevo.
+		<br/><br/><br/>
+		
+		<a href = "35.html">openEHR at International Free Software Forum</a>
+		<h6>22-06-2009</h6>
+		Tim Cook has been selected as an invited lecturer at the 10th Edition of International Free Software Forum or fisl10, to be held at the Pontif&#237;cia Universidade Cat&#243;lica (PUC-RS) in the city of Porto Alegre, Brazil.
+		<br/><br/><br/>
+		
+		<a href = "27.html">openEHR / SNOMED CT training course</a>
+		<h6>25-09-2008</h6>
+		The CHIME department, University College London, is hosting a 2-day training course on openEHR and SNOMED CT.
+		<br/><br/><br/>
+		
+		<a href = "26.html">Python / openEHR workshop, XVIII IEA World Congress of Epidemiology</a>
+		<h6>10-09-2008</h6>
+		There will be a 1.5 day workshop on openEHR using the Python implementation (aka. OSHIP) at the XVIII IEA World Congress of Epidemiology.
+		<br/><br/><br/>
+		
+		<a href = "25.html">OSHIP / openEHR workshop</a>
+		<h6>10-07-2008</h6>
+		The International Workshop on Open Source Health Informatics Projects will take place this month in Brazil.
+		<br/><br/><br/>
+		
+		<a href = "24.html">IHTSDO 2008 Summer Conference</a>
+		<h6>20-06-2008</h6>
+		This six-day international working conference is being hosted by NHS Connecting for Health to bring together IHTSDO's working group and project group members and members of National Release Centres from across the Globe.
+		<br/><br/><br/>
+		
+		<a href = "20.html">MIE 2008</a>
+		<h6>20-05-2008</h6>
+		Various openEHR-related events are occurring at MIE 2008. A number of papers relating to archetypes and associated terminology issues are on the programme, as well as two openEHR-related tutorials.
+		<br/><br/><br/>
+		
+		<a href = "13.html">MedInfo 2007</a>
+		<h6>30-08-2007</h6>
+		There were 14 papers, workshops and posters at MedInfo 2007.
+		<br/><br/><br/>
+		
+		<a href = "458.html">openEHR International 1st Annual Conference</a>
+		<h6>13-06-2024</h6>
+		Join us at openEHR International's 1st Annual Conference - it's going to be a blast! 
+Tue, 5 Nov 2024 08:30 - Wed, 6 Nov 2024 18:00 GMT
+Wokefield Estate Golf Club, Goodboy's Lane, Reading, UK
+		<br/><br/><br/>
+		
+	
+
+	<div class="pagination">
+	    <span class="step-links">
+	        
+	            <a href="index.html%3Fpage=1.html">&laquo;</a>&nbsp;&nbsp;
+	            <a href="index.html%3Fpage=4.html">previous</a>&nbsp;&nbsp;
+	        
+
+	        <span class="current">
+	            Page 5 of 6
+	        </span>
+
+	        
+	            &nbsp;&nbsp;<a href="index.html%3Fpage=6.html">next</a>
+	           &nbsp;&nbsp; <a href="index.html%3Fpage=6.html">&raquo;</a>
+	        
+
+
+	    </span>
+	</div>
+
+
+			<br class="clear">
+			</div>
+			<br class="clear">
+		</div>
+		<br class="clear">
+	</div>
+	<footer class="block footer">
+  <div class="container grid grid--4 footer__sections">
+    <section class="footer__section">
+      <h2 class="footer__heading">Sites</h2>
+      <div>
+        <ul class="list">
+          <li><a href="../../community/mailinglists.html" target="_blank">Forums</a></li>
+          <li>
+            <a href="../../wiki/display/resources/FAQs+-+Frequently+Asked+Questions.html" target="_blank">
+              Wiki
+            </a>
+          </li>
+          <li>
+            <a href="https://openehr.atlassian.net/secure/BrowseProjects.jspa?selectedCategory=all&amp;selectedProjectType=all" target="_blank">
+              Jira
+            </a>
+          </li>
+          <li><a href="https://github.com/openEHR" target="_blank">GitHub</a></li>
+          <li><a href="../../programs/specification/releases/currentbaseline.html" target="_blank">Specifications</a></li>
+          <li><a href="../../ckm/templates/1013.26.272/orgchart.html" target="_blank">CKM</a></li>
+          <li><a href="../../accounts/index.html">Accounts</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Using the Site</h2>
+      <div>
+        <ul class="list">
+          <li><a href="../../using_the_site/terms_of_use.html">Terms of Use</a></li>
+          <li><a href="../../using_the_site/privacy_policy.html">Privacy Policy</a></li>
+          <li>
+            <a href="../../using_the_site/publishing_content.html">Publishing Content</a>
+          </li>
+          <li><a href="../../using_the_site/localisation.html">Localisation</a></li>
+          <li><a href="../../using_the_site/feedback.html">Feedback</a></li>
+          <li><a href="mailto:webmaster@openehr.org">Contact Webmaster</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Acknowledgements</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.atlassian.com/" target="_blank">Atlassian</a>
+            (Jira, Confluence)
+          </li>
+          <li>
+            <a href="http://asciidoctor.org/" target="_blank">AsciiDoctor</a>
+            (publishing)
+          </li>
+          <li><a href="https://github.com/" target="_blank">GitHub</a> (DVCS)</li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="_blank">LAMP</a>
+            (dev community)
+          </li>
+          <li>
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            (images)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Social media</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.youtube.com/openEHR" target="_blank" class="fa fa-youtube" title="YouTube"></a>
+            <a href="https://www.youtube.com/openEHR" target="_blank">YouTube</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/#!/openehr" target="_blank" class="fa fa-twitter" title="Twitter"></a> 
+            <a href="http://twitter.com/#!/openehr" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/openehr/"
+              target="_blank"
+              class="fa fa-facebook"
+              title="Facebook"
+            ></a>
+            <a href="https://www.facebook.com/groups/openehr/" target="_blank">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer__copyright">
+      <img src="../../static/img/logo_inverse.svg" alt="" class="brand-logo" />
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        openEHR International. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+	<script src="../../static/js/header_boxes.js"></script>
+	<script>$('.select_field_class').select2( { placeholder: "Select here", maximumSelectionSize: 100  } );</script>
+
+</body>
+</html>

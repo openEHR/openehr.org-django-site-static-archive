@@ -1,0 +1,630 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<title>Industry News</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems">
+	<meta name="keywords" content="archetypes, openEHR, EHR, electronic health record, electronic medical record, ADL, reference model, clinical models, healthcare, health informatics, medical informatics, EHR standards, ISO 18308, CEN 13606, health care software, open source software, knowledge modelling, patient-centric">
+	<meta name="author" content="Sam Heard, Thomas Beale">
+	<meta name="designer" content="Adriana Csefalvay">
+	<meta name="rating" content="General">
+	<meta name="robots" content="All">
+	<meta name="revisit-after" content="15 days">
+
+	<meta name="msvalidate.01" content="8FFF7BE532A432C2B590526A24F0CBF9" />
+	<meta name="yandex-verification" content="da5f926c2ac75b3c" />
+
+	<meta property="og:title" content="openEHR-Home">
+    <meta property="og:description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems.">
+    <meta property="og:type" content="website">
+
+	<link rel="stylesheet" href="/static/css/normalize.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/basic.css"  type="text/css">
+	
+	<link rel="stylesheet" href="/static/css/pages.css"  type="text/css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+	
+	<link rel="icon" sizes="any" href="/static/img/favicon/favicon.ico">
+	<link rel="icon" type="image/svg+xml" href="/static/img/favicon/icon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="/static/img/favicon/site.webmanifest">
+	
+	<link rel="home" href="/">
+	
+	<script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="/static/js/bootstrap.bundle.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+</head>
+<body>
+	
+	<header>
+  <div class="container hidden" id="affiliate">
+    <div class="affiliates flex">
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-netherlands/12" target="_blank"
+          >openEHR NL</a
+        >
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-germany/16" target="_blank">openEHR DE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-japan/18" target="_blank">openEHR JP</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openher-china/19" target="_blank">openEHR CN</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-sweden/28" target="_blank">openEHR SE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-brazil/17" target="_blank">openEHR BR</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-spain/21" target="_blank">openEHR ES</a>
+      </div>
+    </div>
+  </div>
+  <div class="container hidden grid grid--2" id="search">
+    <div></div>
+    <div class="search-box">
+      <script>
+        (function () {
+          var cx = "013258992131926468583:q3vo4hyneyu";
+          var gcse = document.createElement("script");
+          gcse.type = "text/javascript";
+          gcse.async = true;
+          gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#top-menu"
+          aria-controls="top-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-menu">
+          <ul class="navbar-nav me-auto">
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">About</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">About</span></li>
+                    <li>
+                      <a href="/about/what_is_openehr">What is openEHR?</a>
+                    </li>
+                    <li>
+                      <a href="/about/vision_and_mission">Vision and Mission</a>
+                    </li>
+                    <li>
+                      <a href="/about/developer_ecosystem">Developer Ecosystem</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/origins">Origins of openEHR</a></li>
+                    <li>
+                      <a href="/about/history_2002_2018">History 2002 - 2018</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/logos">Logos</a></li>
+                    <li><a href="/about/contacts">Contacts</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Governance</span></li>
+                    <li>
+                      <a href="/governance/organisational_structure">Organisational Structure</a>
+                    </li>
+                    <li><a href="/governance/cic_board">CIC Board</a></li>
+                    <li>
+                      <a href="/governance/foundation_board">Foundation Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/governance/intellectual_property">Intellectual Property</a>
+                    </li>
+                    <li>
+                      <a href="/governance/code_of_conduct">Code of Conduct</a>
+                    </li>
+                    <li><a href="/governance/reports">Reports</a></li>
+                    <br/>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Community</span></li>
+                    <li>
+                      <a href="/community/industry_partners/">Industry Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/organisation_partners/">Organisation Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/professional_members/">Professional Members</a>
+                    </li>
+                    <li>
+                      <a href="https://www.openehr.org/ckm/#userstatistics" target="_blank">Clinical Modellers (CKM)</a>
+                    </li>
+                    <li><a href="/community/ambassadors">Ambassadors</a></li>
+                    <li><a href="/community/affiliates/">Affiliates</a></li>
+                    <br/>
+                    <li><a href="/community/membership/">Membership</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Programs</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/specification/" class="column-title">Specification Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/board_members">Program Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/programs/specification/changeprocess">Change Process</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/releasestrategy">Release Strategy</a>
+                    </li>
+                    <li>
+                      <a href="https://specifications.openehr.org" target="_blank">Specifications Site</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/spec/Specifications+Home" target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://openehrspecs.slack.com/" target="_blank">Slack</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/clinical/" class="column-title">Clinical Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="http://openehr.org/ckm/" target="_blank">openEHR CKM</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/nationalckms">National CKMs</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a
+                        href="https://openehr.atlassian.net/wiki/display/healthmod/Clinical+Content+Models"
+                        target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li><a href="https://openehrspecs.slack.com/" target="_blank">Slack</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/education/" class="column-title">Education Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/education/recognition">Educator Recognition</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/educator_training_program">Educator Training Program</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/spaces/edu/overview" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/software/" class="column-title">Software Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/software/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/software/issuetrackers">Issue Trackers</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/openEHR" target="_blank">openEHR Github</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/dev/Developers+Home" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Products & Tools</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Products & Tools</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/products_tools/modelling_tools/">Modelling Tools</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/knowledge_management/">Knowledge Management</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/guidelines_and_cds/">Guidelines and CDS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/platform/">Platform</a></li>
+                    <li><a href="/products_tools/applications/">Applications</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/libraries/">Libraries</a></li>
+                    <li><a href="/products_tools/sdks/">SDKs</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Deployments</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Deployments</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/provider_deployments/">Provider deployments</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/jurisdictions/">Jurisdictions</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/research_projects/">Research projects</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Resources</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/publications_zotero">Publications Zotero</a>
+                    </li>
+                    <li>
+                      <a href="/resources/learning_centre">Learning Centre</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/wiki/display/resources/FAQs+-+Frequently+Asked+Questions" title="FAQs" target="_blank">FAQs</a>
+                    </li>
+                    <li><a href="/resources/white_papers">White Papers</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/related_projects">Related Projects</a>
+                      <a href="/digital_media/blogs">Blogs</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/news_events/" class="dropdown-toggle" data-toggle="dropdown">News & Events</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">
+                  <a href="/news_events/">News & Events</a>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/industry_news/">Industry News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/community_news/">Community News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/foundation_news/">openEHR News</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/news_events/events/">Events</a></li>
+                    <li><a href="/news_events/releases/">Releases</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/clinical_news/">CKM Activity</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          
+          <button class="btn--quick-link">
+            <a href="https://specifications.openehr.org/" target="_blank" title="Specifications"><i class="fa fa-file-text"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://ckm.openehr.org/ckm/" target="_blank" title="CKM"><i class="fa fa-database"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://news.openehr.org/" target="_blank" title="News"><i class="fa fa-newspaper-o"></i></a>
+          </button>
+          <button class="btn--affiliate" title="Affiliates">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </button>
+          <button class="btn--search">
+            <svg width="18" height="18" viewBox="0 0 15 15">
+              <path
+                d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="nav-second__container">
+      <div class="brand-logo">
+        <a href="/"><img src="/static/img/logo.svg" alt="" /></a>
+      </div>
+      <div class="nav-second">
+        <div class="nav-second__item"><a href="/about_us">About us</a></div>
+        <div class="nav-second__item"><a href="/clinicians">Clinicians</a></div>
+        <div class="nav-second__item"><a href="/providers">Providers</a></div>
+        <div class="nav-second__item"><a href="/research">Research</a></div>
+        <div class="nav-second__item"><a href="/developers">Developers</a></div>
+        <div class="nav-second__item">
+          <a class="btn btn-secondary" href="/news_events/">Newsfeed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+	<div class='content'>
+		<div class="container">
+		
+		<div id="SideMenu">
+	﻿<span><a href="/news_events/" >News & Events</a></span>
+	<ul>
+		<br/>
+		<li><a href="/news_events/industry_news/"  class="active">Industry News</a></li>
+		<li><a href="/news_events/community_news/" >Community News</a></li>
+		<li><a href="/news_events/foundation_news/" >openEHR News</a></li>
+		<br/>
+		<li><a href="/news_events/events/" >Events</a></li>
+		<li><a href="/news_events/releases/" >Releases</a></li>
+		<br/>
+		<li><a href="/news_events/clinical_news/" >CKM Activity</a></li>
+	</ul>
+</div>
+
+			<div id="Content">
+			
+
+<h2>Inpeco partners up with Marand: Reliable data supporting diagnostic pr</h2>
+<h6>Industry News | March 5, 2018, 8:47 a.m.</h6>
+<br/>
+<p>Inpeco, the world's leading lab automation solution provider, selected Marand's Think!EHR Platform&trade; as the data management and persistence layer for its Total Patient Management solution. With its new patient centric solution, Inpeco is taking its expertise in designing and building systems that guarantee traceability, safety and efficiency in the diagnostic process into the area of patient health records solution. The Total Patient Management solution with vendor neutral data persistence will contain validated and trustworthy set of information used in and for patient care. With this solution, which is expected to be launched in summer 2018, the patients will have access to and full control of their own clinical data anytime, anywhere.</p>
+<p>According to IDC's Worldwide Health Industry 2018 Predictions, 25% of data used in medical care will be collected and shared with healthcare systems by the patients themselves by the end of 2020. The key issue will be reliability of such data that patients can retrieve through new technologies such as wearable sensors that continuously monitor vital signs. Inpeco's Total Patient Management solution corresponds to such trends that enable more personalised healthcare based on validated clinical data, which are either collected in clinical laboratories and hospitals or by patients themselves.</p>
+<p>"<span style="font-style: italic;">We decided to launch the Total Patient Management project because we strongly believe that every human in the world has the right to own his/her medical data and use it whenever it's needed</span>" says Riccardo Triunfo, Inpeco TPM Board of Directors. "<span style="font-style: italic;">We are the global leader in Total Laboratory Automation and we spent the last 25 years in building automation systems able to provide several billions of reliable results to patients in every corner of the globe and we want to bring our expertise to other medical fields. We decided to use Marand's Think!EHR Platform&trade; because is unleashing a new and open paradigm for managing medical data. All our solutions are designed for the entire world: thanks to the open standards, the Think!EHR Platform&trade; could guarantee us a global accessibility of data and the easy update and deployment system will help us in designing future-proof applications</span>".</p>
+<p>Vendor neutral data layer</p>
+<p>With patients being in control of their own clinical data, they need to be able to share it with various clinicians across the healthcare system. Therefore, it is essential for the Total Patient Management solution to have a vendor neutral data layer and to be able to support different applications that connect and share data. Marand's Think!EHR Platform&trade; is a perfect fit with its market leading position for openEHR methodology implementation.</p>
+<p>Marand's Think!EHR Platform&trade; is a means to manage the persistence layer of the Total Patient Management solution, and it provides the application development environment to accelerate the design and deployment of the solution. Marand will provide the technology as well as its experts and architects to support Inpeco during the Total Patient Management solution design and implementation.</p>
+<p>"<span style="font-style: italic;">Reliable data is the key for successful management and decision making</span>," says Tomaz Gornik, CEO at Marand. "<span style="font-style: italic;">Our passion at Marand is to provide better data to enable better healthcare. And this fits perfectly with Inpeco's vision to integrate data through technology and eliminate possible human error. So far, Marand's solutions were mainly used in clinics, hospitals and laboratories to support diagnostic process, treatment and research. We are excited to be a part of Inpeco's strategy that will empower patients who will gain access over their medical data. We believe that Inpeco's solutions can lead to new business models that will enable efficient and quality healthcare</span>."</p>
+<p>Overview of patient's medical history</p>
+<p>The Total Patient Management solution aims to serve as the so called Virtual Patient Drawer, which is cloud enabled virtual clinical data archive that represents the collection of patient data over time. It will combine a number of technologies like biometrics and mobile to ensure that the patient is always in control who access the data, from where and how, and for what purpose. This makes it a fully patient centric solution. Next to the data collected through clinical lab tests, including biochemistry, pathology, etc., the system will support other data feeds, such as medications, observations, assessments, etc.</p>
+<p>One of the key benefits of the solution is knowing the level of quality of data, which is essential in process of analysis and decision making. Thus, clinicians will be able to trust the data that patients bring with themselves as the Total Patient Management solution will validate the data through automation and biometrics processes. Subjected to patient's permission, the data can also be used in research, clinical trials, etc.</p>
+<p>Launch in summer 2018</p>
+<p>Inpeco expects first patients to enrol to the Total Patient Management solution in summer 2018. It will be initially available in Italy to clients that have already indicated interest in implementing the solution. In the beginning, the Total Patient Management solution will focus on migration and aggregation of laboratory generated data coming from Inpeco solutions. Next, it will be available for genotyping and other specialties.</p>
+<p>About <a href="http://www.inpeco.com" target="_blank">Inpeco</a></p>
+<p>Inpeco Group designs, develops, manufactures and distributes solutions for the complete automation and traceability of specimens in Clinical Laboratories, thus granting a seamless chain of custody for the entire process, from blood drawing to results validation. Inpeco has built its expertise in 25+ years, providing Automation solutions to 1600 labs, in over 60 countries.&nbsp;</p>
+<p>About <a href="http://www.marand.com" target="_blank">Marand</a></p>
+<p>Marand&rsquo;s vision for healthcare IT is coined as "Integrate. Open. Innovate." Think!EHR Platform&trade; is well aligned with this vision as it uses IHE-based standards to integrate existing devices, systems and data. By storing data in an open, vendor-neutral format, it enables ecosystems of vendors to innovate. This approach is fuelling next generation solutions known as the <a href="http://blog.marand.com/author/tomaz/" target="_blank">Postmodern EHR</a>.</p>
+<p>Additional information:</p>
+<p>Jaka Kladnik, Digital Marketing Manager at Marand</p>
+<p>T: +386 1 470 31 00</p>
+<p>M: +386 41 200 003</p>
+<p>mail: Jaka.Kladnik(at)marand.com</p>
+
+
+
+
+
+<br/><br/><br/><br/><br/>
+<a href="/news_events/industry_news">>> Back to Industry News</a>
+
+
+			<br class="clear">
+			</div>
+			<br class="clear">
+		</div>
+		<br class="clear">
+	</div>
+	<footer class="block footer">
+  <div class="container grid grid--4 footer__sections">
+    <section class="footer__section">
+      <h2 class="footer__heading">Sites</h2>
+      <div>
+        <ul class="list">
+          <li><a href="https://discourse.openehr.org/" target="_blank">Forums</a></li>
+          <li>
+            <a href="https://openehr.atlassian.net/wiki/spaces/resources/pages/4554774/FAQs+-+Frequently+Asked+Questions" target="_blank">
+              Wiki
+            </a>
+          </li>
+          <li>
+            <a href="https://openehr.atlassian.net/secure/BrowseProjects.jspa?selectedCategory=all&amp;selectedProjectType=all" target="_blank">
+              Jira
+            </a>
+          </li>
+          <li><a href="https://github.com/openEHR" target="_blank">GitHub</a></li>
+          <li><a href="https://specifications.openehr.org/" target="_blank">Specifications</a></li>
+          <li><a href="https://ckm.openehr.org/ckm/" target="_blank">CKM</a></li>
+          <li><a href="/accounts/">Accounts</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Using the Site</h2>
+      <div>
+        <ul class="list">
+          <li><a href="/using_the_site/terms_of_use">Terms of Use</a></li>
+          <li><a href="/using_the_site/privacy_policy">Privacy Policy</a></li>
+          <li>
+            <a href="/using_the_site/publishing_content">Publishing Content</a>
+          </li>
+          <li><a href="/using_the_site/localisation">Localisation</a></li>
+          <li><a href="/using_the_site/feedback">Feedback</a></li>
+          <li><a href="mailto:webmaster@openehr.org">Contact Webmaster</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Acknowledgements</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.atlassian.com/" target="_blank">Atlassian</a>
+            (Jira, Confluence)
+          </li>
+          <li>
+            <a href="http://asciidoctor.org/" target="_blank">AsciiDoctor</a>
+            (publishing)
+          </li>
+          <li><a href="https://github.com/" target="_blank">GitHub</a> (DVCS)</li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="_blank">LAMP</a>
+            (dev community)
+          </li>
+          <li>
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            (images)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Social media</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.youtube.com/openEHR" target="_blank" class="fa fa-youtube" title="YouTube"></a>
+            <a href="https://www.youtube.com/openEHR" target="_blank">YouTube</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/#!/openehr" target="_blank" class="fa fa-twitter" title="Twitter"></a> 
+            <a href="http://twitter.com/#!/openehr" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/openehr/"
+              target="_blank"
+              class="fa fa-facebook"
+              title="Facebook"
+            ></a>
+            <a href="https://www.facebook.com/groups/openehr/" target="_blank">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer__copyright">
+      <img src="/static/img/logo_inverse.svg" alt="" class="brand-logo" />
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        openEHR International. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+	<script src="/static/js/header_boxes.js"></script>
+	<script>$('.select_field_class').select2( { placeholder: "Select here", maximumSelectionSize: 100  } );</script>
+
+</body>
+</html>

@@ -1,0 +1,887 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<title>Management Board</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems">
+	<meta name="keywords" content="archetypes, openEHR, EHR, electronic health record, electronic medical record, ADL, reference model, clinical models, healthcare, health informatics, medical informatics, EHR standards, ISO 18308, CEN 13606, health care software, open source software, knowledge modelling, patient-centric">
+	<meta name="author" content="Sam Heard, Thomas Beale">
+	<meta name="designer" content="Adriana Csefalvay">
+	<meta name="rating" content="General">
+	<meta name="robots" content="All">
+	<meta name="revisit-after" content="15 days">
+
+	<meta name="msvalidate.01" content="8FFF7BE532A432C2B590526A24F0CBF9" />
+	<meta name="yandex-verification" content="da5f926c2ac75b3c" />
+
+	<meta property="og:title" content="openEHR-Home">
+    <meta property="og:description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems.">
+    <meta property="og:type" content="website">
+
+	<link rel="stylesheet" href="/static/css/normalize.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/basic.css"  type="text/css">
+	
+	<link rel="stylesheet" href="/static/css/pages.css"  type="text/css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+	
+	<link rel="icon" sizes="any" href="/static/img/favicon/favicon.ico">
+	<link rel="icon" type="image/svg+xml" href="/static/img/favicon/icon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="/static/img/favicon/site.webmanifest">
+	
+	<link rel="home" href="/">
+	
+	<script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="/static/js/bootstrap.bundle.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+</head>
+<body>
+	
+	<header>
+  <div class="container hidden" id="affiliate">
+    <div class="affiliates flex">
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-netherlands/12" target="_blank"
+          >openEHR NL</a
+        >
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-germany/16" target="_blank">openEHR DE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-japan/18" target="_blank">openEHR JP</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openher-china/19" target="_blank">openEHR CN</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-sweden/28" target="_blank">openEHR SE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-brazil/17" target="_blank">openEHR BR</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-spain/21" target="_blank">openEHR ES</a>
+      </div>
+    </div>
+  </div>
+  <div class="container hidden grid grid--2" id="search">
+    <div></div>
+    <div class="search-box">
+      <script>
+        (function () {
+          var cx = "013258992131926468583:q3vo4hyneyu";
+          var gcse = document.createElement("script");
+          gcse.type = "text/javascript";
+          gcse.async = true;
+          gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#top-menu"
+          aria-controls="top-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-menu">
+          <ul class="navbar-nav me-auto">
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">About</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">About</span></li>
+                    <li>
+                      <a href="/about/what_is_openehr">What is openEHR?</a>
+                    </li>
+                    <li>
+                      <a href="/about/vision_and_mission">Vision and Mission</a>
+                    </li>
+                    <li>
+                      <a href="/about/developer_ecosystem">Developer Ecosystem</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/origins">Origins of openEHR</a></li>
+                    <li>
+                      <a href="/about/history_2002_2018">History 2002 - 2018</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/logos">Logos</a></li>
+                    <li><a href="/about/contacts">Contacts</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Governance</span></li>
+                    <li>
+                      <a href="/governance/organisational_structure">Organisational Structure</a>
+                    </li>
+                    <li><a href="/governance/cic_board">CIC Board</a></li>
+                    <li>
+                      <a href="/governance/foundation_board">Foundation Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/governance/intellectual_property">Intellectual Property</a>
+                    </li>
+                    <li>
+                      <a href="/governance/code_of_conduct">Code of Conduct</a>
+                    </li>
+                    <li><a href="/governance/reports">Reports</a></li>
+                    <br/>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Community</span></li>
+                    <li>
+                      <a href="/community/industry_partners/">Industry Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/organisation_partners/">Organisation Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/professional_members/">Professional Members</a>
+                    </li>
+                    <li>
+                      <a href="https://www.openehr.org/ckm/#userstatistics" target="_blank">Clinical Modellers (CKM)</a>
+                    </li>
+                    <li><a href="/community/ambassadors">Ambassadors</a></li>
+                    <li><a href="/community/affiliates/">Affiliates</a></li>
+                    <br/>
+                    <li><a href="/community/membership/">Membership</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Programs</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/specification/" class="column-title">Specification Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/board_members">Program Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/programs/specification/changeprocess">Change Process</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/releasestrategy">Release Strategy</a>
+                    </li>
+                    <li>
+                      <a href="https://specifications.openehr.org" target="_blank">Specifications Site</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/spec/Specifications+Home" target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://openehrspecs.slack.com/" target="_blank">Slack</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/clinical/" class="column-title">Clinical Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="http://openehr.org/ckm/" target="_blank">openEHR CKM</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/nationalckms">National CKMs</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a
+                        href="https://openehr.atlassian.net/wiki/display/healthmod/Clinical+Content+Models"
+                        target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li><a href="https://openehrspecs.slack.com/" target="_blank">Slack</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/education/" class="column-title">Education Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/education/recognition">Educator Recognition</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/educator_training_program">Educator Training Program</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/spaces/edu/overview" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/software/" class="column-title">Software Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/software/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/software/issuetrackers">Issue Trackers</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/openEHR" target="_blank">openEHR Github</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/dev/Developers+Home" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Products & Tools</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Products & Tools</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/products_tools/modelling_tools/">Modelling Tools</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/knowledge_management/">Knowledge Management</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/guidelines_and_cds/">Guidelines and CDS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/platform/">Platform</a></li>
+                    <li><a href="/products_tools/applications/">Applications</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/libraries/">Libraries</a></li>
+                    <li><a href="/products_tools/sdks/">SDKs</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Deployments</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Deployments</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/provider_deployments/">Provider deployments</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/jurisdictions/">Jurisdictions</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/research_projects/">Research projects</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Resources</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/publications_zotero">Publications Zotero</a>
+                    </li>
+                    <li>
+                      <a href="/resources/learning_centre">Learning Centre</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/wiki/display/resources/FAQs+-+Frequently+Asked+Questions" title="FAQs" target="_blank">FAQs</a>
+                    </li>
+                    <li><a href="/resources/white_papers">White Papers</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/related_projects">Related Projects</a>
+                      <a href="/digital_media/blogs">Blogs</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/news_events/" class="dropdown-toggle" data-toggle="dropdown">News & Events</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">
+                  <a href="/news_events/">News & Events</a>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/industry_news/">Industry News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/community_news/">Community News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/foundation_news/">openEHR News</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/news_events/events/">Events</a></li>
+                    <li><a href="/news_events/releases/">Releases</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/clinical_news/">CKM Activity</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          
+          <button class="btn--quick-link">
+            <a href="https://specifications.openehr.org/" target="_blank" title="Specifications"><i class="fa fa-file-text"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://ckm.openehr.org/ckm/" target="_blank" title="CKM"><i class="fa fa-database"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://news.openehr.org/" target="_blank" title="News"><i class="fa fa-newspaper-o"></i></a>
+          </button>
+          <button class="btn--affiliate" title="Affiliates">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </button>
+          <button class="btn--search">
+            <svg width="18" height="18" viewBox="0 0 15 15">
+              <path
+                d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="nav-second__container">
+      <div class="brand-logo">
+        <a href="/"><img src="/static/img/logo.svg" alt="" /></a>
+      </div>
+      <div class="nav-second">
+        <div class="nav-second__item"><a href="/about_us">About us</a></div>
+        <div class="nav-second__item"><a href="/clinicians">Clinicians</a></div>
+        <div class="nav-second__item"><a href="/providers">Providers</a></div>
+        <div class="nav-second__item"><a href="/research">Research</a></div>
+        <div class="nav-second__item"><a href="/developers">Developers</a></div>
+        <div class="nav-second__item">
+          <a class="btn btn-secondary" href="/news_events/">Newsfeed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+	<div class='content'>
+		<div class="container">
+		
+		<div id="SideMenu">
+	﻿<span>Governance</span>
+	<ul>
+		<br/>
+		<li><a href="/governance/organisational_structure">Organisational Structure</a></li>
+		<li><a href="/governance/cic_board" >CIC Board</a></li>
+		<li><a href="/governance/foundation_board" >Foundation Board</a></li>
+		<br/>
+		<li><a href="/governance/intellectual_property" >Intellectual Property</a></li>
+		<li><a href="/governance/code_of_conduct" >Code of Conduct</a></li>
+		<li><a href="/governance/reports" >Reports</a></li>
+	</ul>
+</div>
+
+			<div id="Content">
+			
+
+
+	<h1>Management Board</h1>
+	<h2>(replaced by CIC Board, 2019)</h2>
+
+	
+	<br/>
+	
+
+		
+			<h2>Industry representative</h2>
+			
+				<h3>Bjørn Næss </h3>
+				<table class="TableInvisible">
+				<tbody>
+				<tr><td colspan="2">July 2018 -</td></tr>
+				<tr>
+					<td><img src ="/media/images/BjornNaess_k02fseG.png"  width="115px"/></td>
+					<td><p>Bj&oslash;rn has implemented openEHR systems since 2010 and has been a member of the specification editorial committee since 2015. Bjorn believes in an open platform approach and that the openEHR community is the best approach to make a global approach to better health data, which is needed to be able to provide better healthcare services and for the research for new treatments.</p>
+
+<p>He received his M. Sc. in Telecommunications from the Norwegian university of science and technology, NTNU. Before this he worked some years as a physiotherapist. He has been working in e-health in various areas, starting as a developer of a national booking solution for medical services in Norway. Later he worked on integration and interop between systems and organizations. More recently he has focused on implementation of openEHR in DIPS Arena, the next generation of the DIPS EHR solution. His contributions to this work has included both openEHR evangelism and on the specification and implementation of the DIPS openEHR server.</p></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			
+				<h3>Tomaž Gornik </h3>
+				<table class="TableInvisible">
+				<tbody>
+				<tr><td colspan="2">Feb 2015 -</td></tr>
+				<tr>
+					<td><img src ="/media/images/TomazGornik-small.png"  width="115px"/></td>
+					<td><p>Tomaž is the CEO of Better and an experienced leader of a large group of developers building world-class software products for more than 30 years. He is always challenging his team to build better software using state-of-the-art technology, architectures and processes. He has a deep understanding of software platforms, architecture, deployment and business models.</p>
+
+<p>Tomaž has a proven track record delivering innovative turn-key solutions for large clients in telecommunications, finance and healthcare. He has been&nbsp;speaker&nbsp;at conferences including TeleManagement Forum, HIMSS and Health 2.0.</p>
+
+<p>&nbsp;</p></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						- 
+						<a href="https://www.linkedin.com/in/tomazgornik/" target="_blank">Linkedin</a> -
+						
+						<a href="https://twitter.com/tomazgornik" target="_blank">Twitter</a> -
+						
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			
+			<br/>
+		
+			<h2>Co-opted expert</h2>
+			
+				<h3>Birger Haarbrandt </h3>
+				<table class="TableInvisible">
+				<tbody>
+				<tr><td colspan="2">Aug 2018 -</td></tr>
+				<tr>
+					<td><img src ="/media/images/birger_haarbrandt_p0aT641.jpg"  width="115px"/></td>
+					<td><p>Birger Haarbrandt holds a B.A. in Medical Information Management and an M.Sc. in Computer Science. Between 2013 and 2017, Birger has established the&nbsp;<a href="https://plri.de/en/forschung/projekte/hannover-medical-school-translational-research-framework-hamstr">Hannover Medical School Translational Research Framework (HaMSTR)</a>, investigating the enhancement of traditional data warehousing approaches (including i2b2/tranSMART) with openEHR. He previously worked on the establishment of a regional health network in the state of Lower-Saxony based on IHE XDS and as a software developer for CGM MEDISTAR.</p>
+
+<p>Since 2015, he has substantially contributed to the concept of the&nbsp;<a href="http://www.highmed.org/">HiGHmed consortium</a>&nbsp;to apply for the&nbsp;<a href="http://www.medizininformatik-initiative.de/en/about-initiative">Medical Informatics Initiative</a>, a national research project to enable secondary use of health data across institutions. Since the start of the project in January 2018, he is working in HiGHmed as a software architect for the&nbsp;<a href="https://plri.de/en">Peter L. Reichertz Institute for Medical Informatics</a>, aiming at the establishment of an open platform based on IHE, openEHR and FHIR between eight German university hospitals.</p></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						- 
+						<a href="https://twitter.com/BHaarbrandt" target="_blank">Twitter</a> -
+						
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			
+			<br/>
+		
+
+
+	
+	<br/><br/>
+
+	
+	<h2>Past members<h2>
+		
+			<h3>Ian McNicoll, MBChB, MSc (Chair)</h3>
+			<table class="TableInvisible">
+			<tbody>
+			<tr><td colspan="2">Member (Feb 2015 -Sept 2019)</td></tr>
+			<tr>
+				<td><img src ="/media/images/IMcnicoll_NbcUIQP.png"/></td>
+				<td><p>Ian is a former Scottish GP, and has been involved in healthcare informatics for nearly 30 years, working with and promoting openEHR technologies for the last 8 years, initially with Ocean Informatics and latterly as an independent consultant.</p>
+
+<p>His current focus is on the promotion of the Apperta open e-health platform ecosystem, with openEHR at its core, and the development of a related Development Platform, adopted by NHS England as a key part of their Code4Health initiative.</p>
+
+<p>A Director of the openEHR Foundation Board. Previous Chair of the openEHR Management Board, and Director of the International Board from March 2019 until November 2022.</p>
+
+<p><img src="https://www.openehr.org/media/uploads/2023/03/18/recognised_educator.png" style="height:62px; width:200px" /></p></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					- 
+					<a href="https://www.linkedin.com/in/ianmcnicoll/" target="_blank">Linkedin</a> -
+					
+					<a href="http://twitter.com/ianmcnicoll" target="_blank">Twitter</a> -
+					
+				</td>
+			</tr>
+			</tbody>
+			</table>
+		
+			<h3>Joana Feijó </h3>
+			<table class="TableInvisible">
+			<tbody>
+			<tr><td colspan="2">Member (2012 - 28/02/2015)</td></tr>
+			<tr>
+				<td><img src ="/media/images/JFeijo.png"/></td>
+				<td><p>Joana Feij&oacute; holds a degree in Microbiology from the Portuguese Catholic University, a Post-graduation in Basic and Molecular Biology and a PhD in Biomedical Sciences from Abel Salazar Biomedical Sciences Institute from the Oporto University.</p>
+
+<p>Joana works at Critical Software, as a Business Development Manager for the Health area. She is responsible for product conceptualization, development and commercialization. During the last 3 years, she has been focused on an openEHR based product development for managing Clinical information.</p>
+
+<p>Previous to joining Critical Group, Joana worked for ALERT Life Sciences Computing, S.A. as Director of Clinical Content Department and Functional Analysis Department. During her 3 years at ALERT, Joana was responsible for national and international teams regarding software specifications and Clinical Content definition for the clinical applications. She was also responsible for the medical consultant group.</p>
+
+<p>Before ALERT Joana was an Associate Professor lecturing Biochemistry, Biophysics and Microbiology.</p></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					
+				</td>
+			</tr>
+			</tbody>
+			</table>
+		
+			<h3>Koray Atalag, MD, PhD, FAIDH </h3>
+			<table class="TableInvisible">
+			<tbody>
+			<tr><td colspan="2">Member </td></tr>
+			<tr>
+				<td><img src ="/media/images/DSCF3822-AE_Visa_digital_format-508x650_px_1.jpg"/></td>
+				<td><p>Trained as a medical doctor but an engineer at heart and self-taught full-stack developer, Koray has done his PhD in health informatics on openEHR and is a Foundational Fellow of the Australasian Institute of Digital Health (FAIDH). With almost 30 years of experience in digital health as a developer, academic researcher and entrepreneur, he has a strong background in EHR &amp; health information architectures, interoperability with hands on implementation experience on key standards such as HL7 v2, FHIR and SNOMED-CT. Koray&#39;s mission is to fix healthcare by enabling patient-centred, personalised, and value-based appropriate care through interoperability and digital health solutions.</p>
+
+<p>Koray has been contributing to standards development and governance at a global scale, religiously to openEHR as a domain expert and former member of the first openEHR Foundation Management Board. Koray is also a founding member of HL7 Turkey and has been on HL7 New Zealand Board since 2011. He is also a member of the ISO TC/251 Taskforce on Telehealth and Virtual Care.</p>
+
+<p>Koray currently serves as Chief Health Informatics Officer (CHIO) and Head of Research at <strong><a href="https://theclinician.com/" target="_blank">The Clinician</a></strong>, a New Zealand headquartered digital health company he co-founded that offers the ZEDOC Platform and services for patient engagement and managing Patient Generated Health Data (PROMs/PREMs and objective biometric data) to drive value-based care.</p>
+
+<p>He recently founded <strong><a href="https://www.galata-digital.biz/" target="_blank">GALATA-Digital LLC-FZ</a> </strong>as his own consultancy business in Dubai and looking to engage with exciting and innovative projects offering services with a focus on openEHR, FHIR and digital twins underpinned by EHR, AI, Genomics and Computational Physiology - all brought together by effective use of industry standards.</p></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					- 
+					<a href="http://openehrnz.wordpress.com/author/atalagk/" target="_blank">Blog</a> -
+					
+					<a href="https://www.linkedin.com/in/koray-atalag" target="_blank">Linkedin</a> -
+					
+					<a href="http://twitter.com/atalagk" target="_blank">Twitter</a> -
+					
+				</td>
+			</tr>
+			</tbody>
+			</table>
+		
+			<h3>Prof Xudong Lu, PhD </h3>
+			<table class="TableInvisible">
+			<tbody>
+			<tr><td colspan="2">Individual and Professional member representative (Jul 2018 - 2019)</td></tr>
+			<tr>
+				<td><img src ="/media/images/xudong_kDLokcC.jpg"/></td>
+				<td><p>A previous member of the <a href="https://www.openehr.org/governance/cic_board" target="_blank">openEHR Board</a>, Xudong is professor of medical informatics in Zhejiang University of China. His research focuses are EHR, CDSS and big data analytics. He has been working in the area of healthcare informatics for over 20 years and led several major Chinese national projects including &ldquo;High-end EMR Technologies and System Development&rdquo;. He is also a visiting guest professor at the Technical University of Eindhoven, where he co-supervised several PhD students on clinical pathway analytics and clinical decision support. Currently he serves as General Secretary of the Chinese Medical Software Association which has large influence on health IT domain in China.</p></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					
+				</td>
+			</tr>
+			</tbody>
+			</table>
+		
+			<h3>Rong Chen MD, PhD </h3>
+			<table class="TableInvisible">
+			<tbody>
+			<tr><td colspan="2">Member (Feb 2015 - Jul 2018)</td></tr>
+			<tr>
+				<td><img src ="/media/images/RChen_kHWcdnF.png"/></td>
+				<td><p>Rong Chen, MD PhD, is the Chief Medical Informatics Officer and the head of Medical Informatics Group at&nbsp;<a href="https://www.openehr.org/community/industry_partners_detail/cambio-healthcare-systems">Cambio Healthcare Systems</a>, Sweden, where he is responsible for the research and development in clinical decision support and knowledge management.</p>
+
+<p>Rong holds a PhD degree in health informatics on the subject of EHR semantic interoperability from Link&ouml;ping University, Sweden. He is an associated researcher at the Health Informatics Centre at Karolinska Institutet, where he lectures and supervises PhD and master students.</p>
+
+<p>Rong has contributed to several core openEHR design specifications, and has for many years led the&nbsp;<a href="https://openehr.atlassian.net/wiki/display/projects/Java+Project+Download">Java Reference Implementation of openEHR</a>. Rong is the lead author of&nbsp;<a href="https://github.com/openEHR/specifications/blob/master/proposals/GDL/GuideDefinitionLanguage_v0.9.pdf?raw=true">Guideline Definition Language (GDL)</a>, which is designed to express clinical logic for scalable decision support with openEHR underpinning.</p>
+
+<p>Since May 2023 he is also a&nbsp;co-chair on the <a href="https://www.openehr.org/programs/specification/editorialcommittee">Specifications Editorial Committee (SEC)</a>.</p></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					- 
+					<a href="https://www.linkedin.com/in/rong-chen" target="_blank">Linkedin</a> -
+					
+					<a href="http://twitter.com/chenron" target="_blank">Twitter</a> -
+					
+				</td>
+			</tr>
+			</tbody>
+			</table>
+		
+			<h3>Sam Heard MD, FRACGP, MRCGP, FACHI </h3>
+			<table class="TableInvisible">
+			<tbody>
+			<tr><td colspan="2">Foundation representative (Mar 2015 - Sep 2019)</td></tr>
+			<tr>
+				<td><img src ="/media/images/SHeard_2t8OERE.png"/></td>
+				<td><p>Sam Heard is a practicing clinician who has worked throughout his career in inner London (UK) and the Northern Territory (Australia) to assist the standardisation of health information to empower clinicians and their patients to improve health care and outcomes.</p>
+
+<p>This work began with the Good European Health Record in the early 90s, continued through a long collaboration with Thomas Beale and CHIME at UCL, the establishment of Ocean Informatics as a commercial vehicle to assist in the vision and culminating in setting up the openEHR Foundation in London in 2002.</p>
+
+<p>Sam was appointed as Chair of the openEHR Foundation Board in June 2023, where he has served&nbsp;as a Director for many years. He was CEO until 2012 and now a current board Chair of Ocean Health Systems. Sam was a foundation co-Chair of the HL7 EHR Technical Committee and has worked extensively with the UK and Australian national programs to utilise and refine the openEHR method.</p></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					- 
+					<a href="http://drsamheard.com/" target="_blank">Blog</a> -
+					
+					<a href="https://www.linkedin.com/in/sam-heard-4b149a1/" target="_blank">Linkedin</a> -
+					
+					<a href="http://twitter.com/samheardoi" target="_blank">Twitter</a> -
+					
+				</td>
+			</tr>
+			</tbody>
+			</table>
+		
+			<h3>Silje Ljosland Bakke, RN (Co-chair)</h3>
+			<table class="TableInvisible">
+			<tbody>
+			<tr><td colspan="2">Member (Aug 2016 - Sep 2019)</td></tr>
+			<tr>
+				<td><img src ="/media/images/silje_1.jpg"/></td>
+				<td><p>Silje is a registrered nurse and informatician, and has worked in health IT in the Norwegian hospital sector since 2009.</p>
+
+<p>She&rsquo;s been a leading figure in Norway&#39;s openEHR modelling, governance and training effort since 2013, and was co-lead for the openEHR Clinical Modelling Program from 2014-2021 and openEHR International board member from 2015-2021.</p></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					- 
+					<a href="https://www.linkedin.com/in/siljeljoslandbakke" target="_blank">Linkedin</a> -
+					
+				</td>
+			</tr>
+			</tbody>
+			</table>
+		
+			<h3>Thomas Beale </h3>
+			<table class="TableInvisible">
+			<tbody>
+			<tr><td colspan="2">Co-opted expert (Mar 2015 - Sep 2019)</td></tr>
+			<tr>
+				<td><img src ="/media/images/tb_campos2_1.jpg"/></td>
+				<td><p>Thomas is one of the founders of openEHR International and is the chief technical architect and editor of the <a href="https://specifications.openehr.org/">openEHR specifications</a>, and was the co-chair on the <a href="https://www.openehr.org/programs/specification/editorialcommittee">Specifications Editorial Committee (SEC)</a>&nbsp;up to 2023. He is also a&nbsp;<a href="https://www.openehr.org/governance/cic_board">openEHR CIC Board member</a>.</p>
+
+<p>He has participated in international standards work (OMG HDTF, HL7, CEN TC/251) for many years. He designed the archetype formalism (<a href="https://specifications.openehr.org/releases/AM/latest/ADL2.html">ADL</a>), object model (<a href="https://specifications.openehr.org/releases/AM/latest/AOM2.html" style="outline-width: 0px !important; user-select: auto !important;">AOM</a>) (an&nbsp;<a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=50119">ISO standard</a>), the Basic Meta-Model (<a href="https://specifications.openehr.org/releases/LANG/latest/bmm.html">BMM</a>), and much of the <a href="https://specifications.openehr.org/releases/PROC/latest">Task Planning and Decision Language specifications</a>.</p>
+
+<p>He has consulted for Intermountain Healthcare, the US Department of Veterans Affairs (VA), and various ministries, departments of health and other public agencies in places including Australia, UK, Brazil, Jamaica, Denmark, Sweden, and Catalonia.</p>
+
+<p>Thomas&#39;s academic background is in Electrical Engineering (communications) and Computer Science. His earlier professional work was in real-time distributed control (SCADA) systems for power, gas and mining; investment management and finance, and document and software configuration management systems.</p>
+
+<p>He has published a number of&nbsp;<a href="http://wolandscat.net/publications/">papers in health informatics</a>&nbsp;and has presented widely on the patient-centric EHR, the model-based platform eco-system, and e-Health strategy.</p>
+
+<p>Thomas is VP Informatics at <a href="https://www.graphitehealth.io/">GraphiteHealth</a>.</p></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					- 
+					<a href="http://wolandscat.net/" target="_blank">Blog</a> -
+					
+					<a href="https://www.linkedin.com/in/thomasbeale" target="_blank">Linkedin</a> -
+					
+					<a href="http://twitter.com/wolands_cat" target="_blank">Twitter</a> -
+					
+				</td>
+			</tr>
+			</tbody>
+			</table>
+		
+	
+
+	<br/><br/>
+
+	<h2 id="contact">Contact</h2>
+	<p><a href="mailto:comms@openehr.org">Contact Management Board</a></p>
+
+
+			<br class="clear">
+			</div>
+			<br class="clear">
+		</div>
+		<br class="clear">
+	</div>
+	<footer class="block footer">
+  <div class="container grid grid--4 footer__sections">
+    <section class="footer__section">
+      <h2 class="footer__heading">Sites</h2>
+      <div>
+        <ul class="list">
+          <li><a href="https://discourse.openehr.org/" target="_blank">Forums</a></li>
+          <li>
+            <a href="https://openehr.atlassian.net/wiki/spaces/resources/pages/4554774/FAQs+-+Frequently+Asked+Questions" target="_blank">
+              Wiki
+            </a>
+          </li>
+          <li>
+            <a href="https://openehr.atlassian.net/secure/BrowseProjects.jspa?selectedCategory=all&amp;selectedProjectType=all" target="_blank">
+              Jira
+            </a>
+          </li>
+          <li><a href="https://github.com/openEHR" target="_blank">GitHub</a></li>
+          <li><a href="https://specifications.openehr.org/" target="_blank">Specifications</a></li>
+          <li><a href="https://ckm.openehr.org/ckm/" target="_blank">CKM</a></li>
+          <li><a href="/accounts/">Accounts</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Using the Site</h2>
+      <div>
+        <ul class="list">
+          <li><a href="/using_the_site/terms_of_use">Terms of Use</a></li>
+          <li><a href="/using_the_site/privacy_policy">Privacy Policy</a></li>
+          <li>
+            <a href="/using_the_site/publishing_content">Publishing Content</a>
+          </li>
+          <li><a href="/using_the_site/localisation">Localisation</a></li>
+          <li><a href="/using_the_site/feedback">Feedback</a></li>
+          <li><a href="mailto:webmaster@openehr.org">Contact Webmaster</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Acknowledgements</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.atlassian.com/" target="_blank">Atlassian</a>
+            (Jira, Confluence)
+          </li>
+          <li>
+            <a href="http://asciidoctor.org/" target="_blank">AsciiDoctor</a>
+            (publishing)
+          </li>
+          <li><a href="https://github.com/" target="_blank">GitHub</a> (DVCS)</li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="_blank">LAMP</a>
+            (dev community)
+          </li>
+          <li>
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            (images)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Social media</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.youtube.com/openEHR" target="_blank" class="fa fa-youtube" title="YouTube"></a>
+            <a href="https://www.youtube.com/openEHR" target="_blank">YouTube</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/#!/openehr" target="_blank" class="fa fa-twitter" title="Twitter"></a> 
+            <a href="http://twitter.com/#!/openehr" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/openehr/"
+              target="_blank"
+              class="fa fa-facebook"
+              title="Facebook"
+            ></a>
+            <a href="https://www.facebook.com/groups/openehr/" target="_blank">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer__copyright">
+      <img src="/static/img/logo_inverse.svg" alt="" class="brand-logo" />
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        openEHR International. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+	<script src="/static/js/header_boxes.js"></script>
+	<script>$('.select_field_class').select2( { placeholder: "Select here", maximumSelectionSize: 100  } );</script>
+
+</body>
+</html>

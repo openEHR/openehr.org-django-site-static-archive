@@ -1,0 +1,803 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<title>Community News</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems">
+	<meta name="keywords" content="archetypes, openEHR, EHR, electronic health record, electronic medical record, ADL, reference model, clinical models, healthcare, health informatics, medical informatics, EHR standards, ISO 18308, CEN 13606, health care software, open source software, knowledge modelling, patient-centric">
+	<meta name="author" content="Sam Heard, Thomas Beale">
+	<meta name="designer" content="Adriana Csefalvay">
+	<meta name="rating" content="General">
+	<meta name="robots" content="All">
+	<meta name="revisit-after" content="15 days">
+
+	<meta name="msvalidate.01" content="8FFF7BE532A432C2B590526A24F0CBF9" />
+	<meta name="yandex-verification" content="da5f926c2ac75b3c" />
+
+	<meta property="og:title" content="openEHR-Home">
+    <meta property="og:description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems.">
+    <meta property="og:type" content="website">
+
+	<link rel="stylesheet" href="/static/css/normalize.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/basic.css"  type="text/css">
+	
+	<link rel="stylesheet" href="/static/css/pages.css"  type="text/css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+	
+	<link rel="icon" sizes="any" href="/static/img/favicon/favicon.ico">
+	<link rel="icon" type="image/svg+xml" href="/static/img/favicon/icon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="/static/img/favicon/site.webmanifest">
+	
+	<link rel="home" href="/">
+	
+	<script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="/static/js/bootstrap.bundle.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+</head>
+<body>
+	
+	<header>
+  <div class="container hidden" id="affiliate">
+    <div class="affiliates flex">
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-netherlands/12" target="_blank"
+          >openEHR NL</a
+        >
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-germany/16" target="_blank">openEHR DE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-japan/18" target="_blank">openEHR JP</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openher-china/19" target="_blank">openEHR CN</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-sweden/28" target="_blank">openEHR SE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-brazil/17" target="_blank">openEHR BR</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-spain/21" target="_blank">openEHR ES</a>
+      </div>
+    </div>
+  </div>
+  <div class="container hidden grid grid--2" id="search">
+    <div></div>
+    <div class="search-box">
+      <script>
+        (function () {
+          var cx = "013258992131926468583:q3vo4hyneyu";
+          var gcse = document.createElement("script");
+          gcse.type = "text/javascript";
+          gcse.async = true;
+          gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#top-menu"
+          aria-controls="top-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-menu">
+          <ul class="navbar-nav me-auto">
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">About</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">About</span></li>
+                    <li>
+                      <a href="/about/what_is_openehr">What is openEHR?</a>
+                    </li>
+                    <li>
+                      <a href="/about/vision_and_mission">Vision and Mission</a>
+                    </li>
+                    <li>
+                      <a href="/about/developer_ecosystem">Developer Ecosystem</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/origins">Origins of openEHR</a></li>
+                    <li>
+                      <a href="/about/history_2002_2018">History 2002 - 2018</a>
+                    </li>
+                    <br/>
+                    <li><a href="/about/logos">Logos</a></li>
+                    <li><a href="/about/contacts">Contacts</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Governance</span></li>
+                    <li>
+                      <a href="/governance/organisational_structure">Organisational Structure</a>
+                    </li>
+                    <li><a href="/governance/cic_board">CIC Board</a></li>
+                    <li>
+                      <a href="/governance/foundation_board">Foundation Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/governance/intellectual_property">Intellectual Property</a>
+                    </li>
+                    <li>
+                      <a href="/governance/code_of_conduct">Code of Conduct</a>
+                    </li>
+                    <li><a href="/governance/reports">Reports</a></li>
+                    <br/>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Community</span></li>
+                    <li>
+                      <a href="/community/industry_partners/">Industry Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/organisation_partners/">Organisation Partners</a>
+                    </li>
+                    <li>
+                      <a href="/community/professional_members/">Professional Members</a>
+                    </li>
+                    <li>
+                      <a href="https://www.openehr.org/ckm/#userstatistics" target="_blank">Clinical Modellers (CKM)</a>
+                    </li>
+                    <li><a href="/community/ambassadors">Ambassadors</a></li>
+                    <li><a href="/community/affiliates/">Affiliates</a></li>
+                    <br/>
+                    <li><a href="/community/membership/">Membership</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Programs</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/specification/" class="column-title">Specification Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/board_members">Program Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="/programs/specification/changeprocess">Change Process</a>
+                    </li>
+                    <li>
+                      <a href="/programs/specification/releasestrategy">Release Strategy</a>
+                    </li>
+                    <li>
+                      <a href="https://specifications.openehr.org" target="_blank">Specifications Site</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/spec/Specifications+Home" target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://openehrspecs.slack.com/" target="_blank">Slack</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/clinical/" class="column-title">Clinical Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="http://openehr.org/ckm/" target="_blank">openEHR CKM</a>
+                    </li>
+                    <li>
+                      <a href="/programs/clinical/nationalckms">National CKMs</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a
+                        href="https://openehr.atlassian.net/wiki/display/healthmod/Clinical+Content+Models"
+                        target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li><a href="https://openehrspecs.slack.com/" target="_blank">Slack</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/education/" class="column-title">Education Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/education/recognition">Educator Recognition</a>
+                    </li>
+                    <li>
+                      <a href="/programs/education/educator_training_program">Educator Training Program</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/spaces/edu/overview" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="/programs/software/" class="column-title">Software Program</a>
+                    </li>
+                    <li>
+                      <a href="/programs/software/board_members">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="/programs/software/issuetrackers">Issue Trackers</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/openEHR" target="_blank">openEHR Github</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/dev/Developers+Home" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Products & Tools</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Products & Tools</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/products_tools/modelling_tools/">Modelling Tools</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/knowledge_management/">Knowledge Management</a>
+                    </li>
+                    <li>
+                      <a href="/products_tools/guidelines_and_cds/">Guidelines and CDS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/platform/">Platform</a></li>
+                    <li><a href="/products_tools/applications/">Applications</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/products_tools/libraries/">Libraries</a></li>
+                    <li><a href="/products_tools/sdks/">SDKs</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Deployments</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Deployments</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/provider_deployments/">Provider deployments</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/jurisdictions/">Jurisdictions</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/deployments/research_projects/">Research projects</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Resources</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/publications_zotero">Publications Zotero</a>
+                    </li>
+                    <li>
+                      <a href="/resources/learning_centre">Learning Centre</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/wiki/display/resources/FAQs+-+Frequently+Asked+Questions" title="FAQs" target="_blank">FAQs</a>
+                    </li>
+                    <li><a href="/resources/white_papers">White Papers</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/resources/related_projects">Related Projects</a>
+                      <a href="/digital_media/blogs">Blogs</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="/news_events/" class="dropdown-toggle" data-toggle="dropdown">News & Events</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">
+                  <a href="/news_events/">News & Events</a>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/industry_news/">Industry News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/community_news/">Community News</a>
+                    </li>
+                    <li>
+                      <a href="/news_events/foundation_news/">openEHR News</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="/news_events/events/">Events</a></li>
+                    <li><a href="/news_events/releases/">Releases</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="/news_events/clinical_news/">CKM Activity</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          
+          <button class="btn--quick-link">
+            <a href="https://specifications.openehr.org/" target="_blank" title="Specifications"><i class="fa fa-file-text"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://ckm.openehr.org/ckm/" target="_blank" title="CKM"><i class="fa fa-database"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://news.openehr.org/" target="_blank" title="News"><i class="fa fa-newspaper-o"></i></a>
+          </button>
+          <button class="btn--affiliate" title="Affiliates">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </button>
+          <button class="btn--search">
+            <svg width="18" height="18" viewBox="0 0 15 15">
+              <path
+                d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="nav-second__container">
+      <div class="brand-logo">
+        <a href="/"><img src="/static/img/logo.svg" alt="" /></a>
+      </div>
+      <div class="nav-second">
+        <div class="nav-second__item"><a href="/about_us">About us</a></div>
+        <div class="nav-second__item"><a href="/clinicians">Clinicians</a></div>
+        <div class="nav-second__item"><a href="/providers">Providers</a></div>
+        <div class="nav-second__item"><a href="/research">Research</a></div>
+        <div class="nav-second__item"><a href="/developers">Developers</a></div>
+        <div class="nav-second__item">
+          <a class="btn btn-secondary" href="/news_events/">Newsfeed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+	<div class='content'>
+		<div class="container">
+		
+		<div id="SideMenu">
+	﻿<span><a href="/news_events/" >News & Events</a></span>
+	<ul>
+		<br/>
+		<li><a href="/news_events/industry_news/" >Industry News</a></li>
+		<li><a href="/news_events/community_news/"  class="active">Community News</a></li>
+		<li><a href="/news_events/foundation_news/" >openEHR News</a></li>
+		<br/>
+		<li><a href="/news_events/events/" >Events</a></li>
+		<li><a href="/news_events/releases/" >Releases</a></li>
+		<br/>
+		<li><a href="/news_events/clinical_news/" >CKM Activity</a></li>
+	</ul>
+</div>
+
+			<div id="Content">
+			
+
+<h2>Swedish Invitation to openEHR platform pre-procurement demo respond by 2nd Feb</h2>
+<h6>Community News | Jan. 27, 2020, 12:49 p.m.</h6>
+<br/>
+<p><strong>Invitation to pre-procurement demo</strong><br />
+Region &Ouml;sterg&ouml;tland (R&Ouml;) hereby invites suppliers of openEHR platforms and openEHR tools to<br />
+conduct an online pre-procurement presentation and demo.</p>
+
+<p><strong>Background</strong><br />
+R&Ouml; is a Swedish healthcare region that serves approximately 500 000 inhabitants. In addition,<br />
+R&Ouml; provides other nationwide healthcare related services.<br />
+R&Ouml; has now initiated a procurement process for an openEHR platform and openEHR tools. R&Ouml; is<br />
+interested in two different main areas of use and associated tools for development and maintenance:<br />
+ Normal hospital EHR use cases<br />
+ Use cases such as patient registries, biobank information, and patient owned data</p>
+
+<p>In 2018 R&Ouml; conducted an openEHR RFI and in 2019 R&Ouml; tested an openEHR platform to see how it<br />
+fits use cases, organization and workflows. For more background see:<br />
+ https://discourse.openehr.org/t/swedish-openehr-platform-procurement-q1-2020/247<br />
+ https://openehr.atlassian.net/wiki/spaces/resources/pages/416514052/Procurement+of+openEHR-related+systems+and+services (including documents linked or available as downloads)</p>
+
+<p>R&Ouml; now wants to procure a permanent full-scale openEHR solution and therefore invites<br />
+suppliers of openEHR platforms and openEHR tools to conduct an online pre-procurement<br />
+presentation and demo. Other Swedish regions have shown interest in R&Ouml;&#39;s procurement process,<br />
+R&Ouml; thus intends to keep the process as transparent as possible.</p>
+
+<p><strong>Purpose of the presentation and demo session</strong><br />
+The purpose with the pre-procurement demo is to give R&Ouml;&#39;s procurement team insight into<br />
+interesting features that could be included as evaluation criteria in the upcoming formal<br />
+procurement call. There is no obligation to participate in these pre-procurement sessions in<br />
+order to respond to the upcoming actual procurement call and participation will not affect your<br />
+later evaluation score. In other words, a fail during this demo is no catastrophe.</p>
+
+<p><strong>Questions to answer before the demo</strong><br />
+Provide brief written responses to these questions when applying for a presentation/demo time,<br />
+and feel free to elaborate more during the presentation. If there is competition for available<br />
+presentation/demo slots, these written responses will be used as prioritization criteria. Responses to<br />
+question 4 to 11 will also be openly published after all presentations are done.<br />
+1. What is the name, e-mail address and telephone number of your contact person for the<br />
+presentation/demo?<br />
+2. Is &quot;Skype for Business&quot; OK to use for you, or do you need some other teleconference system,<br />
+such as Skype or Zoom?<br />
+3. Have you understood that the first hour with presentation/demo will be recorded and openly<br />
+published on the internet? (See information below)<br />
+4. What is the name and address of your company?<br />
+5. What is the name and intended purpose of the products/tools/platforms you want to present?<br />
+6. Will you present/demo a product that can be used as an EHR/CDR platform?<br />
+If yes, briefly answer the following.<br />
+i. Does the platform:<br />
+a. support responding to ad-hoc and stored AQL-queries?<br />
+b. provide archetype/template-based validation of input data?<br />
+c. support most of openEHR&#39;s standardized REST APIs?<br />
+d. support openEHR &quot;Task planning&quot;?<br />
+e. support openEHR based decision support like GDL or GDL2? If so, describe?<br />
+f. support anything like openEHR &quot;Simplified Data Template (SDT)&quot;? If so, describe.<br />
+ii Do you or your business partners:<br />
+a. provide 24/7 support for critical issues in production EHR systems if contracted to do<br />
+so?<br />
+b. provide different service levels (likely at different price points) to choose from?<br />
+c. have experience of deploying the these products/platforms to customers providing<br />
+healthcare to more than 500 000 inhabitants? If so how big are the largest<br />
+deployments?<br />
+iii. Do you provide any prebuilt products or EHR-modules based on the platform, for instance end user applications for surgery, emergency wards, medications<br />
+7. Will you present/demonstrate tools that can support software developers, informaticians and<br />
+clinical &quot;super-users&quot; in developing and configuring openEHR-based applications? If yes, please<br />
+briefly describe if they support &hellip;<br />
+a. creation of openEHR template based entry forms<br />
+b. openEHR &quot;Task planning&quot;<br />
+c. openEHR based decision support like GDL or GDL2<br />
+d. easy retrieval and storage of assets (archetypes, templates, forms etc.) in some<br />
+commonly used openly specified version control system (e.g. GIT-based ones) or asset<br />
+management systems<br />
+e. multilingual openEHR models and tool-interfaces that can be easily localized to Swedish<br />
+8. Can applications based on output from tools you intend to present be published as open source,<br />
+without restrictions on usage? This implies e.g. that generated code, forms, configuration<br />
+information etc. and exported (possibly in compiled form) runtime components (like form<br />
+renderers) should be perpetually allowed to be included in open source based systems and in<br />
+associated, possibly public, versioning systems (like GitHub).<br />
+9. Are your products (or some of them) open source?<br />
+If yes, answer the following.<br />
+a. Describe what open source licence you use.<br />
+b. Can you or your business partners be contracted for varying support and bug-fixing<br />
+service levels?<br />
+c. Can you or your business partners be contracted in order to preform feature extensions<br />
+to the platform/product that customers want to prioritize?<br />
+10. Describe regulatory issues:<br />
+a. Are any of the products, tools or modules you will provide certified (CE labelled)<br />
+according to EU Medical Device Directive 93/42/EEC or the EU Medical Devices<br />
+Regulation (MDR)? If yes, please state which product or module that fulfil which<br />
+regulation.<br />
+b. Do you have experience of the process to CE label a software as a medical device?<br />
+11. Optional: If you want to, please supply existing material or links to more information that you<br />
+believe may help us understand your products and that can give us hints about useful product<br />
+features. This can for example be marketing material like product brochures, presentation files,<br />
+user manuals or demo-films. Also, tell us if you have online demo environments that we can<br />
+explore. (If demo login information is needed, please remember to supply that too. We will not<br />
+publish the login information.) Please note that there is no guarantee that we will read or<br />
+evaluate all such optional material given in this pre-procurement phase.&hellip;<br />
+Additional information that will be distributed before the session<br />
+At least one week before your session time the following will be provided in order for you to prepare<br />
+for the demo:<br />
+ An openEHR operational template, at least in &quot;.OPT&quot; format, possibly more formats.<br />
+ Medical data samples for 3-4 test patients (in Excel)<br />
+ An AQL query<br />
+ Further demo instructions<br />
+Back-end systems that do not support front-end development may use this data to prepare for<br />
+database import ahead of the demo.</p>
+
+<p><strong>Presentation and demo session format and content</strong><br />
+Each demo is a 2-hour online session via e.g. Skype for Business, on the following format:<br />
+ Up to 1 hour demo by the supplier, including<br />
+o Addressing the issues listed below<br />
+o If your system supports it, show how to build a form, how to use the form to enter<br />
+patient data, and how to use AQL queries to fetch data (further instructions about<br />
+this will be sent out a week before the demo)<br />
+ 15 minutes break<br />
+ Up to 45 minutes discussion with questions and answers<br />
+The sessions will be recorded. The recording of the first hour of each presentation and demo will be<br />
+made public on the internet when all suppliers have held their sessions. The purpose is to help other<br />
+organisations interested in openEHR systems. The recording of the 45 minutes discussions will not<br />
+be made public; they will only be available to R&Ouml; and other Swedish healthcare providers possibly<br />
+joining this procurement process and agreeing to confidentiality.<br />
+During the first hour of the presentation and demo session, please cover the following issues;<br />
+describe them or demonstrate such capabilities.<br />
+1. Infrastructure:<br />
+o Supported OS<br />
+o Support for cluster configurations and redundancy<br />
+o Supported database systems/products (DBMS)<br />
+o Limitations on using virtualization (hardware/IaaS)<br />
+o Recommended hardware requirements and suitable setup for a system serving primary<br />
+and specialized care for approximately 500 000 inhabitants<br />
+2. Security:<br />
+o Support for role based authorization. Describe (default/typical) roles<br />
+o Support for authentication tickets issued by an Identity Provider (e,g. SAML, OAuth2)<br />
+o Support for logging - access and change<br />
+o Support for authorization of APIs, including options for authorization of APIs (Basic auth,<br />
+API-key, OAuth2 AccessToken etc.)<br />
+3. Training. Availability of course or on-line training for:<br />
+o Administrators<br />
+o Technicians<br />
+o Tool users<br />
+o Software developers<br />
+o EHR end users (if you provide modules/products for end users)<br />
+4. Product documentation, such as:<br />
+o User manuals<br />
+o Installation guides<br />
+o System administration guides<br />
+5. Management, such as possibility to:<br />
+o Export system configuration between different instances of the installation and how it is<br />
+done<br />
+o Run multiple instances of the installation on the same network without conflicts, and<br />
+how it is done<br />
+o Run different versions of the same system simultaneously within the same instance<br />
+o Do soft launches of new versions of software<br />
+6. Integrations and developer support, such as:<br />
+o Describe support openEHR &quot;Simplified Data Template (SDT)&quot; or similar.<br />
+o Does the product support most of openEHR&#39;s standardized REST APIs? (Which ones?<br />
+Using XML, JSON or both?)<br />
+o Does the product provide client libraries for development of software based on the<br />
+platform, and if so, in what program languages<br />
+o Does the software product have interfaces or tooling to support import and export of<br />
+HL7v2 and HL7 FHIR messages<br />
+o Describe if the software product provides programmatic interfaces (APIs) for<br />
+administrative tasks like user administration or patient administration<br />
+During the second part of the session (the 45 minutes that will not be published), please cover at<br />
+least the following subjects if you did not cover them during the first hour.<br />
+7. Your currently available licensing and business models, such as:<br />
+o If the number of registered or simultaneous users or patients is limited. If so, what the<br />
+limit and model usually is.<br />
+o Possible differences in license models for research and statistics versus normal clinical<br />
+healthcare EHR usage.<br />
+o If you, or business partners you work through, already have or plan to have services or<br />
+products that are covered by Swedish existing agreements that public Swedish<br />
+healthcare providers (like R&Ouml;) can use. See for example https://www.avropa.se/ and<br />
+https://www.sklkommentus.se/, which include things like &ldquo;IT consulting services&rdquo; and<br />
+&ldquo;software and services&rdquo; .<br />
+o If you provide any prebuilt products or EHR-modules based on the platform, for instance<br />
+end user applications for surgery, emergency wards, medications, primary care, and also<br />
+state whether there are usually extra costs for some of these or if they usually are<br />
+included in the standard offer.<br />
+<br />
+<strong>Responding to this invitation</strong><br />
+To apply for a presentation and demo time, send an e-mail to Brita Petersson at<br />
+brita.petersson@regionostergotland.se at the latest February 2nd 2020.<br />
+Include the following:<br />
+ At least 2 time slots that suit you - one preferred and one alternative. Available time slots are<br />
+listed below.<br />
+ Answers to &quot;Questions to answer before the demo&quot; (see above)<br />
+The following time slots are available, all in CET (Stockholm time zone):<br />
+ February 10th, 8:30-10:30 am<br />
+ February 10th, 4:00-6:00 pm<br />
+ February 14th, 8:30-10:30 am<br />
+ February 14th, 2:00-4:00 pm<br />
+ February 17th, 1:00-3:00 pm<br />
+ February 17th, 3:30-5:30 pm<br />
+ February 19th, 8:30-10:30 am<br />
+ February 19th, 2:30-4:30 pm<br />
+<strong>If you have any questions, please contact Brita Petersson at brita.petersson@regionostergotland.se</strong></p>
+
+
+
+
+
+<br/><br/><br/><br/><br/>
+<a href="/news_events/community_news">>> Back to Community News</a>
+
+
+			<br class="clear">
+			</div>
+			<br class="clear">
+		</div>
+		<br class="clear">
+	</div>
+	<footer class="block footer">
+  <div class="container grid grid--4 footer__sections">
+    <section class="footer__section">
+      <h2 class="footer__heading">Sites</h2>
+      <div>
+        <ul class="list">
+          <li><a href="https://discourse.openehr.org/" target="_blank">Forums</a></li>
+          <li>
+            <a href="https://openehr.atlassian.net/wiki/spaces/resources/pages/4554774/FAQs+-+Frequently+Asked+Questions" target="_blank">
+              Wiki
+            </a>
+          </li>
+          <li>
+            <a href="https://openehr.atlassian.net/secure/BrowseProjects.jspa?selectedCategory=all&amp;selectedProjectType=all" target="_blank">
+              Jira
+            </a>
+          </li>
+          <li><a href="https://github.com/openEHR" target="_blank">GitHub</a></li>
+          <li><a href="https://specifications.openehr.org/" target="_blank">Specifications</a></li>
+          <li><a href="https://ckm.openehr.org/ckm/" target="_blank">CKM</a></li>
+          <li><a href="/accounts/">Accounts</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Using the Site</h2>
+      <div>
+        <ul class="list">
+          <li><a href="/using_the_site/terms_of_use">Terms of Use</a></li>
+          <li><a href="/using_the_site/privacy_policy">Privacy Policy</a></li>
+          <li>
+            <a href="/using_the_site/publishing_content">Publishing Content</a>
+          </li>
+          <li><a href="/using_the_site/localisation">Localisation</a></li>
+          <li><a href="/using_the_site/feedback">Feedback</a></li>
+          <li><a href="mailto:webmaster@openehr.org">Contact Webmaster</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Acknowledgements</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.atlassian.com/" target="_blank">Atlassian</a>
+            (Jira, Confluence)
+          </li>
+          <li>
+            <a href="http://asciidoctor.org/" target="_blank">AsciiDoctor</a>
+            (publishing)
+          </li>
+          <li><a href="https://github.com/" target="_blank">GitHub</a> (DVCS)</li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="_blank">LAMP</a>
+            (dev community)
+          </li>
+          <li>
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            (images)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Social media</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.youtube.com/openEHR" target="_blank" class="fa fa-youtube" title="YouTube"></a>
+            <a href="https://www.youtube.com/openEHR" target="_blank">YouTube</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/#!/openehr" target="_blank" class="fa fa-twitter" title="Twitter"></a> 
+            <a href="http://twitter.com/#!/openehr" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/openehr/"
+              target="_blank"
+              class="fa fa-facebook"
+              title="Facebook"
+            ></a>
+            <a href="https://www.facebook.com/groups/openehr/" target="_blank">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer__copyright">
+      <img src="/static/img/logo_inverse.svg" alt="" class="brand-logo" />
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        openEHR International. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+	<script src="/static/js/header_boxes.js"></script>
+	<script>$('.select_field_class').select2( { placeholder: "Select here", maximumSelectionSize: 100  } );</script>
+
+</body>
+</html>

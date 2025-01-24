@@ -1,0 +1,878 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<title>openEHR News</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems">
+	<meta name="keywords" content="archetypes, openEHR, EHR, electronic health record, electronic medical record, ADL, reference model, clinical models, healthcare, health informatics, medical informatics, EHR standards, ISO 18308, CEN 13606, health care software, open source software, knowledge modelling, patient-centric">
+	<meta name="author" content="Sam Heard, Thomas Beale">
+	<meta name="designer" content="Adriana Csefalvay">
+	<meta name="rating" content="General">
+	<meta name="robots" content="All">
+	<meta name="revisit-after" content="15 days">
+
+	<meta name="msvalidate.01" content="8FFF7BE532A432C2B590526A24F0CBF9" />
+	<meta name="yandex-verification" content="da5f926c2ac75b3c" />
+
+	<meta property="og:title" content="openEHR-Home">
+    <meta property="og:description" content="openEHR provides open source specifications and reference implementations of future proof EHR systems.">
+    <meta property="og:type" content="website">
+
+	<link rel="stylesheet" href="../../static/css/normalize.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../static/css/basic.css"  type="text/css">
+	
+	<link rel="stylesheet" href="../../static/css/pages.css"  type="text/css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+	
+	<link rel="icon" sizes="any" href="../../static/img/favicon/favicon.ico">
+	<link rel="icon" type="image/svg+xml" href="../../static/img/favicon/icon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../static/img/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="../../static/img/favicon/site.webmanifest.html">
+	
+	<link rel="home" href="../../index.html">
+	
+	<script src="../../static/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="../../static/js/bootstrap.bundle.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+</head>
+<body>
+	
+	<header>
+  <div class="container hidden" id="affiliate">
+    <div class="affiliates flex">
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-netherlands/12" target="_blank"
+          >openEHR NL</a
+        >
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-germany/16" target="_blank">openEHR DE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-japan/18" target="_blank">openEHR JP</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openher-china/19" target="_blank">openEHR CN</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-sweden/28" target="_blank">openEHR SE</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-brazil/17" target="_blank">openEHR BR</a>
+      </div>
+      <div class="affiliates-link">
+        <a href="https://discourse.openehr.org/c/openehr-affiliates/openehr-spain/21" target="_blank">openEHR ES</a>
+      </div>
+    </div>
+  </div>
+  <div class="container hidden grid grid--2" id="search">
+    <div></div>
+    <div class="search-box">
+      <script>
+        (function () {
+          var cx = "013258992131926468583:q3vo4hyneyu";
+          var gcse = document.createElement("script");
+          gcse.type = "text/javascript";
+          gcse.async = true;
+          gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#top-menu"
+          aria-controls="top-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-menu">
+          <ul class="navbar-nav me-auto">
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">About</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">About</span></li>
+                    <li>
+                      <a href="../../about/what_is_openehr.html">What is openEHR?</a>
+                    </li>
+                    <li>
+                      <a href="../../about/vision_and_mission.html">Vision and Mission</a>
+                    </li>
+                    <li>
+                      <a href="../../about/developer_ecosystem.html">Developer Ecosystem</a>
+                    </li>
+                    <br/>
+                    <li><a href="../../about/origins.html">Origins of openEHR</a></li>
+                    <li>
+                      <a href="../../about/history_2002_2018.html">History 2002 - 2018</a>
+                    </li>
+                    <br/>
+                    <li><a href="../../about/logos.html">Logos</a></li>
+                    <li><a href="../../about/contacts.html">Contacts</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Governance</span></li>
+                    <li>
+                      <a href="../../governance/organisational_structure.html">Organisational Structure</a>
+                    </li>
+                    <li><a href="../../governance/cic_board.html">CIC Board</a></li>
+                    <li>
+                      <a href="../../governance/foundation_board.html">Foundation Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="../../governance/intellectual_property.html">Intellectual Property</a>
+                    </li>
+                    <li>
+                      <a href="../../governance/code_of_conduct.html">Code of Conduct</a>
+                    </li>
+                    <li><a href="../../governance/reports.html">Reports</a></li>
+                    <br/>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li class="dropdown-header"><span class="column-title">Community</span></li>
+                    <li>
+                      <a href="../../community/industry_partners/index.html">Industry Partners</a>
+                    </li>
+                    <li>
+                      <a href="../../community/organisation_partners/index.html">Organisation Partners</a>
+                    </li>
+                    <li>
+                      <a href="../../community/professional_members/index.html">Professional Members</a>
+                    </li>
+                    <li>
+                      <a href="https://www.openehr.org/ckm/#userstatistics" target="_blank">Clinical Modellers (CKM)</a>
+                    </li>
+                    <li><a href="../../community/ambassadors.html">Ambassadors</a></li>
+                    <li><a href="../../community/affiliates/index.html">Affiliates</a></li>
+                    <br/>
+                    <li><a href="../../community/membership.html">Membership</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">Programs</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="../../programs/specification/index.html" class="column-title">Specification Program</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/specification/board_members.html">Program Board</a>
+                    </li>
+                    <br/>
+                    <li>
+                      <a href="../../programs/specification/changeprocess.html">Change Process</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/specification/releasestrategy.html">Release Strategy</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/specification/releases/currentbaseline.html" target="_blank">Specifications Site</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/spec/Specifications+Home" target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://openehrspecs.slack.com/" target="_blank">Slack</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="../../programs/clinicalmodels/index.html" class="column-title">Clinical Program</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/clinical/board_members.html">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="../../ckm/index.html" target="_blank">openEHR CKM</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/clinical/nationalckms.html">National CKMs</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a
+                        href="https://openehr.atlassian.net/wiki/display/healthmod/Clinical+Content+Models"
+                        target="_blank"
+                        >Wiki</a
+                      >
+                    </li>
+                    <li><a href="https://openehrspecs.slack.com/" target="_blank">Slack</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="../../programs/education/index.html" class="column-title">Education Program</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/education/board_members.html">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="../../programs/education/recognition.html">Educator Recognition</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/education/educator_training_program.html">Educator Training Program</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/spaces/edu/overview" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a href="../../programs/software/index.html" class="column-title">Software Program</a>
+                    </li>
+                    <li>
+                      <a href="../../programs/software/board_members.html">Program Board</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="../../programs/software/issuetrackers.html">Issue Trackers</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/openEHR" target="_blank">openEHR Github</a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href="https://openehr.atlassian.net/wiki/display/dev/Developers+Home" target="_blank">Wiki</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">Products & Tools</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Products & Tools</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../downloads/modellingtools.html">Modelling Tools</a>
+                    </li>
+                    <li>
+                      <a href="../../products_tools/knowledge_management/index.html">Knowledge Management</a>
+                    </li>
+                    <li>
+                      <a href="../../products_tools/guidelines_and_cds/index.html">Guidelines and CDS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="../../products_tools/platform/index.html">Platform</a></li>
+                    <li><a href="../../products_tools/applications/index.html">Applications</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="../../products_tools/libraries/index.html">Libraries</a></li>
+                    <li><a href="../../products_tools/sdks/index.html">SDKs</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">Deployments</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Deployments</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../who_is_using_openehr/healthcare_providers_and_authorities.html">Provider deployments</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../deployments/jurisdictions/index.html">Jurisdictions</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../deployments/research_projects/index.html">Research projects</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">Resources</li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../resources/publications_zotero.html">Publications Zotero</a>
+                    </li>
+                    <li>
+                      <a href="../../resources/learning_centre.html">Learning Centre</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../wiki/display/resources/FAQs+-+Frequently+Asked+Questions.html" title="FAQs" target="_blank">FAQs</a>
+                    </li>
+                    <li><a href="../../resources/white_papers.html">White Papers</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../../resources/related_projects.html">Related Projects</a>
+                      <a href="../../digital_media/blogs.html">Blogs</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-large">
+              <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">News & Events</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="dropdown-header">
+                  <a href="../index.html">News & Events</a>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../industry_news.html">Industry News</a>
+                    </li>
+                    <li>
+                      <a href="../community_news.html">Community News</a>
+                    </li>
+                    <li>
+                      <a href="index.html">openEHR News</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li><a href="../events.html">Events</a></li>
+                    <li><a href="../releases.html">Releases</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a href="../clinical_news/index.html">CKM Activity</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          
+          <button class="btn--quick-link">
+            <a href="../../programs/specification/releases/currentbaseline.html" target="_blank" title="Specifications"><i class="fa fa-file-text"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="../../ckm/templates/1013.26.272/orgchart.html" target="_blank" title="CKM"><i class="fa fa-database"></i></a>
+          </button>
+          <button class="btn--quick-link">
+            <a href="https://news.openehr.org/" target="_blank" title="News"><i class="fa fa-newspaper-o"></i></a>
+          </button>
+          <button class="btn--affiliate" title="Affiliates">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </button>
+          <button class="btn--search">
+            <svg width="18" height="18" viewBox="0 0 15 15">
+              <path
+                d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="nav-second__container">
+      <div class="brand-logo">
+        <a href="../../index.html"><img src="../../static/img/logo.svg" alt="" /></a>
+      </div>
+      <div class="nav-second">
+        <div class="nav-second__item"><a href="../../about_us.html">About us</a></div>
+        <div class="nav-second__item"><a href="../../clinicians.html">Clinicians</a></div>
+        <div class="nav-second__item"><a href="../../providers.html">Providers</a></div>
+        <div class="nav-second__item"><a href="../../research.html">Research</a></div>
+        <div class="nav-second__item"><a href="../../developers.html">Developers</a></div>
+        <div class="nav-second__item">
+          <a class="btn btn-secondary" href="../index.html">Newsfeed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+	<div class='content'>
+		<div class="container">
+		
+		<div id="SideMenu">
+	﻿<span><a href="../index.html" >News & Events</a></span>
+	<ul>
+		<br/>
+		<li><a href="../industry_news.html" >Industry News</a></li>
+		<li><a href="../community_news.html" >Community News</a></li>
+		<li><a href="index.html"  class="active">openEHR News</a></li>
+		<br/>
+		<li><a href="../events.html" >Events</a></li>
+		<li><a href="../releases.html" >Releases</a></li>
+		<br/>
+		<li><a href="../clinical_news/index.html" >CKM Activity</a></li>
+	</ul>
+</div>
+
+			<div id="Content">
+			
+
+<h2>Management Board Update</h2>
+<h6>openEHR News | Dec. 17, 2015, 11:49 a.m.</h6>
+<br/>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri;"><span style="font-size: 24pt;">openEHR Management Board</span></span></strong></p>
+<p style="margin: 0cm 0cm 0pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: 22pt;"><span style="font-family: Calibri;">News Roundup 2015</span></span></strong></p>
+<p style="margin: 0cm 0cm 8pt; line-height: normal;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: 10pt;"><br /></span><span style="font-family: Calibri;"><span style="font-size: medium;">Elected members:</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span></span></strong><span style="font-family: Calibri; font-size: medium;">Ian McNicoll, Tomaz Gornik, Koray Atalag, Rong Chen</span></p>
+<p style="margin: 0cm 0cm 8pt; line-height: normal;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Board of Governors appointment:</span></strong><span style="font-size: medium;"> Sam Heard</span></span></p>
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Co-opted members:</span></strong><span style="font-size: medium;"> Thomas Beale</span></span></p>
+<table style="margin: auto auto auto -5.75pt; border: currentColor; border-image: none; height: 3038px; border-collapse: collapse; mso-table-layout-alt: fixed; mso-border-alt: solid black .5pt; mso-yfti-tbllook: 1024; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid black; mso-border-insidev: .5pt solid black;" border="1" width="699" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: 11pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+<td style="background: #c9daf8; padding: 0cm 5.4pt; border: 1pt solid black; border-image: none; width: 524.5pt; height: 11pt; mso-border-alt: solid black .5pt;" colspan="4" valign="top" width="699">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="line-height: 107%; font-size: 12pt;"><span style="font-family: Calibri;">Foundation</span></span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">March</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">New Management Board</span></strong><span style="font-size: medium;"> - following individual members and industry partners votes, the candidates elected to the new Management Board were:-</span></span></p>
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><em style="mso-bidi-font-style: normal;"><span style="font-family: Calibri; font-size: medium;">Individual Members:</span></em></strong></p>
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;">Ian McNicoll, UK<br /></span><span style="font-family: Calibri; font-size: medium;">Koray Atalag, NZ</span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><em style="mso-bidi-font-style: normal;"><span style="font-family: Calibri; font-size: medium;">Industry Partners:</span></em></strong></p>
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;">Tomaz Gornik, Marand, Slovenia<br /></span><span style="font-family: Calibri; font-size: medium;">Rong Chen, Cambio, Sweden</span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;">The Management Board set out the direction and make day to day decisions in regard to the activities of the openEHR community and Foundation.</span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 2;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">April</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">openEHR Programs Guidelines</span></strong><span style="font-size: medium;"> &ndash; Koray started work on drafting ideas / guidelines around how the openEHR programs could operate and share some common processes in a bid to support them to get program activities underway and with engagement of the wider community. This document was produced and finalised.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 3;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">April</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Clinical Models Program</span></strong><span style="font-size: medium;"> - Heather Leslie and Silje Ljosland Bakke were appointed as joint leads of the Clinical Models Program</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 4;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">June</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Localisation Program</span></strong><span style="font-size: medium;"> - Shinji Kobayashi and Gustavo Bacelar were appointed as joint leads of the Localisation Program.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 5;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">June / July</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">New Education Program</span></strong><span style="font-size: medium;"> - Pablo Pazos and Evelyn Hovenga agreed to be joint leads of this new group.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp;&nbsp;</span></span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;">The group will look to build a community of practitioners with an academic or commercial interest in providing openEHR training and education, to include formal education.</span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;">It will also look at opportunities to share and make public a set of free introductory training materials and resources plus advise the Foundation on possible approaches to formal accreditation of courses and trainers, including options for funding the accreditation process.</span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 6;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">June / July</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Foundation IP Licensing</span></strong><span style="font-size: medium;"> - Heather Leslie, Sebastian Garde and Ian McNicoll have completed discussions with IHTSDO about licensing implications of using SNOMED CT terms within archetypes, in line with other groups such as CIMI, FHIR and a joint agreement is back with IHTSDO for consideration.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 7;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">September</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Branding</span></strong><span style="font-size: medium;"> &ndash; It had been suggested that it might be worth looking at our current logo and how it might be improved for printing and other media use. This has been looked at and options are being considered.</span></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 8;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">October</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">openEHR released a new </span></strong><a href="../resources/white_paper_docs/openEHR_vendor_independent_platform.pdf.html"><strong style="mso-bidi-font-weight: normal;"><span style="color: #3386ae; text-decoration: none; text-underline: none;"><span style="font-family: Calibri; font-size: medium;">White Paper</span></span></strong></a><span style="font-family: Calibri;"><span style="font-size: medium;"> describing an open, vendor-neutral semantic platform-based future for health computing.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">The White Paper describes how a health computing platform built around openEHR offers the most comprehensive semantic framework available in e-health, combining formal clinical modelling, terminology, and a services infrastructure, lowering the costs to market for new eHealth innovators, involving clinical stakeholders directly in content development, and preventing vendor lock-in.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 9;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">October</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Intellectual Property</span></strong><span style="font-size: medium;"> - The licenses governing the Intellectual Property (IP) of the </span><em style="mso-bidi-font-style: normal;"><span style="font-size: medium;">open</span></em><span style="font-size: medium;">EHR Foundation need to be modernised and reviewed. The IP status of archetypes has also been raised as a potential issue. Ian contacted Silje and Eric to review options and produce a short paper with recommendations about what to do, if anything.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">Ongoing.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 10;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">October / November</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Terms of Reference Document for Ambassador Roles</span></strong><span style="font-size: medium;"> &ndash; drafted and completed by Koray and signed off November.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="height: 11pt; mso-yfti-irow: 11;">
+<td style="background: #c9daf8; border-width: 0px 1pt; border-style: none solid; border-color: #000000 black; padding: 0cm 5.4pt; width: 524.5pt; height: 11pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-right-alt: solid black .5pt;" colspan="4" valign="top" width="699">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="line-height: 107%; font-size: 12pt;"><span style="font-family: Calibri;">Industry Partners</span></span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 12;">
+<td style="padding: 0cm 5.4pt; border: 1pt solid black; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">August</span></strong></p>
+</td>
+<td style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black #000000; padding: 0cm 5.4pt; border-image: none; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">New Industry Partners</span></strong><span style="font-size: medium;"> - We welcomed new Industry Partners to membership:- Infinnity Solutions Ltd, Evgeny Agafonov and BPAC inc, Eric Robertson.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 13;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">Sept /Oct</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">VPHi Collaboration</span></strong><span style="font-size: medium;"> - The Foundation and the&nbsp;</span></span><a href="http://www.vph-institute.org/"><strong style="mso-bidi-font-weight: normal;"><span style="color: blue;"><span style="font-family: Calibri; font-size: medium;">Virtual Physiological Human Institute&nbsp;</span></span></strong></a><span style="font-family: Calibri;"><span style="font-size: medium;"> (VPHi) are looking at ways to collaborate and establish a strategic partnership for positioning openEHR as the underpinning semantic bridge between computational physiology and clinical data.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">This approach has the potential to open up new raft of personalised clinical decision support tools and make in-silico clinical trials possible.</span></span><span style="mso-spacerun: yes;"><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 14;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">October</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">CIMI and External Sharing of Information</span></strong><span style="font-size: medium;"> &ndash; CIMI became part of HL7, and we contacted HL7 to ask how non-HL7 groups that were not members of HL7 were to continue to work with CIMI.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">CIMI members to continue as previously. Balloting rights are to be worked out by HL7.</span></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 15;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">November</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Industry Partners Mailing List</span></strong><span style="font-size: medium;"> &ndash;an Industry Partners mailing list is being considered.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">There is likely to be some overlap with other lists.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">This is still being looked at.</span></span></p>
+</td>
+</tr>
+<tr style="height: 11pt; mso-yfti-irow: 16;">
+<td style="background: #c9daf8; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 524.5pt; height: 11pt; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="4" valign="top" width="699">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="line-height: 107%; font-size: 12pt;"><span style="font-family: Calibri;">Engagement</span></span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 17;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">19 &ndash; 23 August </span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Medinfo Event</span></strong><span style="font-size: medium;"> - openEHR supported the Medinfo 2015 event held in SÄo Paulo, Brazil as a Silver Sponsor. Having a stand at the event was a first for openEHR and very successful, and it is planned to have an increasing presence at events like this in future, including the next </span></span><a href="http://www.hec2016.eu/"><span style="color: blue;"><span style="font-family: Calibri; font-size: medium;">MIE conference in M&uuml;nchen Aug 2016&nbsp;</span></span></a><span style="font-family: Calibri; font-size: medium;">.&nbsp;</span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><span style="font-size: medium;">The openEHR Medinfo2015 wiki page is</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span></span><a href="https://openehr.atlassian.net/wiki/display/resources/MEDINFO+2015+-+Sao+Paulo%2C+Brazil"><span style="color: blue;"><span style="font-family: Calibri; font-size: medium;">HERE</span></span></a><span style="font-family: Calibri; font-size: medium;"> and contains links to the papers, presentations and posters that we have been able to acquire. A report from Prof. David Ingram along with some photos taken at the event can be viewed </span><a href="../pages/news_events/conference_reports/2015-08-19_medinfo_2015.html"><span style="color: blue;"><span style="font-family: Calibri;"><span style="font-size: medium;">HERE.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span></span></span></a></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 18;">
+<td style="padding: 0cm 5.4pt; border: 1pt solid black; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri;"><span style="font-size: medium;">12</span><sup><span style="font-size: small;">th</span></sup><span style="font-size: medium;"> November</span></span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">NHS England Code4Health / Apperta Foundation openEHR Event &ndash; </span></strong><span style="font-size: medium;">We were involved with the first NHS England Code4Health / Apperta Foundation learning event, at which David Ingram made a guest appearance.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="height: 11pt; mso-yfti-irow: 19;">
+<td style="background: #c9daf8; border-width: 0px 1pt; border-style: none solid; border-color: #000000 black; padding: 0cm 5.4pt; width: 524.5pt; height: 11pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-right-alt: solid black .5pt;" colspan="4" valign="top" width="699">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="line-height: 107%; font-size: 12pt;"><span style="font-family: Calibri;">Technical / Clinical</span></span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 20;">
+<td style="padding: 0cm 5.4pt; border: 1pt solid black; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">May</span></strong></p>
+</td>
+<td style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black #000000; padding: 0cm 5.4pt; border-image: none; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Specifications</span></strong><span style="font-size: medium;"> &ndash; A successful Specifications Editorial Committee (SEC) meeting took place in Alkmaar, NL, kindly hosted at the offices of Code24. Meeting report </span></span><a href="../news_events/community_news.php%3Fid=125.html"><span style="color: blue;"><span style="font-family: Calibri; font-size: medium;">here.</span></span></a></p>
+<p style="margin: 0cm 0cm 8pt;">&nbsp;</p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 21;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">May</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">FHIR-openEHR MAPPINGS</span></strong><span style="font-size: medium;"> - Basic dialogue commenced re FHIR-openEHR being mapped together. Koray is experimenting with Grahame Grieve using Condition Resource &lt;&gt; Problem/Diagnosis archetype to see how direct and reference model items align. The idea is then to publish and maintain these on both sites.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">Work on the joint FHIR/openEHR Allergy archetype is almost complete.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 22;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">June / July</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Modelling</span></strong><span style="font-size: medium;"> &ndash; specifications refresh - Some issues arose around representation of missing information on CKM reviews - Koray was involved in discussions at Reference Model level and requirements for some level of generic support (e.g. for safe querying) with exact clinical/modelling requirements needing to be worked out.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 23;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">October</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">ADL 2.0 issues</span></strong><span style="font-size: medium;">- an online meeting is to be arranged with anyone who has an interest / difficulties with this release.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">It is hoped to organise a web event early in 2016.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 24;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">December</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">1.03 Specification Release </span></strong><span style="font-size: medium;">- The Specification Program Group has worked extremely hard on the 1.03 Release which will have been published as this Newsletter goes out.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="height: 11pt; mso-yfti-irow: 25;">
+<td style="background: #c9daf8; border-width: 0px 1pt; border-style: none solid; border-color: #000000 black; padding: 0cm 5.4pt; width: 524.5pt; height: 11pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-right-alt: solid black .5pt;" colspan="4" valign="top" width="699">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="line-height: 107%; font-size: 12pt;"><span style="font-family: Calibri;">Looking Ahead to 2016</span></span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 26;">
+<td style="padding: 0cm 5.4pt; border: 1pt solid black; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">Industry Partners Teleconference</span></strong></p>
+</td>
+<td style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black #000000; padding: 0cm 5.4pt; border-image: none; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;">Teleconference to get Industry Partners communications underway, to get additional people more engaged and understand the values and how to communicate with them. From a procurement side; what people see is a whole lot of separate things claiming that they can work together.</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 27;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">openEHR /NHSE event</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><span style="font-size: medium;">Next year see plans to work with NHS England to establish a set of openEHR training sessions</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">and to setting up a supplier oriented day, to include partners who may be interested in working on an open platform. openEHR will form part of this day and will look to try build an &lsquo;open community&rsquo; with companies that are prepared to work together, providing different skills.</span></span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 28;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">Licences, IP, Trademarks etc</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;">Ian is progressing things like this and it is planned to look at getting something on the website under &lsquo;intellectual property&rsquo;. The Board are looking at moving away from CC-BY-ND to possibly CC-BY-SA for specifications and widening licences for software to include AGPL.</span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 29;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">MIE 2016</span></strong></span></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;">Medical Informatics Europe MIE 2016 is now part of HEC 2016, and it is planned to have a significant openEHR presence at this event, being held in Munich next August.</span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 30; mso-yfti-lastrow: yes;">
+<td style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: #000000 black black; padding: 0cm 5.4pt; border-image: none; width: 93.15pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt;" colspan="2" valign="top" width="124">
+<p style="margin: 0cm 0cm 8pt;"><strong style="mso-bidi-font-weight: normal;"><span style="font-family: Calibri; font-size: medium;">Members</span></strong></p>
+</td>
+<td style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: #000000 black black #000000; padding: 0cm 5.4pt; width: 431.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-left-alt: solid black .5pt;" colspan="2" valign="top" width="575">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri;"><strong style="mso-bidi-font-weight: normal;"><span style="font-size: medium;">Members</span></strong><span style="font-size: medium;"> have increased during this year, but we still need as many people as possible to join and get involved in the openEHR Foundation, so if you are not already a member, please consider membership.</span><span style="mso-spacerun: yes;"><span style="font-size: medium;">&nbsp; </span></span><span style="font-size: medium;">Go to </span></span><a href="http://members.openehr.org/"><span style="color: blue;"><span style="font-family: Calibri; font-size: medium;">http://members.openehr.org</span></span></a><span style="font-family: Calibri; font-size: medium;">.</span><span style="font-family: Calibri; font-size: medium;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="border: 0px #000000; border-image: none; background-color: transparent;" width="8">&nbsp;</td>
+<td style="border: 0px #000000; border-image: none; background-color: transparent;" width="116">&nbsp;</td>
+<td style="border: 0px #000000; border-image: none; background-color: transparent;" width="8">&nbsp;</td>
+<td style="border: 0px #000000; border-image: none; background-color: transparent;" width="567">&nbsp;</td>
+<td style="border: 0px #000000; border-image: none; background-color: transparent;" width="8">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table style="margin: auto auto auto -5.75pt; border: currentColor; border-image: none; height: 83px; border-collapse: collapse; mso-table-layout-alt: fixed; mso-border-alt: solid black .5pt; mso-yfti-tbllook: 1024; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid black; mso-border-insidev: .5pt solid black;" border="1" width="692" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: 11pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes;">
+<td style="background: #a4c2f4; padding: 0cm 5.4pt; border: 1pt solid black; border-image: none; width: 524.5pt; height: 11pt; mso-border-alt: solid black .5pt;" valign="top" width="699">
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;">&nbsp;<span style="line-height: 107%; font-size: 12pt;"><strong>And finally... </strong></span></span></p>
+<p style="margin: 0cm 0cm 8pt;"><span style="font-family: Calibri; font-size: medium;"><span style="line-height: 107%; font-size: 12pt;">Thank you to everyone who has supported and been involved with openEHR - wishing all a Merry Christmas and Happy New Year</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0cm 0cm 8pt;"><a name="h.gjdgxs"></a></p>
+
+
+
+
+
+<br/><br/><br/><br/><br/>
+<a href="../foundation_news.html">>> Back to openEHR News</a>
+
+
+			<br class="clear">
+			</div>
+			<br class="clear">
+		</div>
+		<br class="clear">
+	</div>
+	<footer class="block footer">
+  <div class="container grid grid--4 footer__sections">
+    <section class="footer__section">
+      <h2 class="footer__heading">Sites</h2>
+      <div>
+        <ul class="list">
+          <li><a href="../../community/mailinglists.html" target="_blank">Forums</a></li>
+          <li>
+            <a href="../../wiki/display/resources/FAQs+-+Frequently+Asked+Questions.html" target="_blank">
+              Wiki
+            </a>
+          </li>
+          <li>
+            <a href="https://openehr.atlassian.net/secure/BrowseProjects.jspa?selectedCategory=all&amp;selectedProjectType=all" target="_blank">
+              Jira
+            </a>
+          </li>
+          <li><a href="https://github.com/openEHR" target="_blank">GitHub</a></li>
+          <li><a href="../../programs/specification/releases/currentbaseline.html" target="_blank">Specifications</a></li>
+          <li><a href="../../ckm/templates/1013.26.272/orgchart.html" target="_blank">CKM</a></li>
+          <li><a href="../../accounts/index.html">Accounts</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Using the Site</h2>
+      <div>
+        <ul class="list">
+          <li><a href="../../using_the_site/terms_of_use.html">Terms of Use</a></li>
+          <li><a href="../../using_the_site/privacy_policy.html">Privacy Policy</a></li>
+          <li>
+            <a href="../../using_the_site/publishing_content.html">Publishing Content</a>
+          </li>
+          <li><a href="../../using_the_site/localisation.html">Localisation</a></li>
+          <li><a href="../../using_the_site/feedback.html">Feedback</a></li>
+          <li><a href="mailto:webmaster@openehr.org">Contact Webmaster</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Acknowledgements</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.atlassian.com/" target="_blank">Atlassian</a>
+            (Jira, Confluence)
+          </li>
+          <li>
+            <a href="http://asciidoctor.org/" target="_blank">AsciiDoctor</a>
+            (publishing)
+          </li>
+          <li><a href="https://github.com/" target="_blank">GitHub</a> (DVCS)</li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="_blank">LAMP</a>
+            (dev community)
+          </li>
+          <li>
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            (images)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer__section">
+      <h2 class="footer__heading">Social media</h2>
+      <div>
+        <ul class="list">
+          <li>
+            <a href="https://www.youtube.com/openEHR" target="_blank" class="fa fa-youtube" title="YouTube"></a>
+            <a href="https://www.youtube.com/openEHR" target="_blank">YouTube</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
+            <a href="https://www.linkedin.com/groups/144276/" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/#!/openehr" target="_blank" class="fa fa-twitter" title="Twitter"></a> 
+            <a href="http://twitter.com/#!/openehr" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/openehr/"
+              target="_blank"
+              class="fa fa-facebook"
+              title="Facebook"
+            ></a>
+            <a href="https://www.facebook.com/groups/openehr/" target="_blank">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer__copyright">
+      <img src="../../static/img/logo_inverse.svg" alt="" class="brand-logo" />
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        openEHR International. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+	<script src="../../static/js/header_boxes.js"></script>
+	<script>$('.select_field_class').select2( { placeholder: "Select here", maximumSelectionSize: 100  } );</script>
+
+</body>
+</html>
